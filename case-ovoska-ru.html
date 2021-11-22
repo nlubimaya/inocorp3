@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Inocorp-3</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&amp;display=swap">
+    <link rel="stylesheet" href="stylesheets/common.css">
+    <link rel="stylesheet" href="stylesheets/case-ovoska.css">
+</head>
+
+<body class="page">
+    <div class="screen">
+        <header class="header header--color-second js-header">
+            <div class="box header__box">
+                <div class="header__container"><a class="logo header__logo" href="#42">
+                        <svg class="logo__image" viewBox="0 0 175 14" width="175" height="14" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M52.987 10.363c1.975 0 3.269-1.475 3.269-3.363 0-1.887-1.294-3.397-3.269-3.397s-3.269 1.51-3.269 3.397c0 1.853 1.294 3.363 3.269 3.363zm-50.807-.721c1.192 0 2.179.995 2.179 2.162 0 1.201-.988 2.162-2.179 2.162-1.192 0-2.179-.995-2.179-2.162 0-1.167.988-2.162 2.179-2.162zm10.148-9.402h4.121v13.52h-4.121v-13.52zm21.454 0h4.12v13.52h-3.95l-5.04-6.828v6.828h-4.12v-13.52h4.257l4.733 6.382v-6.382zm19.206-.24c4.223 0 7.458 2.848 7.458 7s-3.269 6.966-7.458 6.966c-4.223 0-7.458-2.814-7.458-6.966s3.235-7 7.458-7zm20.645 4.889c2.25.432 5.61 1.077 5.61 4.41 0 2.951-2.247 4.667-5.857 4.632-2.895 0-4.87-.824-6.334-2.127l2.145-3.02c1.022.961 2.554 1.75 4.393 1.75.749 0 1.498-.206 1.498-.721 0-.432-.833-.578-1.947-.773-2.25-.394-5.647-.989-5.647-4.546 0-2.265 1.907-4.461 5.653-4.461 2.248 0 4.223.618 5.789 1.887l-2.213 2.882c-1.192-.892-2.724-1.338-4.018-1.338-.817 0-1.056.275-1.056.618 0 .425.852.589 1.984.806zm11.909-4.649h11.408v3.569h-3.644v9.951h-4.12v-9.951h-3.644v-3.569zm28.332 0h4.2219999999999995v7.961c0 3.363-2.145 5.799-6.742 5.799-4.597 0-6.743-2.471-6.743-5.799v-7.961h4.189v7.824c0 1.304.851 2.333 2.554 2.333 1.668 0 2.52-1.029 2.52-2.333v-7.824zm18.627 0c4.291 0 7.492 2.402 7.492 6.725 0 4.324-3.201 6.76-7.458 6.76h-6.13v-13.485h6.096zm15.085 0h4.121v13.52h-4.121v-13.52zm19.206-.24c4.223 0 7.458 2.848 7.458 7s-3.269 6.966-7.458 6.966c-4.222 0-7.457-2.814-7.457-6.966s3.235-7 7.457-7zm.001 3.603c-1.975 0-3.269 1.51-3.269 3.397 0 1.887 1.294 3.363 3.269 3.363s3.269-1.51 3.269-3.363c0-1.887-1.294-3.397-3.269-3.397zm-34.257.206h-1.975v6.382h1.975c2.077 0 3.303-1.51 3.303-3.191-.034-1.853-1.124-3.191-3.303-3.191z"></path>
+                        </svg>
+                        <span class="logo__name">INOSTUDIO</span>
+                    </a>
+                    <!--END .logo-->
+                    <nav class="nav header__nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__link" href="#42">Портфолио</a>
+                            </li>
+                            <li class="nav__item">
+                                <span class="nav__link is-active">Услуги
+                                    <svg class="icon icon--color-fill nav__icon-dropdown" width="16" height="16">
+                                        <use xlink:href="images/svg-sprite.svg#arrow-2-down"></use>
+                                    </svg>
+                                    <!--END .icon-->
+                                </span>
+                                <ul class="nav__sublist">
+                                    <li class="nav__subitem"><a class="nav__sublink" href="#42">Все услуги</a></li>
+                                    <li class="nav__subitem"><a class="nav__sublink" href="#42">Веб-сервисы</a></li>
+                                    <li class="nav__subitem"><a class="nav__sublink" href="#42">Мобильные приложения</a></li>
+                                    <li class="nav__subitem"><a class="nav__sublink" href="#42">Devops</a></li>
+                                    <li class="nav__subitem"><a class="nav__sublink" href="#42">ИТ аутсорсинг</a></li>
+                                    <li class="nav__subitem"><a class="nav__sublink" href="#42">Стартапы</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item">
+                                <span class="nav__link">Компания
+                                    <svg class="icon icon--color-fill nav__icon-dropdown" width="16" height="16">
+                                        <use xlink:href="images/svg-sprite.svg#arrow-2-down"></use>
+                                    </svg>
+                                    <!--END .icon-->
+                                </span>
+                                <ul class="nav__sublist">
+                                    <li class="nav__subitem"><a class="nav__sublink" href="#42">О нас</a></li>
+                                    <li class="nav__subitem"><a class="nav__sublink" href="#42">Вакансии</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#42">Блог</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#42">Контакты</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#42">Экспресс-услуги</a>
+                            </li>
+                        </ul>
+                        <div class="lang-switcher nav__lang">
+                            <div class="lang-switcher__item"><a class="lang-switcher__link is-active" href="#42">Рус</a></div>
+                            <div class="lang-switcher__item"><a class="lang-switcher__link" href="#42">Eng</a></div>
+                        </div>
+                        <!--END .lang-switcher-->
+                    </nav>
+                    <!--END .nav--><button class="cheeseburger js-cheeseburger header__cheeseburger" type="button" data-open="Открыть меню" data-close="Закрыть меню"><span class="cheeseburger__text">Открыть меню</span><span class="cheeseburger__lines"></span></button>
+                    <!--END .cheeseburger-->
+                </div>
+            </div>
+            <!--END .box-->
+        </header>
+        <!--END .header-->
+        <main class="main">
+            <article class="product product--ovoska">
+                <header class="product-header">
+                    <div class="box">
+                        <div class="product-header__title">OVOska</div>
+                        <h1 class="product-header__subtitle">Разработка MVP мобильного <br>приложения для доставки товаров</h1>
+                        <div class="product-data">
+                            <div class="product-data__year">2020 &mdash; 2021</div>
+                            <div class="product-tags product-data__tags"><a class="product-tags__item" href="#42">мобильная разработка</a><a class="product-tags__item" href="#42">flutter</a><a class="product-tags__item" href="#42">mvp</a></div><!-- END .product-tags-->
+                        </div><!-- END .product-data-->
+                    </div><!-- END .box-->
+                </header><!-- END .product-header-->
+                <div class="product-body">
+                    <div class="product-show">
+                        <div class="product-video js-product-video product-video--ovoska">
+                            <div class="box">
+                                <div class="product-video__container">
+                                    <div class="product-video__viewport">
+                                        <iframe class="product-video__player" id="product-video" src="//www.youtube.com/embed/y_eMxPitWKw?rel=0&amp;amp;controls=0&amp;amp;showinfo=0&amp;amp;enablejsapi=1" width="100%" height="100%" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                        <div class="product-video__placeholder">
+                                            <figure class="image-box product-video__preview">
+                                                <picture>
+                                                    <source srcset="images/cases/case-ovoska/intro-poster.jpg 1x, images/cases/case-ovoska/intro-poster@2x.jpg 2x" media="(min-width: 768px)"><img class="image-box__image" src="images/cases/case-ovoska/intro-poster_mobile.jpg" srcset="images/cases/case-ovoska/intro-poster_mobile.jpg 1x, images/cases/case-ovoska/[object Object]-poster.jpg 2x" alt="">
+                                                </picture>
+                                            </figure><!-- END .image-box--><button class="product-video__button" type="button"><svg enable-background="new 0 0 90 90" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M45,0C20.1,0,0,20.1,0,45c0,24.9,20.1,45,45,45c24.9,0,45-20.1,45-45C90,20.1,69.9,0,45,0L45,0z 	 M53.8,47.6l-11.9,7c-1.2,0.7-2.8,0.301-3.5-0.8C38.1,53.4,38,53,38,52.5v-14c0-1.4,1.1-2.5,2.5-2.5c0.5,0,0.9,0.1,1.3,0.4l11.9,7 c1.2,0.7,1.6,2.2,0.899,3.4C54.4,47.1,54.1,47.4,53.8,47.6L53.8,47.6z"></path>
+                                                </svg></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- END .box-->
+                        </div><!-- END .product-video-->
+                    </div>
+                    <!--END .product-show-->
+                    <section class="product-stores">
+                        <div class="box">
+                            <div class="product-stores__group"><a class="button-store button-store--google-play product-stores__item" href="https://play.google.com/store/apps/details?id=com.neumserg.ovoska" target="_blank"><img class="button-store__image" src="images/cases/google-play.svg" alt="Get it on Google Play"><span class="button-store__text">Get it on Google Play</span></a>
+                                <!--END .button-store--><a class="button-store button-store--app-store product-stores__item" href="https://apps.apple.com/id/app/ovoska-%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%B8%D0%BC-%D0%BE%D1%82%D0%BE%D0%B2%D1%81%D1%8E%D0%B4%D1%83/id1553438764" target="_blank"><img class="button-store__image" src="images/cases/app-store.svg" alt="Download on the App Store"><span class="button-store__text">Download on the App Store</span></a>
+                                <!--END .button-store-->
+                            </div>
+                        </div>
+                    </section>
+                    <!--END .product-stores-->
+                    <section class="product-about">
+                        <div class="box">
+                            <div class="product-about__group">
+                                <div class="product-about__item product-about__item--content">
+                                    <h2 class="product-title product-about__title">О проекте </h2>
+                                    <!--END .product-title-->
+                                    <p class="product-text product-about__text">Мы разработали MVP для тестирования гипотезы клиента — мобильное приложение для доставки товаров широкого спроса.</p>
+                                </div>
+                                <div class="product-about__item product-about__item--image">
+                                    <picture class="image-box">
+                                        <img class="image-box__image" src="images/cases/case-ovoska/logo.svg" alt="" loading="lazy">
+                                    </picture>
+                                    <!--END .image-box-->
+                                </div>
+                            </div>
+                        </div><!-- END .box-->
+                    </section><!-- END .product-about-->
+                    <section class="product-tasks">
+                        <div class="box">
+                            <div class="product-tasks__group">
+                                <div class="product-tasks__item product-tasks__item--content">
+                                    <h2 class="product-title product-tasks__title">Миссия и задачи клиента </h2>
+                                    <!--END .product-title-->
+                                    <div class="product-text product-tasks__text">
+                                        <p>Заказчик и идейный вдохновитель проекта преследует цель сделать рынок доставки прозрачным, простым и доступным. Это новая «философия», основанная по принципу “win-win-win”. Ведь OvOska — это просто для всех и доступно для каждого.</p>
+                                    </div>
+                                    <div class="product-text product-tasks__text">
+                                        <p>Перед стартом разработки мобильного приложения мы выделили <strong>три группы сложностей, с которыми сталкиваются целевые аудитории:</strong></p>
+                                    </div>
+                                    <ul class="product-list product-tasks__list">
+                                        <li class="product-list__item"><strong>Малый и средний бизнес:</strong> у небольших кафе, продуктовых магазинов нет возможности сотрудничать с гигантами индустрии (Яндекс.Еда, Delivery Club)</li>
+                                        <li class="product-list__item"><strong>Курьер:</strong> не всегда подходящие условия сотрудничества, зависимость от работодателя, обязательный дресс-код</li>
+                                        <li class="product-list__item"><strong>Покупатель:</strong> любимые магазины не всегда сотрудничают с крупными сервисами доставки, получить необходимые товары иногда невозможно.</li>
+                                    </ul>
+                                    <!--END .product-list-->
+                                </div>
+                                <div class="product-tasks__item product-tasks__item--image">
+                                    <picture class="image-box">
+                                        <img class="image-box__image" src="images/cases/case-ovoska/people.svg" alt="" loading="lazy">
+                                    </picture>
+                                    <!--END .image-box-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--END .box-->
+                    </section>
+                    <!--END .product-tasks-->
+                    <section class="product-carousel">
+                        <div class="box">
+                            <div class="product-carousel__group js-product-carousel">
+                                <div class="product-carousel__item">
+                                    <picture class="image-box product-carousel__image">
+                                        <img class="image-box__image" src="images/cases/case-ovoska/screen-1.png" alt="" loading="lazy">
+                                    </picture>
+                                    <!--END .image-box-->
+                                </div>
+                                <div class="product-carousel__item">
+                                    <div class="product-carousel__media js-product-media"><video class="product-carousel__video" src="videos/cases/case-ovoska/video-screens-1.mp4" loop muted playsinline preload="yes"></video>
+                                        <div class="product-carousel__video-poster image-box js-video-poster"><img class="image-box__image" src="images/cases/case-ovoska/poster-1.jpg" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="product-carousel__item">
+                                    <picture class="image-box product-carousel__image">
+                                        <img class="image-box__image" src="images/cases/case-ovoska/screen-2.png" alt="" loading="lazy">
+                                    </picture>
+                                    <!--END .image-box-->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--END .product-carousel-->
+                    <section class="product-tasks">
+                        <div class="box">
+                            <div class="product-tasks__group">
+                                <div class="product-tasks__item product-tasks__item--content">
+                                    <h2 class="product-title product-tasks__title">Решение бизнес-задач </h2>
+                                    <!--END .product-title-->
+                                    <div class="product-text product-tasks__text">
+                                        <p>К решению поставленных задач мы подошли по методологии <strong>“more flexible than agile”</strong>. Команде было важно полностью контролировать бюджет и время разработки. На первом этапе требовалось самое необходимое: достойный UI и полностью рабочий функционал, отвечающий новой концепции доставки в России.</p>
+                                        <p>В итоге решение задач мы объединили в одно кроссплатформенное приложение OvOska. В нем нет short-листов с ресторанами и кафе, с которыми можно сотрудничать. Нет никаких жестких требований для курьеров: дресс-код, наличие автомобиля, рабочий график. А основные пользователи могут заказать не только еду, но и цветы для именинницы или батарейки для радиоуправляемого вертолета сына.</p>
+                                    </div>
+                                </div>
+                                <div class="product-tasks__item product-tasks__item--image">
+                                    <picture class="image-box">
+                                        <img class="image-box__image" src="images/cases/case-ovoska/thumb.svg" alt="" loading="lazy">
+                                    </picture>
+                                    <!--END .image-box-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--END .box-->
+                    </section>
+                    <!--END .product-tasks-->
+                    <section class="product-structure">
+                        <div class="box">
+                            <div class="product-structure__contasiner">
+                                <h2 class="product-title product-structure__title">Функциональные особенности </h2>
+                                <!--END .product-title-->
+                                <div class="product-structure__group">
+                                    <div class="product-structure__item">
+                                        <h6 class="product-structure__item-title">Авторизация в приложении</h6>
+                                        <p class="product-text product-structure__text">Для упрощения авторизации пользователей в приложении мы воспользовались простым проверенным механизмом — технологией Firebase Authentication. Чтобы начать пользоваться приложением, достаточно ввести номер телефона, получить по СМС код и отправить его обратно для проверки.</p>
+                                        <div class="product-structure__media js-product-media">
+                                            <div class="product-structure__carousel product-carousel product-structure__carousel--bordered">
+                                                <div class="product-carousel__group js-product-carousel">
+                                                    <div class="product-carousel__item">
+                                                        <picture class="image-box product-carousel__image">
+                                                            <img class="image-box__image" src="images/cases/case-ovoska/screen-3.png" alt="" loading="lazy">
+                                                        </picture>
+                                                        <!--END .image-box-->
+                                                    </div>
+                                                    <div class="product-carousel__item">
+                                                        <picture class="image-box product-carousel__image">
+                                                            <img class="image-box__image" src="images/cases/case-ovoska/screen-4.png" alt="" loading="lazy">
+                                                        </picture>
+                                                        <!--END .image-box-->
+                                                    </div>
+                                                    <div class="product-carousel__item">
+                                                        <picture class="image-box product-carousel__image">
+                                                            <img class="image-box__image" src="images/cases/case-ovoska/screen-5.png" alt="" loading="lazy">
+                                                        </picture>
+                                                        <!--END .image-box-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-structure__item">
+                                        <h6 class="product-structure__item-title">Маршрут доставки</h6>
+                                        <p class="product-text product-structure__text">Мы интегрировали приложение с картами, чтобы каждый пользователь приложения с легкостью мог сделать заказ. На ней можно увидеть область доставки курьера и поставить метки «Магазин — конечная точка доставки».</p>
+                                        <div class="product-structure__media js-product-media"></div>
+                                    </div>
+                                    <div class="product-structure__item">
+                                        <h6 class="product-structure__item-title">Чат и push-уведомления</h6>
+                                        <p class="product-text product-structure__text">Диалог между покупателем и курьером происходит в чате. Теперь найти альтернативу отсутствующему товару можно не только с помощью звонка, но и в чате приложения OvOska. Чтобы взаимодействие протекало более продуктивно, пользователи могут обмениваться фотографиями продуктов.</p>
+                                        <p class="product-text product-structure__text">Все действия курьера, сведения о процессе доставки и сообщения сопровождаются push-уведомлениями. Пользователи приложения всегда остаются в курсе, если назначен курьер, изменилась цена или сменился статус заказа.</p>
+                                        <div class="product-structure__media js-product-media">
+                                            <div class="product-structure__images-group">
+                                                <picture class="image-box product-structure__image">
+                                                    <img class="image-box__image" src="images/cases/case-ovoska/screen-6.png" alt="" loading="lazy">
+                                                </picture>
+                                                <!--END .image-box-->
+                                                <picture class="image-box product-structure__image">
+                                                    <img class="image-box__image" src="images/cases/case-ovoska/screen-7.png" alt="" loading="lazy">
+                                                </picture>
+                                                <!--END .image-box-->
+                                                <picture class="image-box product-structure__image">
+                                                    <img class="image-box__image" src="images/cases/case-ovoska/screen-8.png" alt="" loading="lazy">
+                                                </picture>
+                                                <!--END .image-box-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="product-structure__item">
+                                        <h6 class="product-structure__item-title">Режимы: пользователь, курьер</h6>
+                                        <p class="product-text product-structure__text">Для упрощения логики приложения команда ушла от нескольких уровней доступа. Так пользователи и курьеры OvOska могут перейти из режима «заказать» в «доставить» с помощью только одного нажатия кнопки.</p>
+                                        <div class="product-structure__media js-product-media">
+                                            <div class="product-structure__carousel product-carousel product-structure__carousel--align-center">
+                                                <div class="product-carousel__group js-product-carousel">
+                                                    <div class="product-carousel__item">
+                                                        <picture class="image-box product-carousel__image">
+                                                            <img class="image-box__image" src="images/cases/case-ovoska/screen-9.png" alt="" loading="lazy">
+                                                        </picture>
+                                                        <!--END .image-box-->
+                                                    </div>
+                                                    <div class="product-carousel__item">
+                                                        <div class="product-carousel__media js-product-media"><video class="product-carousel__video" src="videos/cases/case-ovoska/video-screens-2.mp4" loop muted></video>
+                                                            <div class="product-carousel__video-poster image-box js-video-poster"><img class="image-box__image" src="images/cases/case-ovoska/poster-2.jpg" alt=""></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-carousel__item">
+                                                        <picture class="image-box product-carousel__image">
+                                                            <img class="image-box__image" src="images/cases/case-ovoska/screen-10.png" alt="" loading="lazy">
+                                                        </picture>
+                                                        <!--END .image-box-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- END .box-->
+                    </section><!-- END .product-structure-->
+                    <section class="product-about">
+                        <div class="box">
+                            <div class="product-about__group">
+                                <div class="product-about__item product-about__item--content">
+                                    <h2 class="product-title product-about__title">Результаты и планы </h2>
+                                    <!--END .product-title-->
+                                    <p class="product-text product-about__text">На данный момент мы вместе с заказчиком тестируем MVP-версию приложения в Санкт-Петербурге. И пока жизнеспособность сервиса проверяется временем, а клиент находится в поиске инвесторов для масштабирования идеи — <span class='product-text__colored'>наша продуктовая команда постоянно улучшает <strong>OvOska</strong></span>.</p>
+                                </div>
+                            </div>
+                        </div><!-- END .box-->
+                    </section><!-- END .product-about-->
+                    <section class="product-about product-about--review">
+                        <div class="box">
+                            <div class="product-about__group">
+                                <div class="product-about__item product-about__item--content">
+                                    <h2 class="product-title product-about__title">Отзыв клиента </h2>
+                                    <!--END .product-title-->
+                                    <p class="product-text product-about__text">INOSTUDIO — это отличная команда разработки, грамотный руководитель проекта и UI/UX-дизайнер со вкусом. Там, где я даже не ожидал, все было проработано и закрыто.</p>
+                                    <p class="product-text product-about__text">Да, иногда на все не хватало рук, но время — это всегда ресурс, которого не хватает. Так что мне все нравится.</p>
+                                    <p class="product-text product-about__text">Любой другой проект с удовольствием делал бы снова с INOSTUDIO.</p>
+                                </div>
+                                <div class="product-about__item product-about__item--image">
+                                    <picture class="image-box">
+                                        <img class="image-box__image" src="images/cases/case-ovoska/photo.jpg" alt="" loading="lazy">
+                                    </picture>
+                                    <!--END .image-box-->
+                                </div>
+                            </div>
+                        </div><!-- END .box-->
+                    </section><!-- END .product-about-->
+                    <div class="product-tech">
+                        <div class="box">
+                            <div class="product-tech__group">
+                                <h2 class="product-title product-tech__title">Стек технологий </h2>
+                                <!--END .product-title-->
+                                <div class="product-tech__list"><span class="product-tech__item">Flutter</span><span class="product-tech__item">Google Maps</span><span class="product-tech__item">DaData</span><span class="product-tech__item">Firebase Auth</span><span class="product-tech__item">FIrebase Cloud Messaging (Firebase Cloud Function)</span><span class="product-tech__item">Firestore</span><span class="product-tech__item">Sign in with Apple</span><span class="product-tech__item">PHP</span><span class="product-tech__item">Laravel</span><span class="product-tech__item">React</span><span class="product-tech__item">PostgreSql</span></div>
+                            </div>
+                        </div>
+                    </div><!-- END .product-tech-->
+                </div><!-- END .product-body-->
+            </article><!-- END .product-->
+            <!-- END .ovoska-->
+            <section class="projects-nav js-projects-nav">
+                <div class="projects-nav__bg-group">
+                    <div class="projects-nav__bg projects-nav__bg--current projects-nav__bg--ovoska"></div>
+                    <div class="projects-nav__bg projects-nav__bg--other projects-nav__bg--agrotracker is-transparent" data-bg="agrotracker"></div>
+                    <div class="projects-nav__bg projects-nav__bg--other projects-nav__bg--corner is-transparent" data-bg="corner"></div>
+                </div>
+                <div class="projects-nav__group">
+                    <div class="projects-nav__item projects-nav__item--one"><a class="projects-nav__link" href="#42" data-target="agrotracker"><span class="icon icon--css-arrow icon--reverse projects-nav__icon-arrow projects-nav__icon-arrow--prev"></span><!-- END .icon--><span class="projects-nav__name projects-nav__name--one">Agrotracker</span></a></div>
+                    <div class="projects-nav__item projects-nav__item--all"><a class="projects-nav__link projects-nav__link--all" href="#42"><svg class="icon icon--grid projects-nav__icon-grid" viewBox="0 0 15 15">
+                                <path d="m12 0h3v3h-3v-3m0 6h3v3h-3v-3m0 6h3v3h-3v-3m-6-12h3v3h-3v-3m0 6h3v3h-3v-3m0 6h3v3h-3v-3m-6-12h3v3h-3v-3m0 6h3v3h-3v-3m0 6h3v3h-3v-3"></path>
+                            </svg><!-- END .icon--><span class="projects-nav__name projects-nav__name--all">Все проекты</span></a></div>
+                    <div class="projects-nav__item projects-nav__item--one"><a class="projects-nav__link projects-nav__link--reverse" href="#42" data-target="corner"><span class="icon icon--css-arrow projects-nav__icon-arrow projects-nav__icon-arrow--next"></span><!-- END .icon--><span class="projects-nav__name projects-nav__name--one">Corner</span></a></div>
+                </div>
+            </section><!-- END .projects-nav-->
+            <section class="order-block order-block--ovoska">
+                <div class="x-box">
+                    <div class="order-block__content">
+                        <div class="order-block__text">
+                            <p>Понравился проект?</p>
+                            <p>Сделаем ваш.</p>
+                        </div><a class="order-block__link" href="#42">Связаться с нами</a>
+                    </div>
+                </div>
+                <!--END .x-box-->
+            </section><!-- END .order-block-->
+        </main>
+        <footer class="footer">
+            <div class="box">
+                <div class="social footer__social">
+                    <a class="ctrl-button ctrl-button--icon-only social__item" href="#42" target="_blank" rel="noopener noreferrer">
+                        <svg class="icon icon--color-fill ctrl-button__icon" width="32" height="32">
+                            <use xlink:href="images/svg-sprite.svg#social-vk"></use>
+                        </svg>
+                        <!--END .icon-->
+                        <span class="ctrl-button__text">INOSTUDIO Вконтакте</span>
+                    </a>
+                    <!--END .ctrl-button-->
+                    <a class="ctrl-button ctrl-button--icon-only social__item" href="#42" target="_blank" rel="noopener noreferrer">
+                        <svg class="icon icon--color-fill ctrl-button__icon" width="32" height="32">
+                            <use xlink:href="images/svg-sprite.svg#social-facebook"></use>
+                        </svg>
+                        <!--END .icon-->
+                        <span class="ctrl-button__text">INOSTUDIO на Facebook</span>
+                    </a>
+                    <!--END .ctrl-button-->
+                    <a class="ctrl-button ctrl-button--icon-only social__item" href="#42" target="_blank" rel="noopener noreferrer">
+                        <svg class="icon icon--color-fill ctrl-button__icon" width="32" height="32">
+                            <use xlink:href="images/svg-sprite.svg#social-behance"></use>
+                        </svg>
+                        <!--END .icon-->
+                        <span class="ctrl-button__text">INOSTUDIO на Behance</span>
+                    </a>
+                    <!--END .ctrl-button-->
+                    <a class="ctrl-button ctrl-button--icon-only social__item" href="#42" target="_blank" rel="noopener noreferrer">
+                        <svg class="icon icon--color-fill ctrl-button__icon" width="32" height="32">
+                            <use xlink:href="images/svg-sprite.svg#social-instagram"></use>
+                        </svg>
+                        <!--END .icon-->
+                        <span class="ctrl-button__text">INOSTUDIO в instagram</span>
+                    </a>
+                    <!--END .ctrl-button-->
+                </div>
+                <!--END .social-->
+                <div class="footer__group">
+                    <div class="footer__item footer__item--copy">
+                        <p>&copy; 2020 Все права защищены. INOSTUDIO</p>
+                    </div>
+                    <div class="footer__item footer__item--agree">
+                        <a class="footer__link" href="#42">Соглашение об использовании сайта</a>
+                    </div>
+                    <div class="footer__item">
+                        <a class="footer__link" href="#42">Политика обработки персональных данных</a>
+                    </div>
+                </div>
+            </div>
+            <!--END .box-->
+        </footer>
+        <!--END .footer-->
+        <div class="scroll screen__scroll">
+            <div class="scroll__actions">
+                <button class="ctrl-button ctrl-button--icon-only scroll__button scroll__button--up is-hidden" type="button">
+                    <svg class="icon icon--color-fill ctrl-button__icon" width="24" height="24">
+                        <use xlink:href="images/svg-sprite.svg#to-top"></use>
+                    </svg>
+                    <!--END .icon-->
+                    <span class="ctrl-button__text">На верх</span>
+                </button>
+                <!--END .ctrl-button-->
+            </div>
+        </div>
+        <!--END .scroll-->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/modernizr/modernizr-custom.js"></script>
+    <script src="scripts/autosize/autosize.min.js"></script>
+    <script src="scripts/svg4everybody/svg4everybody.min.js"></script>
+    <script src="scripts/slick/slick.min.js"></script>
+    <script src="scripts/cases.js"></script>
+    <script src="scripts/common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Inocorp-3</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&amp;display=swap">
+    <link rel="stylesheet" href="stylesheets/common.css">
+    <link rel="stylesheet" href="stylesheets/case-backyard.css">
+</head>
+
+<body class="page">
+    <div class="screen">
+        <header class="header header--color-second js-header">
+            <div class="box header__box">
+                <div class="header__container"><a class="logo header__logo" href="#42">
+                        <svg class="logo__image" viewBox="0 0 175 14" width="175" height="14" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M52.987 10.363c1.975 0 3.269-1.475 3.269-3.363 0-1.887-1.294-3.397-3.269-3.397s-3.269 1.51-3.269 3.397c0 1.853 1.294 3.363 3.269 3.363zm-50.807-.721c1.192 0 2.179.995 2.179 2.162 0 1.201-.988 2.162-2.179 2.162-1.192 0-2.179-.995-2.179-2.162 0-1.167.988-2.162 2.179-2.162zm10.148-9.402h4.121v13.52h-4.121v-13.52zm21.454 0h4.12v13.52h-3.95l-5.04-6.828v6.828h-4.12v-13.52h4.257l4.733 6.382v-6.382zm19.206-.24c4.223 0 7.458 2.848 7.458 7s-3.269 6.966-7.458 6.966c-4.223 0-7.458-2.814-7.458-6.966s3.235-7 7.458-7zm20.645 4.889c2.25.432 5.61 1.077 5.61 4.41 0 2.951-2.247 4.667-5.857 4.632-2.895 0-4.87-.824-6.334-2.127l2.145-3.02c1.022.961 2.554 1.75 4.393 1.75.749 0 1.498-.206 1.498-.721 0-.432-.833-.578-1.947-.773-2.25-.394-5.647-.989-5.647-4.546 0-2.265 1.907-4.461 5.653-4.461 2.248 0 4.223.618 5.789 1.887l-2.213 2.882c-1.192-.892-2.724-1.338-4.018-1.338-.817 0-1.056.275-1.056.618 0 .425.852.589 1.984.806zm11.909-4.649h11.408v3.569h-3.644v9.951h-4.12v-9.951h-3.644v-3.569zm28.332 0h4.2219999999999995v7.961c0 3.363-2.145 5.799-6.742 5.799-4.597 0-6.743-2.471-6.743-5.799v-7.961h4.189v7.824c0 1.304.851 2.333 2.554 2.333 1.668 0 2.52-1.029 2.52-2.333v-7.824zm18.627 0c4.291 0 7.492 2.402 7.492 6.725 0 4.324-3.201 6.76-7.458 6.76h-6.13v-13.485h6.096zm15.085 0h4.121v13.52h-4.121v-13.52zm19.206-.24c4.223 0 7.458 2.848 7.458 7s-3.269 6.966-7.458 6.966c-4.222 0-7.457-2.814-7.457-6.966s3.235-7 7.457-7zm.001 3.603c-1.975 0-3.269 1.51-3.269 3.397 0 1.887 1.294 3.363 3.269 3.363s3.269-1.51 3.269-3.363c0-1.887-1.294-3.397-3.269-3.397zm-34.257.206h-1.975v6.382h1.975c2.077 0 3.303-1.51 3.303-3.191-.034-1.853-1.124-3.191-3.303-3.191z"></path>
+                        </svg>
+                        <span class="logo__name">INOSTUDIO</span>
+                    </a>
+                    <!--END .logo-->
+                    <nav class="nav header__nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__link" href="#42">Портфолио</a>
+                            </li>
+                            <li class="nav__item">
+                                <span class="nav__link is-active">Услуги
+                                    <svg class="icon icon--color-fill nav__icon-dropdown" width="16" height="16">
+                                        <use xlink:href="images/svg-sprite.svg#arrow-2-down"></use>
+                                    </svg>
+                                    <!--END .icon-->
+                                </span>
+                                <ul class="nav__sublist">
+                                    <li class="nav__subitem"><a class="nav__sublink" href="#42">Все услуги</a></li>
+                                    <li class="nav__subitem"><a class="nav__sublink" href="#42">Веб-сервисы</a></li>
+                                    <li class="nav__subitem"><a class="nav__sublink" href="#42">Мобильные приложения</a></li>
+                                    <li class="nav__subitem"><a class="nav__sublink" href="#42">Devops</a></li>
+                                    <li class="nav__subitem"><a class="nav__sublink" href="#42">ИТ аутсорсинг</a></li>
+                                    <li class="nav__subitem"><a class="nav__sublink" href="#42">Стартапы</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item">
+                                <span class="nav__link">Компания
+                                    <svg class="icon icon--color-fill nav__icon-dropdown" width="16" height="16">
+                                        <use xlink:href="images/svg-sprite.svg#arrow-2-down"></use>
+                                    </svg>
+                                    <!--END .icon-->
+                                </span>
+                                <ul class="nav__sublist">
+                                    <li class="nav__subitem"><a class="nav__sublink" href="#42">О нас</a></li>
+                                    <li class="nav__subitem"><a class="nav__sublink" href="#42">Вакансии</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#42">Блог</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#42">Контакты</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#42">Экспресс-услуги</a>
+                            </li>
+                        </ul>
+                        <div class="lang-switcher nav__lang">
+                            <div class="lang-switcher__item"><a class="lang-switcher__link is-active" href="#42">Рус</a></div>
+                            <div class="lang-switcher__item"><a class="lang-switcher__link" href="#42">Eng</a></div>
+                        </div>
+                        <!--END .lang-switcher-->
+                    </nav>
+                    <!--END .nav--><button class="cheeseburger js-cheeseburger header__cheeseburger" type="button" data-open="Открыть меню" data-close="Закрыть меню"><span class="cheeseburger__text">Открыть меню</span><span class="cheeseburger__lines"></span></button>
+                    <!--END .cheeseburger-->
+                </div>
+            </div>
+            <!--END .box-->
+        </header>
+        <!--END .header-->
+        <main class="main">
+            <article class="product product--backyard">
+                <header class="product-header">
+                    <div class="box">
+                        <div class="product-header__title">Backyard</div>
+                        <h1 class="product-header__subtitle">A mobile app for organizing and holding events, development</h1>
+                        <div class="product-data">
+                            <div class="product-data__year">2019</div>
+                            <div class="product-tags product-data__tags"><a class="product-tags__item" href="#42">mobile development</a><a class="product-tags__item" href="#42">startup</a><a class="product-tags__item" href="#42">ios</a><a class="product-tags__item" href="#42">android</a></div><!-- END .product-tags-->
+                        </div><!-- END .product-data-->
+                    </div><!-- END .box-->
+                </header><!-- END .product-header-->
+                <div class="product-body">
+                    <div class="product-show">
+                        <div class="product-video js-product-video product-video--backyard">
+                            <div class="box">
+                                <div class="product-video__container">
+                                    <div class="product-video__viewport"><video class="product-video__player" src="videos/cases/case-backyard/intro.mp4" loop></video>
+                                        <div class="product-video__placeholder">
+                                            <figure class="image-box product-video__preview">
+                                                <picture>
+                                                    <source srcset="images/cases/case-backyard/intro-poster.jpg 1x, images/cases/case-backyard/intro-poster@2x.jpg 2x" media="(min-width: 768px)"><img class="image-box__image" src="images/cases/case-backyard/intro-poster_mobile.jpg" srcset="images/cases/case-backyard/intro-poster_mobile.jpg 1x, images/cases/case-backyard/[object Object]-poster.jpg 2x" alt="">
+                                                </picture>
+                                            </figure><!-- END .image-box--><button class="product-video__button" type="button"><svg enable-background="new 0 0 90 90" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M45,0C20.1,0,0,20.1,0,45c0,24.9,20.1,45,45,45c24.9,0,45-20.1,45-45C90,20.1,69.9,0,45,0L45,0z 	 M53.8,47.6l-11.9,7c-1.2,0.7-2.8,0.301-3.5-0.8C38.1,53.4,38,53,38,52.5v-14c0-1.4,1.1-2.5,2.5-2.5c0.5,0,0.9,0.1,1.3,0.4l11.9,7 c1.2,0.7,1.6,2.2,0.899,3.4C54.4,47.1,54.1,47.4,53.8,47.6L53.8,47.6z"></path>
+                                                </svg></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- END .box-->
+                        </div><!-- END .product-video-->
+                    </div>
+                    <!--END .product-show-->
+                    <section class="product-about product-about--backyard">
+                        <div class="box">
+                            <div class="product-about__group">
+                                <div class="product-about__item product-about__item--content">
+                                    <h2 class="product-title product-about__title">About the project </h2>
+                                    <!--END .product-title-->
+                                    <p class="product-text product-about__text">Backyard, a mobile app for organizing and holding events.</p>
+                                </div>
+                                <div class="product-about__item product-about__item--image">
+                                    <picture class="image-box">
+                                        <img class="image-box__image" src="images/cases/case-backyard/backyard-logo.jpg" alt="" loading="lazy">
+                                    </picture>
+                                    <!--END .image-box-->
+                                </div>
+                            </div>
+                        </div><!-- END .box-->
+                    </section><!-- END .product-about-->
+                    <section class="product-tasks product-tasks--backyard-idea">
+                        <div class="box">
+                            <div class="product-tasks__group">
+                                <div class="product-tasks__item product-tasks__item--content">
+                                    <h2 class="product-title product-tasks__title">Idea and implementation </h2>
+                                    <!--END .product-title-->
+                                    <div class="product-text product-tasks__text">
+                                        <p>Our client is the owner of a worldwide network of coworking centers. To attract new customers and increase profits in San Jose, California, he started setting up the necessary facilities. Eventually, the task turned out to have two main components: creating a pop-up park and holding thematic events. We developed iOS / Android apps to help with organizing and hosting such events.</p>
+                                    </div>
+                                    <div class="product-text product-tasks__text">
+                                        <p>A pop-up-park (POP — point of presence) is a platform set up from scratch, the brand's point of presence for holding political conferences, professional meetups, and thematic evenings. Anyone can organize and run an event or take part in it as a listener or speaker.</p>
+                                    </div>
+                                </div>
+                                <div class="product-tasks__item product-tasks__item--image">
+                                    <picture class="image-box">
+                                        <img class="image-box__image" src="images/cases/case-backyard/backyard-idea.jpg" alt="" loading="lazy">
+                                    </picture>
+                                    <!--END .image-box-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--END .box-->
+                    </section>
+                    <!--END .product-tasks-->
+                    <section class="product-carousel product-carousel--backyard">
+                        <div class="box">
+                            <div class="product-carousel__group js-product-carousel">
+                                <div class="product-carousel__item">
+                                    <picture class="image-box product-carousel__image">
+                                        <img class="image-box__image" src="images/cases/case-backyard/screen-1.png" alt="" loading="lazy">
+                                    </picture>
+                                    <!--END .image-box-->
+                                </div>
+                                <div class="product-carousel__item">
+                                    <picture class="image-box product-carousel__image">
+                                        <img class="image-box__image" src="images/cases/case-backyard/screen-2.png" alt="" loading="lazy">
+                                    </picture>
+                                    <!--END .image-box-->
+                                </div>
+                                <div class="product-carousel__item">
+                                    <picture class="image-box product-carousel__image">
+                                        <img class="image-box__image" src="images/cases/case-backyard/screen-3.png" alt="" loading="lazy">
+                                    </picture>
+                                    <!--END .image-box-->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!--END .product-carousel-->
+                    <section class="product-tasks product-tasks--backyard-task">
+                        <div class="box">
+                            <div class="product-tasks__group">
+                                <div class="product-tasks__item product-tasks__item--content">
+                                    <h2 class="product-title product-tasks__title">Tasks for the INOSTUDIO team </h2>
+                                    <!--END .product-title-->
+                                    <div class="product-text product-tasks__text">
+                                        <p>While our client was working with the facilities, we were developing the app, Backyard. We prepared a unified system that includes <strong>organizing events, booking</strong> and <strong>purchasing tickets, and marketing analytics tools</strong>.</p>
+                                    </div>
+                                </div>
+                                <div class="product-tasks__item product-tasks__item--image">
+                                    <picture class="image-box">
+                                        <img class="image-box__image" src="images/cases/case-backyard/backyard-task.png" alt="" loading="lazy">
+                                    </picture>
+                                    <!--END .image-box-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--END .box-->
+                    </section>
+                    <!--END .product-tasks-->
+                    <div class="product-info product-info--registration">
+                        <div class="box">
+                            <div class="product-info__group">
+                                <div class="product-info__item product-info__item--content">
+                                    <h3 class="product-title product-info__title">Registration </h3>
+                                    <!--END .product-title-->
+                                    <div class="product-text product-info__text">
+                                        <p>To get registered in the application, users enter a name, a mobile phone number and provide an SMS confirmation. After authorization, they can book tickets for the event.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-carousel product-info__carousel product-info__carousel--registration">
+                                <div class="product-carousel__group js-product-carousel">
+                                    <div class="product-carousel__item">
+                                        <picture class="image-box product-carousel__image">
+                                            <img class="image-box__image" src="images/cases/case-backyard/screen-4.png" alt="" loading="lazy">
+                                        </picture>
+                                        <!--END .image-box-->
+                                    </div>
+                                    <div class="product-carousel__item">
+                                        <picture class="image-box product-carousel__image">
+                                            <img class="image-box__image" src="images/cases/case-backyard/screen-5.png" alt="" loading="lazy">
+                                        </picture>
+                                        <!--END .image-box-->
+                                    </div>
+                                    <div class="product-carousel__item">
+                                        <picture class="image-box product-carousel__image">
+                                            <img class="image-box__image" src="images/cases/case-backyard/screen-6.png" alt="" loading="lazy">
+                                        </picture>
+                                        <!--END .image-box-->
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END .product-carousel-->
+                        </div>
+                        <!--END .box-->
+                    </div>
+                    <!--END .product-info-->
+                    <div class="product-info product-info--events">
+                        <div class="box">
+                            <div class="product-info__group">
+                                <div class="product-info__item product-info__item--content">
+                                    <h3 class="product-title product-info__title">Event poster </h3>
+                                    <!--END .product-title-->
+                                    <div class="product-text product-info__text">
+                                        <p>On the main screen, we implemented a poster with information about available events. Users can filter the events by date and category; also, they can see the details of any event: description, time and location, information about the organizer, the number of available seats, and the ticket price.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info__media js-product-media"><video class="product-info__video" src="videos/cases/case-backyard/animation-1.mp4" loop muted playsinline> </video>
+                                <div class="product-info__video-poster image-box js-video-poster"><img class="image-box__image" src="images/cases/case-backyard/poster-1.jpg" alt=""></div>
+                            </div>
+                        </div>
+                        <!--END .box-->
+                    </div>
+                    <!--END .product-info-->
+                    <div class="product-info product-info--booking">
+                        <div class="box">
+                            <div class="product-info__group">
+                                <div class="product-info__item product-info__item--content">
+                                    <h3 class="product-title product-info__title">Booking and buying tickets </h3>
+                                    <!--END .product-title-->
+                                    <div class="product-text product-info__text">
+                                        <p>Some events are free, while there is an admission fee for other ones. So users have to book a ticket through the app, indicating the number of participants and paying for the order through the Stripe payment system.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-carousel product-info__carousel product-info__carousel--booking">
+                                <div class="product-carousel__group js-product-carousel">
+                                    <div class="product-carousel__item">
+                                        <picture class="image-box product-carousel__image">
+                                            <img class="image-box__image" src="images/cases/case-backyard/screen-7.png" alt="" loading="lazy">
+                                        </picture>
+                                        <!--END .image-box-->
+                                    </div>
+                                    <div class="product-carousel__item">
+                                        <div class="product-carousel__media js-product-media"><video class="product-carousel__video" src="videos/cases/case-backyard/video-screen-1.mp4" loop muted playsinline preload="yes"></video>
+                                            <div class="product-carousel__video-poster image-box js-video-poster"><img class="image-box__image" src="images/cases/case-backyard/poster-2.jpg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-carousel__item">
+                                        <picture class="image-box product-carousel__image">
+                                            <img class="image-box__image" src="images/cases/case-backyard/screen-8.png" alt="" loading="lazy">
+                                        </picture>
+                                        <!--END .image-box-->
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END .product-carousel-->
+                        </div>
+                        <!--END .box-->
+                    </div>
+                    <!--END .product-info-->
+                    <div class="product-info product-info--save">
+                        <div class="box">
+                            <div class="product-info__group">
+                                <div class="product-info__item product-info__item--content">
+                                    <h3 class="product-title product-info__title">Autosave </h3>
+                                    <!--END .product-title-->
+                                    <div class="product-text product-info__text">
+                                        <p>We added an encrypted autosave function to protect the personal data of users. So users do not have to enter the credit card number each time they buy tickets.</p>
+                                    </div>
+                                </div>
+                                <div class="product-info__item product-info__item--image">
+                                    <div class="product-info__decor-box">
+                                        <picture class="image-box product-info__decor product-info__decor--star-1">
+                                            <img class="image-box__image" src="images/cases/case-backyard/decor/star-1.svg" alt="" loading="lazy">
+                                        </picture>
+                                        <!--END .image-box-->
+                                        <picture class="image-box product-info__decor product-info__decor--star-2">
+                                            <img class="image-box__image" src="images/cases/case-backyard/decor/star-2.svg" alt="" loading="lazy">
+                                        </picture>
+                                        <!--END .image-box-->
+                                        <picture class="image-box product-info__decor product-info__decor--card">
+                                            <img class="image-box__image" src="images/cases/case-backyard/decor/card.svg" alt="" loading="lazy">
+                                        </picture>
+                                        <!--END .image-box-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--END .box-->
+                    </div>
+                    <!--END .product-info-->
+                    <div class="product-info product-info--push">
+                        <div class="box">
+                            <div class="product-info__group">
+                                <div class="product-info__item product-info__item--content">
+                                    <h3 class="product-title product-info__title">Push notifications </h3>
+                                    <!--END .product-title-->
+                                    <div class="product-text product-info__text">
+                                        <p>As soon as the event parameters change, for example, when the event is postponed or canceled, users receive push notifications.</p>
+                                    </div>
+                                </div>
+                                <div class="product-info__item product-info__item--image">
+                                    <picture class="image-box product-info__image">
+                                        <img class="image-box__image" src="images/cases/case-backyard/push.png" alt="" loading="lazy">
+                                    </picture>
+                                    <!--END .image-box-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--END .box-->
+                    </div>
+                    <!--END .product-info-->
+                    <div class="product-info product-info--form">
+                        <div class="box">
+                            <div class="product-info__group">
+                                <div class="product-info__item product-info__item--content">
+                                    <h3 class="product-title product-info__title">Feedback form </h3>
+                                    <!--END .product-title-->
+                                    <div class="product-text product-info__text">
+                                        <p>So that users could share their impressions of the system and suggest ways to improve it, we provided a feedback form. Through it, for instance, we improved the app, adding the function of purchasing multiple tickets.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info__set-images">
+                                <picture class="image-box">
+                                    <img class="image-box__image" src="images/cases/case-backyard/screen-9.jpg" alt="" loading="lazy">
+                                </picture>
+                                <!--END .image-box-->
+                                <picture class="image-box">
+                                    <img class="image-box__image" src="images/cases/case-backyard/screen-10.jpg" alt="" loading="lazy">
+                                </picture>
+                                <!--END .image-box-->
+                                <picture class="image-box">
+                                    <img class="image-box__image" src="images/cases/case-backyard/screen-11.jpg" alt="" loading="lazy">
+                                </picture>
+                                <!--END .image-box-->
+                            </div>
+                        </div>
+                        <!--END .box-->
+                    </div>
+                    <!--END .product-info-->
+                    <div class="product-info product-info--system">
+                        <div class="box">
+                            <div class="product-info__group">
+                                <div class="product-info__item product-info__item--content">
+                                    <h3 class="product-title product-info__title">Product Analytics </h3>
+                                    <!--END .product-title-->
+                                    <div class="product-text product-info__text">
+                                        <p>It was important for the client to have access to statistical data on user actions. That is why we integrated the application with the Mixpanel business analytics tool.</p>
+                                    </div>
+                                </div>
+                                <div class="product-info__item product-info__item--image">
+                                    <picture class="image-box product-info__image">
+                                        <img class="image-box__image" src="images/cases/case-backyard/logo-mixpanel.svg" alt="" loading="lazy">
+                                    </picture>
+                                    <!--END .image-box-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--END .box-->
+                    </div>
+                    <!--END .product-info-->
+                    <div class="product-info product-info--panel">
+                        <div class="box">
+                            <div class="product-info__group">
+                                <div class="product-info__item product-info__item--content">
+                                    <h3 class="product-title product-info__title">Admin panel </h3>
+                                    <!--END .product-title-->
+                                    <div class="product-text product-info__text">
+                                        <p>For the convenience of community managers, we developed an admin panel in the application. The client's employees can create and edit events, view statistics on ticket sales, and collect user feedback.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-carousel product-info__carousel product-info__carousel--panel">
+                                <div class="product-carousel__group js-product-carousel">
+                                    <div class="product-carousel__item">
+                                        <picture class="image-box product-carousel__image">
+                                            <img class="image-box__image" src="images/cases/case-backyard/screen-12.png" alt="" loading="lazy">
+                                        </picture>
+                                        <!--END .image-box-->
+                                    </div>
+                                    <div class="product-carousel__item">
+                                        <div class="product-carousel__media js-product-media"><video class="product-carousel__video" src="videos/cases/case-backyard/video-screen-2.mp4" loop muted playsinline preload="yes"></video>
+                                            <div class="product-carousel__video-poster image-box js-video-poster"><img class="image-box__image" src="images/cases/case-backyard/poster-3.jpg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="product-carousel__item">
+                                        <picture class="image-box product-carousel__image">
+                                            <img class="image-box__image" src="images/cases/case-backyard/screen-13.png" alt="" loading="lazy">
+                                        </picture>
+                                        <!--END .image-box-->
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END .product-carousel-->
+                        </div>
+                        <!--END .box-->
+                    </div>
+                    <!--END .product-info-->
+                    <div class="product-info product-info--qr">
+                        <div class="box">
+                            <div class="product-info__group">
+                                <div class="product-info__item product-info__item--content">
+                                    <h3 class="product-title product-info__title">Scanning the QR code on the ticket </h3>
+                                    <!--END .product-title-->
+                                    <div class="product-text product-info__text">
+                                        <p>In the application, we have implemented hidden functions accessible only to some particular roles. For example, the “Security” role can scan QR codes of tickets and view purchases statistics. This solution does not complicate the application logic, as the “Security” role needs only to wait for permission from the administrator.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--END .box-->
+                    </div>
+                    <!--END .product-info-->
+                    <div class="product-info product-info--integration">
+                        <div class="box">
+                            <div class="product-info__group">
+                                <div class="product-info__item product-info__item--content">
+                                    <h3 class="product-title product-info__title">Integration with maps </h3>
+                                    <!--END .product-title-->
+                                    <div class="product-text product-info__text">
+                                        <p>We integrated the application with the map so that every event visitor or participant could easily find the venue.</p>
+                                    </div>
+                                </div>
+                                <div class="product-info__item product-info__item--image">
+                                    <div class="product-info__decor-box">
+                                        <picture class="image-box product-info__decor product-info__decor--star-3">
+                                            <img class="image-box__image" src="images/cases/case-backyard/decor/star-3.svg" alt="" loading="lazy">
+                                        </picture>
+                                        <!--END .image-box-->
+                                        <picture class="image-box product-info__decor product-info__decor--star-4">
+                                            <img class="image-box__image" src="images/cases/case-backyard/decor/star-4.svg" alt="" loading="lazy">
+                                        </picture>
+                                        <!--END .image-box-->
+                                        <picture class="image-box product-info__decor product-info__decor--pin">
+                                            <img class="image-box__image" src="images/cases/case-backyard/decor/pin.svg" alt="" loading="lazy">
+                                        </picture>
+                                        <!--END .image-box-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--END .box-->
+                    </div>
+                    <!--END .product-info-->
+                    <section class="product-about product-about--backyard-results">
+                        <div class="box">
+                            <div class="product-about__group">
+                                <div class="product-about__item product-about__item--content">
+                                    <h2 class="product-title product-about__title">Project outcomes </h2>
+                                    <!--END .product-title-->
+                                    <p class="product-text product-about__text">As a result, the Backyard app helped to hold more than 1,000 events for 12,000 people in the first three months of the pop-up park's operation.</p>
+                                </div>
+                            </div>
+                        </div><!-- END .box-->
+                    </section><!-- END .product-about-->
+                    <section class="product-about product-about--backyard-review">
+                        <div class="box">
+                            <div class="product-about__group">
+                                <div class="product-about__item product-about__item--content">
+                                    <h2 class="product-title product-about__title">Client's testimonial </h2>
+                                    <!--END .product-title-->
+                                    <p class="product-text product-about__text">INOSTUDIO's team filled a critical gap in skillsets, delivering exceptional mobile development services to launch the product on time. This is due to their proactive project management and efficient workflows. Organized and transparent, they were almost always available to hop on a call. For the next project, I'll just go straight for INOSTUDIO as we had such a great positive experience.</p>
+                                </div>
+                                <div class="product-about__item product-about__item--image">
+                                    <picture class="image-box">
+                                        <img class="image-box__image" src="images/cases/case-backyard/review-photo.jpg" alt="" loading="lazy">
+                                    </picture>
+                                    <!--END .image-box-->
+                                </div>
+                            </div>
+                        </div><!-- END .box-->
+                    </section><!-- END .product-about-->
+                    <div class="product-tech">
+                        <div class="box">
+                            <div class="product-tech__group">
+                                <h2 class="product-title product-tech__title">Technology stack </h2>
+                                <!--END .product-title-->
+                                <div class="product-tech__list"><span class="product-tech__item">Kotlin</span><span class="product-tech__item">Swift</span><span class="product-tech__item">Coroutines</span><span class="product-tech__item">Alamofire</span><span class="product-tech__item">JetPack</span><span class="product-tech__item">Kingfisher</span><span class="product-tech__item">Dagger</span><span class="product-tech__item">KeychainSwift</span><span class="product-tech__item">Retrofit</span><span class="product-tech__item">OHHTTPStubs Swift</span><span class="product-tech__item">Realm</span><span class="product-tech__item">Timber</span><span class="product-tech__item">Glide</span><span class="product-tech__item">LeakCanary</span><span class="product-tech__item">Junit</span><span class="product-tech__item">Mockito</span><span class="product-tech__item">Stripe</span></div>
+                            </div>
+                        </div>
+                    </div><!-- END .product-tech-->
+                </div><!-- END .product-body-->
+            </article><!-- END .product-->
+            <!-- END .backyard-->
+            <section class="projects-nav js-projects-nav">
+                <div class="projects-nav__bg-group">
+                    <div class="projects-nav__bg projects-nav__bg--current projects-nav__bg--backyard"></div>
+                    <div class="projects-nav__bg projects-nav__bg--other projects-nav__bg--agrotracker is-transparent" data-bg="agrotracker"></div>
+                    <div class="projects-nav__bg projects-nav__bg--other projects-nav__bg--corner is-transparent" data-bg="corner"></div>
+                </div>
+                <div class="projects-nav__group">
+                    <div class="projects-nav__item projects-nav__item--one"><a class="projects-nav__link" href="#42" data-target="agrotracker"><span class="icon icon--css-arrow icon--reverse projects-nav__icon-arrow projects-nav__icon-arrow--prev"></span><!-- END .icon--><span class="projects-nav__name projects-nav__name--one">Agrotracker</span></a></div>
+                    <div class="projects-nav__item projects-nav__item--all"><a class="projects-nav__link projects-nav__link--all" href="#42"><svg class="icon icon--grid projects-nav__icon-grid" viewBox="0 0 15 15">
+                                <path d="m12 0h3v3h-3v-3m0 6h3v3h-3v-3m0 6h3v3h-3v-3m-6-12h3v3h-3v-3m0 6h3v3h-3v-3m0 6h3v3h-3v-3m-6-12h3v3h-3v-3m0 6h3v3h-3v-3m0 6h3v3h-3v-3"></path>
+                            </svg><!-- END .icon--><span class="projects-nav__name projects-nav__name--all">All projects</span></a></div>
+                    <div class="projects-nav__item projects-nav__item--one"><a class="projects-nav__link projects-nav__link--reverse" href="#42" data-target="corner"><span class="icon icon--css-arrow projects-nav__icon-arrow projects-nav__icon-arrow--next"></span><!-- END .icon--><span class="projects-nav__name projects-nav__name--one">Corner</span></a></div>
+                </div>
+            </section><!-- END .projects-nav-->
+            <section class="order-block order-block--backyard">
+                <div class="x-box">
+                    <div class="order-block__content">
+                        <div class="order-block__text">
+                            <p>Like the project?</p>
+                            <p>We will create your own.</p>
+                        </div><a class="order-block__link" href="#42">Contact us</a>
+                    </div>
+                </div>
+                <!--END .x-box-->
+            </section><!-- END .order-block-->
+        </main>
+        <footer class="footer">
+            <div class="box">
+                <div class="social footer__social">
+                    <a class="ctrl-button ctrl-button--icon-only social__item" href="#42" target="_blank" rel="noopener noreferrer">
+                        <svg class="icon icon--color-fill ctrl-button__icon" width="32" height="32">
+                            <use xlink:href="images/svg-sprite.svg#social-vk"></use>
+                        </svg>
+                        <!--END .icon-->
+                        <span class="ctrl-button__text">INOSTUDIO Вконтакте</span>
+                    </a>
+                    <!--END .ctrl-button-->
+                    <a class="ctrl-button ctrl-button--icon-only social__item" href="#42" target="_blank" rel="noopener noreferrer">
+                        <svg class="icon icon--color-fill ctrl-button__icon" width="32" height="32">
+                            <use xlink:href="images/svg-sprite.svg#social-facebook"></use>
+                        </svg>
+                        <!--END .icon-->
+                        <span class="ctrl-button__text">INOSTUDIO на Facebook</span>
+                    </a>
+                    <!--END .ctrl-button-->
+                    <a class="ctrl-button ctrl-button--icon-only social__item" href="#42" target="_blank" rel="noopener noreferrer">
+                        <svg class="icon icon--color-fill ctrl-button__icon" width="32" height="32">
+                            <use xlink:href="images/svg-sprite.svg#social-behance"></use>
+                        </svg>
+                        <!--END .icon-->
+                        <span class="ctrl-button__text">INOSTUDIO на Behance</span>
+                    </a>
+                    <!--END .ctrl-button-->
+                    <a class="ctrl-button ctrl-button--icon-only social__item" href="#42" target="_blank" rel="noopener noreferrer">
+                        <svg class="icon icon--color-fill ctrl-button__icon" width="32" height="32">
+                            <use xlink:href="images/svg-sprite.svg#social-instagram"></use>
+                        </svg>
+                        <!--END .icon-->
+                        <span class="ctrl-button__text">INOSTUDIO в instagram</span>
+                    </a>
+                    <!--END .ctrl-button-->
+                </div>
+                <!--END .social-->
+                <div class="footer__group">
+                    <div class="footer__item footer__item--copy">
+                        <p>&copy; 2020 Все права защищены. INOSTUDIO</p>
+                    </div>
+                    <div class="footer__item footer__item--agree">
+                        <a class="footer__link" href="#42">Соглашение об использовании сайта</a>
+                    </div>
+                    <div class="footer__item">
+                        <a class="footer__link" href="#42">Политика обработки персональных данных</a>
+                    </div>
+                </div>
+            </div>
+            <!--END .box-->
+        </footer>
+        <!--END .footer-->
+        <div class="scroll screen__scroll">
+            <div class="scroll__actions">
+                <button class="ctrl-button ctrl-button--icon-only scroll__button scroll__button--up is-hidden" type="button">
+                    <svg class="icon icon--color-fill ctrl-button__icon" width="24" height="24">
+                        <use xlink:href="images/svg-sprite.svg#to-top"></use>
+                    </svg>
+                    <!--END .icon-->
+                    <span class="ctrl-button__text">На верх</span>
+                </button>
+                <!--END .ctrl-button-->
+            </div>
+        </div>
+        <!--END .scroll-->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/modernizr/modernizr-custom.js"></script>
+    <script src="scripts/autosize/autosize.min.js"></script>
+    <script src="scripts/svg4everybody/svg4everybody.min.js"></script>
+    <script src="scripts/slick/slick.min.js"></script>
+    <script src="scripts/cases.js"></script>
+    <script src="scripts/common.js"></script>
+</body>
+
+</html>

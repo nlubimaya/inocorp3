@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <title>Inocorp-3</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&amp;display=swap">
+    <link rel="stylesheet" href="stylesheets/common.css">
+</head>
+
+<body class="page">
+    <div class="screen">
+        <header class="header header--color-default js-header">
+            <div class="box header__box">
+                <div class="header__container"><a class="logo header__logo" href="#42">
+                        <svg class="logo__image" viewBox="0 0 175 14" width="175" height="14" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M52.987 10.363c1.975 0 3.269-1.475 3.269-3.363 0-1.887-1.294-3.397-3.269-3.397s-3.269 1.51-3.269 3.397c0 1.853 1.294 3.363 3.269 3.363zm-50.807-.721c1.192 0 2.179.995 2.179 2.162 0 1.201-.988 2.162-2.179 2.162-1.192 0-2.179-.995-2.179-2.162 0-1.167.988-2.162 2.179-2.162zm10.148-9.402h4.121v13.52h-4.121v-13.52zm21.454 0h4.12v13.52h-3.95l-5.04-6.828v6.828h-4.12v-13.52h4.257l4.733 6.382v-6.382zm19.206-.24c4.223 0 7.458 2.848 7.458 7s-3.269 6.966-7.458 6.966c-4.223 0-7.458-2.814-7.458-6.966s3.235-7 7.458-7zm20.645 4.889c2.25.432 5.61 1.077 5.61 4.41 0 2.951-2.247 4.667-5.857 4.632-2.895 0-4.87-.824-6.334-2.127l2.145-3.02c1.022.961 2.554 1.75 4.393 1.75.749 0 1.498-.206 1.498-.721 0-.432-.833-.578-1.947-.773-2.25-.394-5.647-.989-5.647-4.546 0-2.265 1.907-4.461 5.653-4.461 2.248 0 4.223.618 5.789 1.887l-2.213 2.882c-1.192-.892-2.724-1.338-4.018-1.338-.817 0-1.056.275-1.056.618 0 .425.852.589 1.984.806zm11.909-4.649h11.408v3.569h-3.644v9.951h-4.12v-9.951h-3.644v-3.569zm28.332 0h4.2219999999999995v7.961c0 3.363-2.145 5.799-6.742 5.799-4.597 0-6.743-2.471-6.743-5.799v-7.961h4.189v7.824c0 1.304.851 2.333 2.554 2.333 1.668 0 2.52-1.029 2.52-2.333v-7.824zm18.627 0c4.291 0 7.492 2.402 7.492 6.725 0 4.324-3.201 6.76-7.458 6.76h-6.13v-13.485h6.096zm15.085 0h4.121v13.52h-4.121v-13.52zm19.206-.24c4.223 0 7.458 2.848 7.458 7s-3.269 6.966-7.458 6.966c-4.222 0-7.457-2.814-7.457-6.966s3.235-7 7.457-7zm.001 3.603c-1.975 0-3.269 1.51-3.269 3.397 0 1.887 1.294 3.363 3.269 3.363s3.269-1.51 3.269-3.363c0-1.887-1.294-3.397-3.269-3.397zm-34.257.206h-1.975v6.382h1.975c2.077 0 3.303-1.51 3.303-3.191-.034-1.853-1.124-3.191-3.303-3.191z"></path>
+                        </svg>
+                        <span class="logo__name">INOSTUDIO</span>
+                    </a>
+                    <!--END .logo-->
+                    <nav class="nav header__nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__link" href="#42">Портфолио</a>
+                            </li>
+                            <li class="nav__item">
+                                <span class="nav__link is-active">Услуги
+                                    <svg class="icon icon--color-fill nav__icon-dropdown" width="16" height="16">
+                                        <use xlink:href="images/svg-sprite.svg#arrow-2-down"></use>
+                                    </svg>
+                                    <!--END .icon-->
+                                </span>
+                                <ul class="nav__sublist">
+                                    <li class="nav__subitem"><a class="nav__sublink" href="#42">Все услуги</a></li>
+                                    <li class="nav__subitem"><a class="nav__sublink" href="#42">Веб-сервисы</a></li>
+                                    <li class="nav__subitem"><a class="nav__sublink" href="#42">Мобильные приложения</a></li>
+                                    <li class="nav__subitem"><a class="nav__sublink" href="#42">Devops</a></li>
+                                    <li class="nav__subitem"><a class="nav__sublink" href="#42">ИТ аутсорсинг</a></li>
+                                    <li class="nav__subitem"><a class="nav__sublink" href="#42">Стартапы</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item">
+                                <span class="nav__link">Компания
+                                    <svg class="icon icon--color-fill nav__icon-dropdown" width="16" height="16">
+                                        <use xlink:href="images/svg-sprite.svg#arrow-2-down"></use>
+                                    </svg>
+                                    <!--END .icon-->
+                                </span>
+                                <ul class="nav__sublist">
+                                    <li class="nav__subitem"><a class="nav__sublink" href="#42">О нас</a></li>
+                                    <li class="nav__subitem"><a class="nav__sublink" href="#42">Вакансии</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#42">Блог</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#42">Контакты</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#42">Экспресс-услуги</a>
+                            </li>
+                        </ul>
+                        <div class="lang-switcher nav__lang">
+                            <div class="lang-switcher__item"><a class="lang-switcher__link is-active" href="#42">Рус</a></div>
+                            <div class="lang-switcher__item"><a class="lang-switcher__link" href="#42">Eng</a></div>
+                        </div>
+                        <!--END .lang-switcher-->
+                    </nav>
+                    <!--END .nav--><button class="cheeseburger js-cheeseburger header__cheeseburger" type="button" data-open="Открыть меню" data-close="Закрыть меню"><span class="cheeseburger__text">Открыть меню</span><span class="cheeseburger__lines"></span></button>
+                    <!--END .cheeseburger-->
+                </div>
+            </div>
+            <!--END .box-->
+        </header>
+        <!--END .header-->
+        <main class="main">
+            <section class="hero-home"><video class="hero-home__video js-hero-video" src="videos/main.mp4" poster="videos/main-poster.jpg" muted></video>
+                <div class="box">
+                    <div class="hero-home__container">
+                        <h1 class="hero-home__title">Разрабатываем цифровые решения</h1>
+                        <div class="hero-home__description">для B2B-компаний</div>
+                        <ul class="hero-nav hero-home__nav">
+                            <li class="hero-nav__item">
+                                <a class="ctrl-button ctrl-button--color-clear hero-nav__link" href="#42">
+                                    <span class="ctrl-button__text">Веб-сервисы</span>
+                                </a>
+                                <!--END .ctrl-button-->
+                            </li>
+                            <li class="hero-nav__item">
+                                <a class="ctrl-button ctrl-button--color-clear hero-nav__link" href="#42">
+                                    <span class="ctrl-button__text">Мобильные приложения</span>
+                                </a>
+                                <!--END .ctrl-button-->
+                            </li>
+                            <li class="hero-nav__item">
+                                <a class="ctrl-button ctrl-button--color-clear hero-nav__link" href="#42">
+                                    <span class="ctrl-button__text">Аутсорс-проекты</span>
+                                </a>
+                                <!--END .ctrl-button-->
+                            </li>
+                            <li class="hero-nav__item">
+                                <a class="ctrl-button ctrl-button--color-clear hero-nav__link" href="#42">
+                                    <span class="ctrl-button__text">DevOps</span>
+                                </a>
+                                <!--END .ctrl-button-->
+                            </li>
+                        </ul>
+                        <!--END .hero-nav-->
+                    </div>
+                </div>
+                <!--END .box-->
+            </section>
+            <!--END .hero-home-->
+            <section class="cases-previews">
+                <header class="cases-previews__header">
+                    <div class="box">
+                        <h2 class="cases-previews__title">14 лет мы создаем сервисы в&nbsp;сферах девелопмента, образования, электронной торговли.</h2>
+                    </div>
+                    <!--END .box-->
+                </header>
+                <div class="cases-grid cases-previews__group">
+                    <div class="cases-grid__row cases-grid__row--items-3">
+                        <a class="case-preview cases-grid__item" href="#42"><video class="case-preview__video" src="videos/stolichki.mp4" poster="videos/stolichki-poster.jpg" autoplay loop muted></video>
+                            <div class="case-preview__container">
+                                <h3 class="case-preview__name">#1 Разработка сервиса для&nbsp;изучения английского языка</h3>
+                                <div class="categories case-preview__categories">
+                                    <div class="categories__grid">
+                                        <span class="category category--color-second categories__item">WEB</span>
+                                        <!--END .tag-->
+                                        <span class="category category--color-second categories__item">Startup</span>
+                                        <!--END .tag-->
+                                    </div>
+                                </div>
+                                <!--END .categories-->
+                            </div>
+                        </a>
+                        <!--END .case-preview-->
+                        <a class="case-preview cases-grid__item" href="#42">
+                            <picture class="image-box case-preview__illustration">
+                                <img class="image-box__image" src="images/projects/project-1.jpg" alt="#2 Мобильное приложение для&amp;nbsp;повышения лояльности покупателей" loading="lazy">
+                            </picture>
+                            <!--END .image-box-->
+                            <div class="case-preview__container">
+                                <h3 class="case-preview__name">#2 Мобильное приложение для&nbsp;повышения лояльности покупателей</h3>
+                                <div class="categories case-preview__categories">
+                                    <div class="categories__grid">
+                                        <span class="category category--color-second categories__item">Маркетинг</span>
+                                        <!--END .tag-->
+                                        <span class="category category--color-second categories__item">Промоприложение</span>
+                                        <!--END .tag-->
+                                    </div>
+                                </div>
+                                <!--END .categories-->
+                            </div>
+                        </a>
+                        <!--END .case-preview-->
+                        <a class="case-preview cases-grid__item" href="#42"><video class="case-preview__video" src="videos/wes.mp4" poster="videos/wes-poster.jpg" autoplay loop muted></video>
+                            <div class="case-preview__container">
+                                <h3 class="case-preview__name">#3 Разработка системы складского учета и&nbsp;управления продажами</h3>
+                                <div class="categories case-preview__categories">
+                                    <div class="categories__grid">
+                                        <span class="category category--color-second categories__item">WEB</span>
+                                        <!--END .tag-->
+                                        <span class="category category--color-second categories__item">Startup</span>
+                                        <!--END .tag-->
+                                    </div>
+                                </div>
+                                <!--END .categories-->
+                            </div>
+                        </a>
+                        <!--END .case-preview-->
+                    </div>
+                    <div class="cases-grid__row cases-grid__row--items-2">
+                        <a class="case-preview cases-grid__item" href="#42">
+                            <picture class="image-box case-preview__illustration">
+                                <img class="image-box__image" src="images/projects/project-1.jpg" alt="#4 Разработка мобильного приложения для&amp;nbsp;сети аптек" loading="lazy">
+                            </picture>
+                            <!--END .image-box-->
+                            <div class="case-preview__container">
+                                <h3 class="case-preview__name">#4 Разработка мобильного приложения для&nbsp;сети аптек</h3>
+                                <div class="categories case-preview__categories">
+                                    <div class="categories__grid">
+                                        <span class="category category--color-second categories__item">WEB</span>
+                                        <!--END .tag-->
+                                        <span class="category category--color-second categories__item">Startup</span>
+                                        <!--END .tag-->
+                                    </div>
+                                </div>
+                                <!--END .categories-->
+                            </div>
+                        </a>
+                        <!--END .case-preview-->
+                        <a class="case-preview cases-grid__item" href="#42">
+                            <picture class="image-box case-preview__illustration">
+                                <img class="image-box__image" src="images/projects/project-1.jpg" alt="#5 Мобильное приложение для&amp;nbsp;системы проектного управления" loading="lazy">
+                            </picture>
+                            <!--END .image-box-->
+                            <div class="case-preview__container">
+                                <h3 class="case-preview__name">#5 Мобильное приложение для&nbsp;системы проектного управления</h3>
+                                <div class="categories case-preview__categories">
+                                    <div class="categories__grid">
+                                        <span class="category category--color-second categories__item">WEB</span>
+                                        <!--END .tag-->
+                                        <span class="category category--color-second categories__item">Startup</span>
+                                        <!--END .tag-->
+                                    </div>
+                                </div>
+                                <!--END .categories-->
+                            </div>
+                        </a>
+                        <!--END .case-preview-->
+                    </div>
+                    <div class="cases-grid__row cases-grid__row--items-3 cases-grid__row--reverse">
+                        <a class="case-preview cases-grid__item" href="#42"><video class="case-preview__video" src="videos/stolichki.mp4" poster="videos/stolichki-poster.jpg" autoplay loop muted></video>
+                            <div class="case-preview__container">
+                                <h3 class="case-preview__name">#1 Разработка сервиса для&nbsp;изучения английского языка</h3>
+                                <div class="categories case-preview__categories">
+                                    <div class="categories__grid">
+                                        <span class="category category--color-second categories__item">WEB</span>
+                                        <!--END .tag-->
+                                        <span class="category category--color-second categories__item">Startup</span>
+                                        <!--END .tag-->
+                                    </div>
+                                </div>
+                                <!--END .categories-->
+                            </div>
+                        </a>
+                        <!--END .case-preview-->
+                        <a class="case-preview cases-grid__item" href="#42">
+                            <picture class="image-box case-preview__illustration">
+                                <img class="image-box__image" src="images/projects/project-1.jpg" alt="#2 Мобильное приложение для&amp;nbsp;повышения лояльности покупателей" loading="lazy">
+                            </picture>
+                            <!--END .image-box-->
+                            <div class="case-preview__container">
+                                <h3 class="case-preview__name">#2 Мобильное приложение для&nbsp;повышения лояльности покупателей</h3>
+                                <div class="categories case-preview__categories">
+                                    <div class="categories__grid">
+                                        <span class="category category--color-second categories__item">Маркетинг</span>
+                                        <!--END .tag-->
+                                        <span class="category category--color-second categories__item">Промоприложение</span>
+                                        <!--END .tag-->
+                                    </div>
+                                </div>
+                                <!--END .categories-->
+                            </div>
+                        </a>
+                        <!--END .case-preview-->
+                        <a class="case-preview cases-grid__item" href="#42"><video class="case-preview__video" src="videos/wes.mp4" poster="videos/wes-poster.jpg" autoplay loop muted></video>
+                            <div class="case-preview__container">
+                                <h3 class="case-preview__name">#3 Разработка системы складского учета и&nbsp;управления продажами</h3>
+                                <div class="categories case-preview__categories">
+                                    <div class="categories__grid">
+                                        <span class="category category--color-second categories__item">WEB</span>
+                                        <!--END .tag-->
+                                        <span class="category category--color-second categories__item">Startup</span>
+                                        <!--END .tag-->
+                                    </div>
+                                </div>
+                                <!--END .categories-->
+                            </div>
+                        </a>
+                        <!--END .case-preview-->
+                    </div>
+                    <div class="cases-grid__row cases-grid__row--items-2">
+                        <a class="case-preview cases-grid__item" href="#42">
+                            <picture class="image-box case-preview__illustration">
+                                <img class="image-box__image" src="images/projects/project-1.jpg" alt="#4 Разработка мобильного приложения для&amp;nbsp;сети аптек" loading="lazy">
+                            </picture>
+                            <!--END .image-box-->
+                            <div class="case-preview__container">
+                                <h3 class="case-preview__name">#4 Разработка мобильного приложения для&nbsp;сети аптек</h3>
+                                <div class="categories case-preview__categories">
+                                    <div class="categories__grid">
+                                        <span class="category category--color-second categories__item">WEB</span>
+                                        <!--END .tag-->
+                                        <span class="category category--color-second categories__item">Startup</span>
+                                        <!--END .tag-->
+                                    </div>
+                                </div>
+                                <!--END .categories-->
+                            </div>
+                        </a>
+                        <!--END .case-preview-->
+                        <a class="case-preview cases-grid__item" href="#42">
+                            <picture class="image-box case-preview__illustration">
+                                <img class="image-box__image" src="images/projects/project-1.jpg" alt="#5 Мобильное приложение для&amp;nbsp;системы проектного управления" loading="lazy">
+                            </picture>
+                            <!--END .image-box-->
+                            <div class="case-preview__container">
+                                <h3 class="case-preview__name">#5 Мобильное приложение для&nbsp;системы проектного управления</h3>
+                                <div class="categories case-preview__categories">
+                                    <div class="categories__grid">
+                                        <span class="category category--color-second categories__item">WEB</span>
+                                        <!--END .tag-->
+                                        <span class="category category--color-second categories__item">Startup</span>
+                                        <!--END .tag-->
+                                    </div>
+                                </div>
+                                <!--END .categories-->
+                            </div>
+                        </a>
+                        <!--END .case-preview-->
+                    </div>
+                </div>
+                <!--END .cases-grid-->
+                <div class="cases-previews__actions">
+                    <a class="ctrl-button-more cases-previews__button-more" href="#42">
+                        <span class="ctrl-button-more__text">Посмотреть еще проекты</span>
+                        <svg class="icon icon--color-fill ctrl-button-more__icon" width="24" height="24">
+                            <use xlink:href="images/svg-sprite.svg#arrow-1-right"></use>
+                        </svg>
+                        <!--END .icon-->
+                    </a>
+                    <!--END .ctrl-button-more-->
+                </div>
+            </section>
+            <!--END .cases-previews-->
+            <section class="focus">
+                <header class="focus__header">
+                    <div class="box">
+                        <div class="focus__container">
+                            <h2 class="focus__title">Наш фокус</h2>
+                            <picture class="image-box focus__illustration">
+                                <img class="image-box__image" srcset="images/illustrations/home-2@1x.jpg 1x, images/illustrations/home-2@2x.jpg 2x" src="images/illustrations/home-2@1x.jpg" alt="" loading="lazy">
+                            </picture>
+                            <!--END .image-box-->
+                            <div class="focus__description">
+                                <p>Проактивный технологический подход, согласованные процессы и легкие коммуникации</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END .box-->
+                </header>
+                <div class="box">
+                    <div class="focus__group">
+                        <div class="tile-info focus__item">
+                            <h3 class="tile-info__title">
+                                <span class="tile-info__name">Подход</span>
+                            </h3>
+                            <div class="tile-info__description">
+                                <p>Мы сознательно выбрали подход, в&nbsp;котором главное место отводим предупреждению неполадок и&nbsp;непрерывному совершенствованию технических знаний и&nbsp;навыков, это помогает нашим клиентам сократить расходы на&nbsp;техническую поддержку.</p>
+                            </div>
+                        </div>
+                        <!--END .tile-info-->
+                        <div class="tile-info focus__item">
+                            <h3 class="tile-info__title">
+                                <span class="tile-info__name">Процессы</span>
+                            </h3>
+                            <div class="tile-info__description">
+                                <p>За 14 лет успели отладить основные рабочие процессы: быстрый старт проекта, шаблоны необходимой документации, автоматизированная среда разработки.</p>
+                                <p>Это позволяет нам непрерывно оказывать услуги и&nbsp;не&nbsp;терять время на&nbsp;рутинные процессы.</p>
+                            </div>
+                        </div>
+                        <!--END .tile-info-->
+                        <div class="tile-info focus__item">
+                            <h3 class="tile-info__title">
+                                <span class="tile-info__name">Коммуникации</span>
+                            </h3>
+                            <div class="tile-info__description">
+                                <p>Используем WhatsApp, Telegram, телефон, почту, Zoom, Skype. Подключены к&nbsp;системе электронного документооборота. На&nbsp;запросы клиентов отвечаем в&nbsp;течение 4 часов, но&nbsp;чаще всего быстрее.</p>
+                            </div>
+                        </div>
+                        <!--END .tile-info-->
+                    </div>
+                </div>
+                <!--END .box-->
+            </section>
+            <!--END .focus-->
+            <section class="market market--home">
+                <picture class="image-box market__decoration market__decoration--position-1">
+                    <img class="image-box__image" srcset="images/decor-full/decor-full-10@1x.jpg 1x, images/decor-full/decor-full-10@2x.jpg 2x" src="images/decor-full/decor-full-10@1x.jpg" alt="" loading="lazy">
+                </picture>
+                <!--END .image-box-->
+                <header class="market__header">
+                    <div class="box">
+                        <div class="market__container">
+                            <h2 class="market__title">Мы обучаем рынок</h2>
+                            <picture class="image-box market__illustration">
+                                <img class="image-box__image" srcset="images/illustrations/home-1@1x.jpg 1x, images/illustrations/home-1@2x.jpg 2x" src="images/illustrations/home-1@1x.jpg" alt="" loading="lazy">
+                            </picture>
+                            <!--END .image-box-->
+                        </div>
+                    </div>
+                    <!--END .box-->
+                </header>
+                <div class="market__body">
+                    <div class="box">
+                        <div class="market__group">
+                            <div class="market__item">
+                                <p class="market__text">Обучили более 600 <br>IТ-специалистов в&nbsp;собственном центре обучения.</p>
+                            </div>
+                            <div class="market__item">
+                                <p class="market__text">Наши сотрудники преподают в&nbsp;ведущем университете Юга России&nbsp;&mdash; ЮФУ.</p>
+                            </div>
+                            <div class="market__item">
+                                <p class="market__text">Проводим авторские занятия на&nbsp;онлайн-площадках.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END .box-->
+                </div>
+            </section>
+            <!--END .market-->
+            <section class="awards">
+                <div class="box">
+                    <h2 class="awards__title">Награды</h2>
+                </div>
+                <div class="box awards__container">
+                    <div class="awards__group">
+                        <div class="award awards__item">
+                            <picture class="image-box award__logo">
+                                <img class="image-box__image" src="images/awards/tagline.svg" alt="" loading="lazy">
+                            </picture>
+                            <!--END .image-box-->
+                            <div class="award__description">
+                                <p>ТОП-40 разработчиков мобильных приложений 2019</p>
+                            </div>
+                        </div>
+                        <!--END .award-->
+                        <div class="award awards__item">
+                            <picture class="image-box award__logo">
+                                <img class="image-box__image" src="images/awards/goodfirms.svg" alt="" loading="lazy">
+                            </picture>
+                            <!--END .image-box-->
+                            <div class="award__description">
+                                <p>ТОП-10 веб-разработчиков в&nbsp;России</p>
+                            </div>
+                        </div>
+                        <!--END .award-->
+                        <div class="award awards__item">
+                            <picture class="image-box award__logo">
+                                <img class="image-box__image" src="images/awards/tagline.svg" alt="" loading="lazy">
+                            </picture>
+                            <!--END .image-box-->
+                            <div class="award__description">
+                                <p>ТОП-50 веб-студий / digital production 2019</p>
+                            </div>
+                        </div>
+                        <!--END .award-->
+                        <div class="award awards__item">
+                            <picture class="image-box award__logo">
+                                <img class="image-box__image" src="images/awards/ru-net.svg" alt="" loading="lazy">
+                            </picture>
+                            <!--END .image-box-->
+                            <div class="award__description">
+                                <p>ТОП-10 рейтинга креативности веб-студий (торговля)</p>
+                            </div>
+                        </div>
+                        <!--END .award-->
+                        <div class="award awards__item">
+                            <picture class="image-box award__logo">
+                                <img class="image-box__image" src="images/awards/golden-site.svg" alt="" loading="lazy">
+                            </picture>
+                            <!--END .image-box-->
+                            <div class="award__description">
+                                <p>Призеры конкурса в 2017 году</p>
+                            </div>
+                        </div>
+                        <!--END .award-->
+                        <div class="award awards__item">
+                            <picture class="image-box award__logo">
+                                <img class="image-box__image" src="images/awards/ru-net.svg" alt="" loading="lazy">
+                            </picture>
+                            <!--END .image-box-->
+                            <div class="award__description">
+                                <p>ТОП-55 разработчиков дизайна мобильных приложений 2019</p>
+                            </div>
+                        </div>
+                        <!--END .award-->
+                        <div class="award awards__item">
+                            <picture class="image-box award__logo">
+                                <img class="image-box__image" src="images/awards/netcat.svg" alt="" loading="lazy">
+                            </picture>
+                            <!--END .image-box-->
+                            <div class="award__description">
+                                <p>Официальный партнер</p>
+                            </div>
+                        </div>
+                        <!--END .award-->
+                        <div class="award awards__item">
+                            <picture class="image-box award__logo">
+                                <img class="image-box__image" src="images/awards/golden-app.svg" alt="" loading="lazy">
+                            </picture>
+                            <!--END .image-box-->
+                            <div class="award__description">
+                                <p>Призеры конкурса в 2015 году</p>
+                            </div>
+                        </div>
+                        <!--END .award-->
+                        <div class="award awards__item">
+                            <picture class="image-box award__logo">
+                                <img class="image-box__image" src="images/awards/raek.svg" alt="" loading="lazy">
+                            </picture>
+                            <!--END .image-box-->
+                            <div class="award__description">
+                                <p>Участники digital кластера</p>
+                            </div>
+                        </div>
+                        <!--END .award-->
+                        <div class="award awards__item">
+                            <picture class="image-box award__logo">
+                                <img class="image-box__image" src="images/awards/spaik.svg" alt="" loading="lazy">
+                            </picture>
+                            <!--END .image-box-->
+                            <div class="award__description">
+                                <p>Члены ассоциации</p>
+                            </div>
+                        </div>
+                        <!--END .award-->
+                        <div class="award awards__item">
+                            <picture class="image-box award__logo">
+                                <img class="image-box__image" src="images/awards/microsoft.svg" alt="" loading="lazy">
+                            </picture>
+                            <!--END .image-box-->
+                            <div class="award__description">
+                                <p>Официальный партнер c 2010 года</p>
+                            </div>
+                        </div>
+                        <!--END .award-->
+                        <div class="award awards__item">
+                            <picture class="image-box award__logo">
+                                <img class="image-box__image" src="images/awards/russoft.svg" alt="" loading="lazy">
+                            </picture>
+                            <!--END .image-box-->
+                            <div class="award__description">
+                                <p>Официальный партнер c 2014 года</p>
+                            </div>
+                        </div>
+                        <!--END .award-->
+                    </div>
+                </div>
+                <!--END .box-->
+            </section>
+            <!--END .awards-->
+            <div class="in-touch">
+                <div class="contacts-form in-touch__form">
+                    <div class="box contacts-form__box">
+                        <form class="form-contacts contacts-form__form">
+                            <h3 class="form-contacts__title">Оставьте заявку</h3>
+                            <div class="info-contacts form-contacts__description">
+                                <h3 class="info-contacts__title">Расскажите о&nbsp;проекте&nbsp;&mdash; <br>мы его реализуем</h3>
+                                <div class="info-contacts__description">Мы получим заявку и&nbsp;в&nbsp;течение 4&nbsp;часов свяжемся с&nbsp;вами: обсудим цели проекта, требования к&nbsp;нему и&nbsp;составим план сотрудничества.</div>
+                            </div>
+                            <!--END .info-contacts-->
+                            <div class="form-contacts__group">
+                                <div class="form-contacts__item">
+                                    <div class="form-control">
+                                        <label class="form-control__label" for="services-name">Имя *</label>
+                                        <div class="form-control__body">
+                                            <input class="ctrl-textfield js-textfield form-control__field" type="text" id="services-name">
+                                            <!--END .ctrl-textfield-->
+                                        </div>
+                                    </div>
+                                    <!--END .form-control-->
+                                </div>
+                                <div class="form-contacts__item form-contacts__item--width-s">
+                                    <div class="form-control">
+                                        <label class="form-control__label" for="services-email">Email *</label>
+                                        <div class="form-control__body">
+                                            <input class="ctrl-textfield js-textfield form-control__field" type="email" id="services-email">
+                                            <!--END .ctrl-textfield-->
+                                        </div>
+                                    </div>
+                                    <!--END .form-control-->
+                                </div>
+                                <div class="form-contacts__item form-contacts__item--width-s">
+                                    <div class="form-control">
+                                        <label class="form-control__label" for="services-tel">Телефон</label>
+                                        <div class="form-control__body">
+                                            <input class="ctrl-textfield js-textfield form-control__field" type="tel" id="services-tel">
+                                            <!--END .ctrl-textfield-->
+                                        </div>
+                                    </div>
+                                    <!--END .form-control-->
+                                </div>
+                                <div class="form-contacts__item">
+                                    <div class="form-control">
+                                        <label class="form-control__label" for="services-message">Расскажите о проекте *</label>
+                                        <div class="form-control__body">
+                                            <textarea class="ctrl-textfield js-textfield ctrl-textfield--textarea js-textarea form-control__field" id="services-message"></textarea>
+                                            <!--END .ctrl-textfield-->
+                                        </div>
+                                    </div>
+                                    <!--END .form-control-->
+                                </div>
+                                <div class="form-contacts__item form-contacts__item--attach">
+                                    <div class="attached form-contacts__attached">
+                                        <div class="attached__group">
+                                            <div class="attached-file attached__item">
+                                                <span class="attached-file__name">file_01.jpeg</span>
+                                                <button class="ctrl-button ctrl-button--icon-only attached-file__button-remove" type="button">
+                                                    <svg class="icon icon--color-fill ctrl-button__icon" width="24" height="24">
+                                                        <use xlink:href="images/svg-sprite.svg#close"></use>
+                                                    </svg>
+                                                    <!--END .icon-->
+                                                    <span class="ctrl-button__text">Удалить файл</span>
+                                                </button>
+                                                <!--END .ctrl-button-->
+                                            </div>
+                                            <!--END .attached-file-->
+                                            <div class="attached-file attached__item">
+                                                <span class="attached-file__name">file_02.jpeg</span>
+                                                <button class="ctrl-button ctrl-button--icon-only attached-file__button-remove" type="button">
+                                                    <svg class="icon icon--color-fill ctrl-button__icon" width="24" height="24">
+                                                        <use xlink:href="images/svg-sprite.svg#close"></use>
+                                                    </svg>
+                                                    <!--END .icon-->
+                                                    <span class="ctrl-button__text">Удалить файл</span>
+                                                </button>
+                                                <!--END .ctrl-button-->
+                                            </div>
+                                            <!--END .attached-file-->
+                                            <div class="attached-file attached__item">
+                                                <span class="attached-file__name">ultralongnamefileultralongnamefileultralongnamefileultralongnamefileultralongnamefileultralongnamefileultralongnamefileultralongnamefile.pdf</span>
+                                                <button class="ctrl-button ctrl-button--icon-only attached-file__button-remove" type="button">
+                                                    <svg class="icon icon--color-fill ctrl-button__icon" width="24" height="24">
+                                                        <use xlink:href="images/svg-sprite.svg#close"></use>
+                                                    </svg>
+                                                    <!--END .icon-->
+                                                    <span class="ctrl-button__text">Удалить файл</span>
+                                                </button>
+                                                <!--END .ctrl-button-->
+                                            </div>
+                                            <!--END .attached-file-->
+                                            <div class="attached-file attached__item">
+                                                <span class="attached-file__name">file_04.txt</span>
+                                                <button class="ctrl-button ctrl-button--icon-only attached-file__button-remove" type="button">
+                                                    <svg class="icon icon--color-fill ctrl-button__icon" width="24" height="24">
+                                                        <use xlink:href="images/svg-sprite.svg#close"></use>
+                                                    </svg>
+                                                    <!--END .icon-->
+                                                    <span class="ctrl-button__text">Удалить файл</span>
+                                                </button>
+                                                <!--END .ctrl-button-->
+                                            </div>
+                                            <!--END .attached-file-->
+                                        </div>
+                                    </div>
+                                    <!--END .attached-->
+                                    <div class="ctrl-attach">
+                                        <label class="ctrl-attach__body">
+                                            <svg class="icon icon--color-fill ctrl-attach__icon" width="24" height="24">
+                                                <use xlink:href="images/svg-sprite.svg#attach"></use>
+                                            </svg>
+                                            <!--END .icon-->
+                                            <span class="ctrl-attach__label">Прикрепить файлы</span>
+                                            <input class="ctrl-attach__field" type="file">
+                                        </label>
+                                        <div class="ctrl-attach__validation">Lorem ipsum dolor sit amet, consectetur adipisicing</div>
+                                    </div>
+                                    <!--END .ctrl-attach-->
+                                </div>
+                                <div class="form-contacts__item form-contacts__item--check">
+                                    <label class="ctrl-check ctrl-check--checkbox form-contacts__check">
+                                        <input class="ctrl-check__field" type="checkbox">
+                                        <span class="ctrl-check__visual"></span>
+                                        <span class="ctrl-check__label">Я даю <a href="#42">согласие на обработку персональных данных</a></span>
+                                    </label>
+                                    <!--END .ctrl-check-->
+                                    <label class="ctrl-check ctrl-check--checkbox form-contacts__check form-contacts__check--indent">
+                                        <input class="ctrl-check__field" type="checkbox">
+                                        <span class="ctrl-check__visual"></span>
+                                        <span class="ctrl-check__label">Я даю <a href="#42">согласие на получение рассылки</a></span>
+                                    </label>
+                                    <!--END .ctrl-check-->
+                                </div>
+                                <div class="form-contacts__item form-contacts__item--button">
+                                    <button class="ctrl-button ctrl-button--size-l form-contacts__button" type="submit">
+                                        <span class="ctrl-button__text">Оставить заявку</span>
+                                    </button>
+                                    <!--END .ctrl-button-->
+                                </div>
+                                <div class="form-contacts__item form-contacts__item--info">
+                                    <p>Этот сайт защищен reCAPTCHA, <a href="https://policies.google.com/privacy">Политикой конфиденциальности</a> и <a href="https://policies.google.com/terms">Условиями предоставления услуг</a> Google.</p>
+                                </div>
+                            </div>
+                        </form>
+                        <!--END .form-contacts-->
+                    </div>
+                    <!--END .box-->
+                </div>
+                <!--END .contacts-form-->
+                <div class="contacts-list in-touch__contacts">
+                    <div class="box">
+                        <ul class="contacts-list__list">
+                            <li class="contacts-list__item">
+                                <a class="contacts-list__link" href="mailto:welcome@inostudio.com">
+                                    <svg class="icon icon--color-fill contacts-list__icon" width="32" height="32">
+                                        <use xlink:href="images/svg-sprite.svg#at"></use>
+                                    </svg>
+                                    <!--END .icon-->
+                                    <span class="contacts-list__text">welcome@inostudio.com</span>
+                                </a>
+                            </li>
+                            <li class="contacts-list__item">
+                                <a class="contacts-list__link" href="tel:+74956404500">
+                                    <svg class="icon icon--color-fill contacts-list__icon" width="32" height="32">
+                                        <use xlink:href="images/svg-sprite.svg#phone"></use>
+                                    </svg>
+                                    <!--END .icon-->
+                                    <span class="contacts-list__text">+7 (495) 6404500</span>
+                                </a>
+                            </li>
+                            <li class="contacts-list__item">
+                                <a class="contacts-list__link contacts-list__link--hidden-text" href="#42">
+                                    <svg class="icon icon--color-fill contacts-list__icon" width="32" height="32">
+                                        <use xlink:href="images/svg-sprite.svg#social-whats-app"></use>
+                                    </svg>
+                                    <!--END .icon-->
+                                    <span class="contacts-list__text">+7 (495) 6404500</span>
+                                </a>
+                                <a class="contacts-list__link contacts-list__link--hidden-text" href="#42">
+                                    <svg class="icon icon--color-fill contacts-list__icon" width="32" height="32">
+                                        <use xlink:href="images/svg-sprite.svg#social-telegram"></use>
+                                    </svg>
+                                    <!--END .icon-->
+                                    <span class="contacts-list__text">+7 (495) 6404500</span>
+                                </a><a class="contacts-list__link" href="tel:+74956404500"><span class="contacts-list__text">+7 (495) 6404500</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--END .box-->
+                </div>
+                <!--END .contacts-list-->
+            </div>
+            <!--END .in-touch-->
+        </main>
+        <footer class="footer">
+            <div class="box">
+                <div class="social footer__social">
+                    <a class="ctrl-button ctrl-button--icon-only social__item" href="#42" target="_blank" rel="noopener noreferrer">
+                        <svg class="icon icon--color-fill ctrl-button__icon" width="32" height="32">
+                            <use xlink:href="images/svg-sprite.svg#social-vk"></use>
+                        </svg>
+                        <!--END .icon-->
+                        <span class="ctrl-button__text">INOSTUDIO Вконтакте</span>
+                    </a>
+                    <!--END .ctrl-button-->
+                    <a class="ctrl-button ctrl-button--icon-only social__item" href="#42" target="_blank" rel="noopener noreferrer">
+                        <svg class="icon icon--color-fill ctrl-button__icon" width="32" height="32">
+                            <use xlink:href="images/svg-sprite.svg#social-facebook"></use>
+                        </svg>
+                        <!--END .icon-->
+                        <span class="ctrl-button__text">INOSTUDIO на Facebook</span>
+                    </a>
+                    <!--END .ctrl-button-->
+                    <a class="ctrl-button ctrl-button--icon-only social__item" href="#42" target="_blank" rel="noopener noreferrer">
+                        <svg class="icon icon--color-fill ctrl-button__icon" width="32" height="32">
+                            <use xlink:href="images/svg-sprite.svg#social-behance"></use>
+                        </svg>
+                        <!--END .icon-->
+                        <span class="ctrl-button__text">INOSTUDIO на Behance</span>
+                    </a>
+                    <!--END .ctrl-button-->
+                    <a class="ctrl-button ctrl-button--icon-only social__item" href="#42" target="_blank" rel="noopener noreferrer">
+                        <svg class="icon icon--color-fill ctrl-button__icon" width="32" height="32">
+                            <use xlink:href="images/svg-sprite.svg#social-instagram"></use>
+                        </svg>
+                        <!--END .icon-->
+                        <span class="ctrl-button__text">INOSTUDIO в instagram</span>
+                    </a>
+                    <!--END .ctrl-button-->
+                </div>
+                <!--END .social-->
+                <div class="footer__group">
+                    <div class="footer__item footer__item--copy">
+                        <p>&copy; 2020 Все права защищены. INOSTUDIO</p>
+                    </div>
+                    <div class="footer__item footer__item--agree">
+                        <a class="footer__link" href="#42">Соглашение об использовании сайта</a>
+                    </div>
+                    <div class="footer__item">
+                        <a class="footer__link" href="#42">Политика обработки персональных данных</a>
+                    </div>
+                </div>
+            </div>
+            <!--END .box-->
+        </footer>
+        <!--END .footer-->
+        <div class="scroll screen__scroll">
+            <div class="scroll__actions">
+                <button class="ctrl-button ctrl-button--icon-only scroll__button scroll__button--up is-hidden" type="button">
+                    <svg class="icon icon--color-fill ctrl-button__icon" width="24" height="24">
+                        <use xlink:href="images/svg-sprite.svg#to-top"></use>
+                    </svg>
+                    <!--END .icon-->
+                    <span class="ctrl-button__text">На верх</span>
+                </button>
+                <!--END .ctrl-button-->
+            </div>
+        </div>
+        <!--END .scroll-->
+        <div class="cookies screen__cookies">
+            <div class="box">
+                <div class="cookies__container">
+                    <div class="cookies__text">Этот сайт использует файлы cookies. Оставаясь на&nbsp;сайте, вы соглашаетесь с&nbsp;использованием файлов cookies и&nbsp;принимаете <a class="cookies__link" href="#42" target="_blank">Соглашение об&nbsp;использовании сайта</a></div>
+                    <button class="ctrl-button ctrl-button--icon-only cookies__button-close" type="button">
+                        <svg class="icon icon--color-stroke ctrl-button__icon" width="24" height="24">
+                            <use xlink:href="images/svg-sprite.svg#close-2"></use>
+                        </svg>
+                        <!--END .icon-->
+                        <span class="ctrl-button__text">Закрыть</span>
+                    </button>
+                    <!--END .ctrl-button-->
+                </div>
+            </div>
+            <!--END .box-->
+        </div>
+        <!--END .cookies-->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/modernizr/modernizr-custom.js"></script>
+    <script src="scripts/autosize/autosize.min.js"></script>
+    <script src="scripts/svg4everybody/svg4everybody.min.js"></script>
+    <script src="scripts/common.js"></script>
+</body>
+
+</html>
