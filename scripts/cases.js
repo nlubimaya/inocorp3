@@ -91,18 +91,18 @@ $(document).ready(function(){
     if ($('.js-product-media').length && $('html').hasClass('touchevents')) {
 
         var $videoBox = $('.js-product-media');
-        var $videoPlayer = $('.js-product-media video');
-        var $videoPoster = $('.js-video-poster');
+        var $videoPlayer = $videoBox.find('video');
+        var $videoPoster = $videoBox.find('.js-video-poster');
 
         $videoPoster.on('click', function(){
             $videoPoster.hide();
-            $videoPlayer.trigger('play')
+            $videoPlayer.trigger('play');
+            $videoPlayer[0].autoplay = true;
             $videoBox.css('border-top', '5px solid red');
         }) 
         
         $videoPlayer.on('click', function(){
-            //$videoPoster.show();
-            $(this).get(0).pause();
+            this[this.paused ? 'play' : 'pause']();
         })
     }
 
