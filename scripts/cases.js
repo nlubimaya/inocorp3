@@ -74,19 +74,36 @@ $(document).ready(function(){
     }
 
     //Case video on hover
-    if ($('.js-product-media').length) {
+    if ($('.js-product-media').length && $('html').hasClass('no-touchevents')) {
 
         var $videoBox = $('.js-product-media');
         var hover = $videoBox.hover( hoverVideo, hideVideo );
 
         function hoverVideo(e) {
             $('video', this).get(0).play();
-            $('.js-video-poster').hide();
         }
 
         function hideVideo(e) {
             $('video', this).get(0).pause();
-        }
+        }        
+    }
+
+    if ($('.js-product-media').length && $('html').hasClass('touchevents')) {
+
+        var $videoBox = $('.js-product-media');
+        var $videoPlayer = $('.js-product-media video');
+        var $videoPoster = $('.js-video-poster');
+
+        $videoPoster.on('click', function(){
+            $videoPoster.hide();
+            $videoPlayer.trigger('play')
+            $videoBox.css('border-top', '5px solid red');
+        }) 
+        
+        $videoPlayer.on('click', function(){
+            //$videoPoster.show();
+            $(this).get(0).pause();
+        })
     }
 
     //Escape from cursor
