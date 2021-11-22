@@ -1206,6 +1206,7 @@ button[disabled] {
 
 .product-carousel__video {
         max-width: 100%;
+        position: relative;
     }
 
 .product-carousel__video-poster {
@@ -1214,7 +1215,8 @@ button[disabled] {
         bottom: 0;
         left: 0;
         right: 0; 
-        display: none
+        display: none;
+        z-index: 5
     }
 
 .product-carousel .slick-list {
