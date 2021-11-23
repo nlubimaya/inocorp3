@@ -94,17 +94,10 @@ $(document).ready(function(){
         var $videoPlayer = $videoBox.find('video');
         var $videoPoster = $videoBox.find('.js-video-poster');
 
-        /*$videoPoster.on('click', function(){
-            
-        }) */
-
-        $videoBox.find('.js-video-poster').click(function() {
-
+        $videoPoster.on('click', function(){
             $videoPoster.hide();
             $videoPlayer.trigger('play');
-            $videoPlayer[0].autoplay = true;
-            $videoBox.css('border-top', '5px solid grey');
-        })
+        }) 
         
         $videoPlayer.on('click', function(){
             this[this.paused ? 'play' : 'pause']();
