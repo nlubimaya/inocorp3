@@ -90,9 +90,9 @@ $(document).ready(function(){
 
     if ($('.js-product-media').length && $('html').hasClass('touchevents')) {
 
-        //var $videoBox = $('.js-product-media');
+        var $videoBox = $('.js-product-media');
         var $videoPoster = $('.js-video-poster');
-        var $videoBox = $videoPoster.closest('.js-product-media');
+        //var $videoBox = $videoPoster.closest('.js-product-media');
         var $videoPlayer = $videoBox.find('video');
         
         $videoPoster.on('click', function(){
