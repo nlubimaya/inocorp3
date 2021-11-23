@@ -158,6 +158,11 @@ $(document).ready(function(){
                 }
             ]
         });
+
+        $('.js-product-carousel').on('afterChange', function(event, slick, currentSlide, nextSlide){
+            $('.js-product-media').find('video').trigger('play');
+            $('.js-product-media').find('.js-video-poster').hide();
+        });
     }
 });
 
