@@ -105,10 +105,10 @@ $(document).ready(function(){
         })
     }
 
-    /*$('video').each(function () {
-        this.preload = 'metadata';
+    $('video').each(function () {
+        /*this.preload = 'metadata';*/
         this.load();
-    });*/
+    });
 
     //Escape from cursor
     if ($('.js-icons-group').length) {
@@ -166,9 +166,14 @@ $(document).ready(function(){
         });
 
         $('.js-product-carousel').on('afterChange', function(event, slick, currentSlide, nextSlide){
+            $('.js-product-media').find('video').trigger('play');
+            $('.js-product-media').find('.js-video-poster').hide();
+        });
+
+        /*$('.js-product-carousel').on('afterChange', function(event, slick, currentSlide, nextSlide){
             $(this).find('.js-product-media').find('video').trigger('play');
             $(this).find('.js-product-media').find('.js-video-poster').hide();
-        });
+        });*/
     }
 });
 
