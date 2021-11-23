@@ -62,8 +62,8 @@ $(document).ready(function(){
 
         $videoButton.on('click', function(){
             $videoPlaceholder.addClass('product-video__is-hidden');
-            $videoPlayer.addClass('is-play');
-            $videoPlayer[0].play();
+            $('.product-video__player').addClass('is-play');
+            $('.product-video__player')[0].play();
         })
 
         $videoPlayer.on('click', function(){
@@ -96,7 +96,7 @@ $(document).ready(function(){
 
         $videoPoster.on('click', function(){
             $videoPoster.hide();
-            $videoPlayer.trigger('play');
+            $('.js-product-media').find('video').trigger('play');
         }) 
         
         $videoPlayer.on('click', function(){
@@ -157,11 +157,6 @@ $(document).ready(function(){
                     }
                 }
             ]
-        });
-
-        $('.js-product-carousel').on('afterChange', function(event, slick, currentSlide, nextSlide){
-            $('.js-product-media').find('video').trigger('play');
-            $('.js-product-media').find('.js-video-poster').hide();
         });
     }
 });
