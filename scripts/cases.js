@@ -105,10 +105,10 @@ $(document).ready(function(){
         })
     }
 
-    $('video').each(function () {
+    /*$('video').each(function () {
         this.preload = 'metadata';
         this.load();
-    });
+    });*/
 
     //Escape from cursor
     if ($('.js-icons-group').length) {
