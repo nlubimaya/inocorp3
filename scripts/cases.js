@@ -95,7 +95,7 @@ $(document).ready(function(){
         var $videoPoster = $videoBox.find('.js-video-poster');
 
         $videoPoster.on('click', function(){
-            $videoPoster.hide();
+            $videoPoster.addClass('is-hidden');
             $('.js-product-media').find('video').trigger('play');
         }) 
         
