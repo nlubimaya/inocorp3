@@ -2590,6 +2590,11 @@ button[disabled] {
                 max-width: 415px
         }
 
+        .product-info__carousel .product-carousel__item {  
+                margin-left: 5px;
+                margin-right: 5px
+        }
+
         .product-info__carousel--registration {  
                 border: none
         }
