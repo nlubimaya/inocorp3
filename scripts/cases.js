@@ -90,13 +90,14 @@ $(document).ready(function(){
 
     if ($('.js-product-media').length && $('html').hasClass('touchevents')) {
 
-        var $videoBox = $('.js-product-media');
+        //var $videoBox = $('.js-product-media');
+        var $videoPoster = $('.js-video-poster');
+        var $videoBox = $videoPoster.closest('.js-product-media');
         var $videoPlayer = $videoBox.find('video');
-        var $videoPoster = $videoBox.find('.js-video-poster');
-
+        
         $videoPoster.on('click', function(){
-            $videoPoster.addClass('is-hidden');
-            $('.js-product-media').find('video').trigger('play');
+            $videoPoster.addClass('is-hidden');            
+            $videoPlayer.trigger('play');
         }) 
         
         $videoPlayer.on('click', function(){
@@ -165,8 +166,8 @@ $(document).ready(function(){
         });
 
         $('.js-product-carousel').on('afterChange', function(event, slick, currentSlide, nextSlide){
-            $('.js-product-media').find('video').trigger('play');
-            $('.js-product-media').find('.js-video-poster').hide();
+            $(this).find('.js-product-media').find('video').trigger('play');
+            $(this).find('.js-product-media').find('.js-video-poster').hide();
         });
     }
 });
