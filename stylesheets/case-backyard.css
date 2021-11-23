@@ -950,6 +950,10 @@ button[disabled] {
         z-index: 5
     }
 
+.product-info__video-poster.is-hidden {
+            display: none;
+        }
+
 .product-info__carousel.product-carousel {
             margin-top: 80px;
             margin-bottom: 0;
