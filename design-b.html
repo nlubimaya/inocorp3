@@ -346,12 +346,11 @@
                 <!--END .box-b-->
             </section>
             <!--END .infoblock-b-->
-            <!--<section class="doing-b doing-b--design-process">-->
             <section class="doing-b doing-b--design-process">
                 <div class="box-b">
                     <h6 class="doing-b__intro-title">Как выглядит процесс работы</h6>
                     <h2 class="doing-b__title">
-                        <span class="doing-b__title-decor">
+                        <div class="doing-b__title-decor">
                             <svg class="icon-b icon-b--color-fill" width="60" height="60">
                                 <use xlink:href="images/decor-svg-sprite-b.svg#arrow-diagonal"></use>
                             </svg>
@@ -360,7 +359,7 @@
                                 <use xlink:href="images/decor-svg-sprite-b.svg#circle-four-quarter"></use>
                             </svg>
                             <!--END .icon-b-->
-                        </span>UX/UI-дизайн веб и мобильных интерфейсов
+                        </div>UX/UI-дизайн веб и мобильных интерфейсов
                     </h2>
                     <div class="doing-b__container">
                         <div class="doing-b__item">
@@ -384,47 +383,33 @@
                 <!--END .box-b-->
             </section>
             <!--END .doing-b-->
-            <!--<section class="doing-b doing-b--design-identity">-->
-            <<section class="doing-b doing-b--design-identity">
-                <div class="box-b">
-                    <h2 class="doing-b__title">
-                        <span class="doing-b__title-decor">
-                            <svg class="icon-b icon-b--color-fill" width="60" height="60">
-                                <use xlink:href="images/decor-svg-sprite-b.svg#wave"></use>
-                            </svg>
-                            <!--END .icon-b-->
-                            <svg class="icon-b icon-b--color-fill" width="60" height="60">
-                                <use xlink:href="images/decor-svg-sprite-b.svg#star-rounded"></use>
-                            </svg>
-                            <!--END .icon-b-->
-                        </span>Цифровая айдентика
-                    </h2>
-                    <div class="doing-b__container">
-                        <div class="doing-b__item">
-                            <h3 class="doing-b__item-title"><span>1.</span></h3>
-                            <div class="doing-b__item-description">Изучаем компанию, чтобы верно передать её ценности в айдентике</div>
-                        </div>
-                        <div class="doing-b__item">
-                            <h3 class="doing-b__item-title"><span>2.</span></h3>
-                            <div class="doing-b__item-description">Формируем единый стиль продукта во всём цифровом пространстве</div>
-                        </div>
-                        <div class="doing-b__item">
-                            <h3 class="doing-b__item-title"><span>3.</span></h3>
-                            <div class="doing-b__item-description">Создаём логотип и готовим документацию, которая описывает правила использования, варианты применения и цветовую палитру</div>
-                        </div>
-                        <div class="doing-b__item">
-                            <h3 class="doing-b__item-title"><span>4.</span></h3>
-                            <div class="doing-b__item-description">Оформляем социальные сети в фирменном стиле. Готовим шаблоны для постов и сторис, создаём «шапки профилей» и аватарки</div>
-                        </div>
-                        <div class="doing-b__item">
-                            <h3 class="doing-b__item-title"><span>5.</span></h3>
-                            <div class="doing-b__item-description">Создаём сеты иллюстраций для задач заказчика</div>
-                        </div>
-                    </div>
-                </div>
-                <!--END .box-b-->
-            </section>
-            <!--END .doing-b-->
+            <!--include ../../_blocks/doing-b/doing-b.pug-->
+            <!--+doing-b({page: "design-identity",
+title: "Цифровая айдентика",
+titleDecor: ["wave", "star-rounded"],
+list: [
+    {
+        title: "<span>1.</span>",
+        description: "Изучаем компанию, чтобы верно передать её ценности в айдентике"
+    },
+    {
+        title: "<span>2.</span>",
+        description: "Формируем единый стиль продукта во всём цифровом пространстве"
+    },
+    {
+        title: "<span>3.</span>",
+        description: "Создаём логотип и готовим документацию, которая описывает правила использования, варианты применения и цветовую палитру"
+    },
+    {
+        title: "<span>4.</span>",
+        description: "Оформляем социальные сети в фирменном стиле. Готовим шаблоны для постов и сторис, создаём «шапки профилей» и аватарки"
+    },            
+    {
+        title: "<span>5.</span>",
+        description: "Создаём сеты иллюстраций для задач заказчика"
+    }
+]-->
+            <!--})-->
             <div class="cases-grid-b cases-grid-b--grid-4-4-3-3">
                 <div class="cases-grid-b__container">
                     <div class="case-preview-b cases-grid-b__item"><video class="case-preview-b__media-video" autoplay loop muted playsinline>
