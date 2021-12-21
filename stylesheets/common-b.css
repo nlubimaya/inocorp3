@@ -4234,7 +4234,7 @@ html.no-touchevents .infoblock-b__tools-social .social-b__item:hover .ctrl-butto
             }
 
 .doing-b--design-identity {
-        background-image: url("../images/doing/background-design-identity.svg");
+        /*background-image: url("../images/doing/background-design-identity.svg");*/
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 0;
