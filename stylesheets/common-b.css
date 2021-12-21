@@ -4186,10 +4186,11 @@ html.no-touchevents .infoblock-b__tools-social .social-b__item:hover .ctrl-butto
             }
 
 .doing-b--design-process {
-        background-image: url("../images/doing/background-design-process.svg");
+        /*background-image: url("../images/doing/background-design-process.svg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: 50% 0
+        background-position: 50% 0;*/
+        background: #000
     }
 
 .doing-b--design-process .doing-b__title-decor {
