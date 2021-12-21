@@ -4186,11 +4186,10 @@ html.no-touchevents .infoblock-b__tools-social .social-b__item:hover .ctrl-butto
             }
 
 .doing-b--design-process {
-        /*background-image: url("../images/doing/background-design-process.svg");
+        background-image: url("../images/doing/background-design-process.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: 50% 0;*/
-        background: #000
+        background-position: 50% 0
     }
 
 .doing-b--design-process .doing-b__title-decor {
@@ -4234,7 +4233,7 @@ html.no-touchevents .infoblock-b__tools-social .social-b__item:hover .ctrl-butto
             }
 
 .doing-b--design-identity {
-        /*background-image: url("../images/doing/background-design-identity.svg");*/
+        background-image: url("../images/doing/background-design-identity.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 0;
