@@ -6111,12 +6111,24 @@ html[dir="rtl"] .recommended-b--certs .recommended-b__container::before {
 .recommended-b--blog .recommended-b__item .image-box-b__image {
             width: auto;
             max-width: inherit;
-            max-height: 100%;
+            height: 100%;
         }
 
-.recommended-b--blog .post-preview-b--type-overlap .post-preview-b__image {
-            height: inherit;
-        }
+.recommended-b--blog .post-preview-b__media {
+        height: 100%;
+    }
+
+.recommended-b--blog .post-preview-b__image {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
 
 .recommended-b--blog .slick-slider .slick-dots { 
             margin-left: calc(15 / 16 * 1rem);
