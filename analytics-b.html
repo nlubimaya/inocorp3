@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, viewport-fit=cover">
+    <title>Inocorp-3B</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&amp;display=swap">
+    <link rel="stylesheet" href="stylesheets/common-b.min.css">
+</head>
+
+<body class="page-b">
+    <div class="screen-b">
+        <header class="header-b header-b--color-second">
+            <div class="header-b__container"><a class="logo-b header-b__logo" href="#42"><span class="logo-b__group">
+                        <svg class="logo-b__image" width="130" height="40" viewBox="0 0 130 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5945 23.3826C17.3452 23.6319 17.0537 23.7549 16.7202 23.7549C16.3867 23.7549 16.0953 23.6319 15.846 23.3826C15.5967 23.1332 15.4736 22.8418 15.4736 22.5083C15.4736 22.1748 15.5967 21.8834 15.846 21.6341C16.0953 21.3848 16.3867 21.2617 16.7202 21.2617C17.0537 21.2617 17.3452 21.3848 17.5945 21.6341C17.8438 21.8834 17.9668 22.1748 17.9668 22.5083C17.9668 22.8418 17.8438 23.1332 17.5945 23.3826Z" fill="white"></path>
+                            <path d="M23.598 23.6141H21.3379V15.8398H23.6919V19.9909L26.3956 15.8398H28.8208V23.6141H26.4668V19.2073L23.598 23.6141Z" fill="white"></path>
+                            <path d="M39.9037 23.6141H37.5497V20.6417H34.7651V23.6141H32.4111V15.8398H34.7651V18.5921H37.5497V15.8398H39.9037V23.6141V23.6141Z" fill="white"></path>
+                            <path d="M50.3661 22.6304C49.5533 23.3816 48.5431 23.754 47.3289 23.754C46.1146 23.754 45.1044 23.3784 44.2917 22.6304C43.479 21.8792 43.0742 20.9143 43.0742 19.7325C43.0742 18.5506 43.479 17.5857 44.2917 16.8345C45.1044 16.0833 46.1146 15.7109 47.3289 15.7109C48.5431 15.7109 49.5533 16.0865 50.3661 16.8345C51.1788 17.5857 51.5835 18.5506 51.5835 19.7325C51.5835 20.9143 51.1788 21.8792 50.3661 22.6304ZM45.9819 21.1215C46.3283 21.4939 46.7752 21.6817 47.3289 21.6817C47.8826 21.6817 48.3294 21.4939 48.6759 21.1215C49.0223 20.7492 49.1939 20.2861 49.1939 19.7357C49.1939 19.1852 49.0223 18.7222 48.6759 18.3499C48.3294 17.9775 47.8826 17.7897 47.3289 17.7897C46.7752 17.7897 46.3283 17.9775 45.9819 18.3499C45.6354 18.7222 45.4638 19.1852 45.4638 19.7357C45.4638 20.2861 45.6354 20.7492 45.9819 21.1215Z" fill="white"></path>
+                            <path d="M58.6123 23.754C57.3851 23.754 56.3651 23.3784 55.5524 22.6304C54.7397 21.8792 54.335 20.9143 54.335 19.7325C54.335 18.5506 54.7397 17.576 55.546 16.8313C56.3554 16.0865 57.3754 15.7109 58.6123 15.7109C59.5448 15.7109 60.296 15.9279 60.8691 16.365C61.439 16.7989 61.8664 17.3364 62.1449 17.9743L60.1179 18.9197C60.0175 18.6089 59.8265 18.3434 59.548 18.12C59.2696 17.8998 58.9587 17.7865 58.6155 17.7865C58.0554 17.7865 57.602 17.9743 57.2523 18.3466C56.9026 18.719 56.7278 19.182 56.7278 19.7325C56.7278 20.2829 56.9026 20.7459 57.2523 21.1183C57.602 21.4907 58.0554 21.6785 58.6155 21.6785C58.9587 21.6785 59.2696 21.5684 59.548 21.345C59.8265 21.1248 60.0175 20.856 60.1179 20.5452L62.1449 21.4777C62.0218 21.7659 61.8664 22.0314 61.6786 22.2775C61.4908 22.5236 61.2577 22.7599 60.9792 22.9931C60.7007 23.2262 60.3543 23.4108 59.9463 23.5467C59.5383 23.6827 59.0947 23.7507 58.6123 23.7507V23.754Z" fill="white"></path>
+                            <path d="M69.2332 23.6154H66.8792V17.8907H64.7939V15.8379H71.3087V17.8907H69.2332V23.6154V23.6154Z" fill="white"></path>
+                            <path d="M75.8188 23.754C74.9187 23.754 74.1934 23.5436 73.6494 23.1259L74.6046 21.3321C74.9478 21.5652 75.2813 21.6818 75.6084 21.6818C75.9645 21.6818 76.2268 21.5587 76.3887 21.3094L73.6494 15.8438H76.2851L77.7195 19.004L79.1636 15.8438H81.7993L78.6876 22.0574C78.1113 23.1906 77.1561 23.7605 75.8188 23.7605V23.754Z" fill="white"></path>
+                            <path d="M83.6875 25.0485V21.6811C84.0761 21.6099 84.3739 21.4447 84.5844 21.1857C84.7949 20.9266 84.9406 20.4507 85.028 19.7577L85.5072 15.8398H91.5816V21.5645H92.2583V25.0485H89.9043V23.6141H86.0447V25.0485H83.6907H83.6875ZM87.3723 19.9326C87.2946 20.5769 87.042 21.1209 86.6146 21.5645H89.2244V17.8927H87.6281L87.3723 19.9326Z" fill="white"></path>
+                            <path d="M97.6263 23.6141H95.3662V15.8398H97.7202V19.9909L100.424 15.8398H102.849V23.6141H100.495V19.2073L97.6263 23.6141Z" fill="white"></path>
+                            <path d="M113.311 22.6304C112.499 23.3816 111.488 23.754 110.274 23.754C109.06 23.754 108.05 23.3784 107.237 22.6304C106.424 21.8792 106.02 20.9143 106.02 19.7325C106.02 18.5506 106.424 17.5857 107.237 16.8345C108.05 16.0833 109.06 15.7109 110.274 15.7109C111.488 15.7109 112.499 16.0865 113.311 16.8345C114.124 17.5857 114.529 18.5506 114.529 19.7325C114.529 20.9143 114.124 21.8792 113.311 22.6304ZM108.927 21.1215C109.274 21.4939 109.72 21.6817 110.274 21.6817C110.828 21.6817 111.275 21.4939 111.621 21.1215C111.968 20.7492 112.139 20.2861 112.139 19.7357C112.139 19.1852 111.968 18.7222 111.621 18.3499C111.275 17.9775 110.828 17.7897 110.274 17.7897C109.72 17.7897 109.274 17.9775 108.927 18.3499C108.581 18.7222 108.409 19.1852 108.409 19.7357C108.409 20.2861 108.581 20.7492 108.927 21.1215Z" fill="white"></path>
+                        </svg><svg class="logo-b__image logo-b__image--dublicated" width="130" height="40" viewBox="0 0 130 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5945 23.3826C17.3452 23.6319 17.0537 23.7549 16.7202 23.7549C16.3867 23.7549 16.0953 23.6319 15.846 23.3826C15.5967 23.1332 15.4736 22.8418 15.4736 22.5083C15.4736 22.1748 15.5967 21.8834 15.846 21.6341C16.0953 21.3848 16.3867 21.2617 16.7202 21.2617C17.0537 21.2617 17.3452 21.3848 17.5945 21.6341C17.8438 21.8834 17.9668 22.1748 17.9668 22.5083C17.9668 22.8418 17.8438 23.1332 17.5945 23.3826Z" fill="white"></path>
+                            <path d="M23.598 23.6141H21.3379V15.8398H23.6919V19.9909L26.3956 15.8398H28.8208V23.6141H26.4668V19.2073L23.598 23.6141Z" fill="white"></path>
+                            <path d="M39.9037 23.6141H37.5497V20.6417H34.7651V23.6141H32.4111V15.8398H34.7651V18.5921H37.5497V15.8398H39.9037V23.6141V23.6141Z" fill="white"></path>
+                            <path d="M50.3661 22.6304C49.5533 23.3816 48.5431 23.754 47.3289 23.754C46.1146 23.754 45.1044 23.3784 44.2917 22.6304C43.479 21.8792 43.0742 20.9143 43.0742 19.7325C43.0742 18.5506 43.479 17.5857 44.2917 16.8345C45.1044 16.0833 46.1146 15.7109 47.3289 15.7109C48.5431 15.7109 49.5533 16.0865 50.3661 16.8345C51.1788 17.5857 51.5835 18.5506 51.5835 19.7325C51.5835 20.9143 51.1788 21.8792 50.3661 22.6304ZM45.9819 21.1215C46.3283 21.4939 46.7752 21.6817 47.3289 21.6817C47.8826 21.6817 48.3294 21.4939 48.6759 21.1215C49.0223 20.7492 49.1939 20.2861 49.1939 19.7357C49.1939 19.1852 49.0223 18.7222 48.6759 18.3499C48.3294 17.9775 47.8826 17.7897 47.3289 17.7897C46.7752 17.7897 46.3283 17.9775 45.9819 18.3499C45.6354 18.7222 45.4638 19.1852 45.4638 19.7357C45.4638 20.2861 45.6354 20.7492 45.9819 21.1215Z" fill="white"></path>
+                            <path d="M58.6123 23.754C57.3851 23.754 56.3651 23.3784 55.5524 22.6304C54.7397 21.8792 54.335 20.9143 54.335 19.7325C54.335 18.5506 54.7397 17.576 55.546 16.8313C56.3554 16.0865 57.3754 15.7109 58.6123 15.7109C59.5448 15.7109 60.296 15.9279 60.8691 16.365C61.439 16.7989 61.8664 17.3364 62.1449 17.9743L60.1179 18.9197C60.0175 18.6089 59.8265 18.3434 59.548 18.12C59.2696 17.8998 58.9587 17.7865 58.6155 17.7865C58.0554 17.7865 57.602 17.9743 57.2523 18.3466C56.9026 18.719 56.7278 19.182 56.7278 19.7325C56.7278 20.2829 56.9026 20.7459 57.2523 21.1183C57.602 21.4907 58.0554 21.6785 58.6155 21.6785C58.9587 21.6785 59.2696 21.5684 59.548 21.345C59.8265 21.1248 60.0175 20.856 60.1179 20.5452L62.1449 21.4777C62.0218 21.7659 61.8664 22.0314 61.6786 22.2775C61.4908 22.5236 61.2577 22.7599 60.9792 22.9931C60.7007 23.2262 60.3543 23.4108 59.9463 23.5467C59.5383 23.6827 59.0947 23.7507 58.6123 23.7507V23.754Z" fill="white"></path>
+                            <path d="M69.2332 23.6154H66.8792V17.8907H64.7939V15.8379H71.3087V17.8907H69.2332V23.6154V23.6154Z" fill="white"></path>
+                            <path d="M75.8188 23.754C74.9187 23.754 74.1934 23.5436 73.6494 23.1259L74.6046 21.3321C74.9478 21.5652 75.2813 21.6818 75.6084 21.6818C75.9645 21.6818 76.2268 21.5587 76.3887 21.3094L73.6494 15.8438H76.2851L77.7195 19.004L79.1636 15.8438H81.7993L78.6876 22.0574C78.1113 23.1906 77.1561 23.7605 75.8188 23.7605V23.754Z" fill="white"></path>
+                            <path d="M83.6875 25.0485V21.6811C84.0761 21.6099 84.3739 21.4447 84.5844 21.1857C84.7949 20.9266 84.9406 20.4507 85.028 19.7577L85.5072 15.8398H91.5816V21.5645H92.2583V25.0485H89.9043V23.6141H86.0447V25.0485H83.6907H83.6875ZM87.3723 19.9326C87.2946 20.5769 87.042 21.1209 86.6146 21.5645H89.2244V17.8927H87.6281L87.3723 19.9326Z" fill="white"></path>
+                            <path d="M97.6263 23.6141H95.3662V15.8398H97.7202V19.9909L100.424 15.8398H102.849V23.6141H100.495V19.2073L97.6263 23.6141Z" fill="white"></path>
+                            <path d="M113.311 22.6304C112.499 23.3816 111.488 23.754 110.274 23.754C109.06 23.754 108.05 23.3784 107.237 22.6304C106.424 21.8792 106.02 20.9143 106.02 19.7325C106.02 18.5506 106.424 17.5857 107.237 16.8345C108.05 16.0833 109.06 15.7109 110.274 15.7109C111.488 15.7109 112.499 16.0865 113.311 16.8345C114.124 17.5857 114.529 18.5506 114.529 19.7325C114.529 20.9143 114.124 21.8792 113.311 22.6304ZM108.927 21.1215C109.274 21.4939 109.72 21.6817 110.274 21.6817C110.828 21.6817 111.275 21.4939 111.621 21.1215C111.968 20.7492 112.139 20.2861 112.139 19.7357C112.139 19.1852 111.968 18.7222 111.621 18.3499C111.275 17.9775 110.828 17.7897 110.274 17.7897C109.72 17.7897 109.274 17.9775 108.927 18.3499C108.581 18.7222 108.409 19.1852 108.409 19.7357C108.409 20.2861 108.581 20.7492 108.927 21.1215Z" fill="white"></path>
+                        </svg></span>
+                    <span class="logo-b__name">INOSTUDIO</span>
+                </a>
+                <!--END .logo-b-->
+                <div class="header-b__part">
+                    <nav class="nav-b header-b__nav">
+                        <ul class="nav-b__list">
+                            <li class="nav-b__item">
+                                <a class="nav-b__link" href="#42">Портфолио</a>
+                            </li>
+                            <li class="nav-b__item">
+                                <span class="nav-b__link">Услуги
+                                    <svg class="icon-b icon-b--color-fill nav-b__icon-dropdown" width="14" height="14">
+                                        <use xlink:href="images/svg-sprite-b.svg#arrow-2-bottom"></use>
+                                    </svg>
+                                    <!--END .icon-b-->
+                                </span>
+                                <ul class="nav-b__sublist">
+                                    <li class="nav-b__subitem"><a class="nav-b__sublink" href="#42">
+                                            <svg class="icon-b icon-b--color-fill nav-b__sublink-icon nav-b__sublink-icon--circles" width="16" height="16">
+                                                <use xlink:href="images/decor-svg-sprite-b.svg#circles"></use>
+                                            </svg>
+                                            <!--END .icon-b--><span class="nav-b__sublink-text">Все услуги</span>
+                                        </a></li>
+                                    <li class="nav-b__subitem"><a class="nav-b__sublink" href="#42">
+                                            <svg class="icon-b icon-b--color-fill nav-b__sublink-icon nav-b__sublink-icon--web" width="16" height="16">
+                                                <use xlink:href="images/decor-svg-sprite-b.svg#square"></use>
+                                            </svg>
+                                            <!--END .icon-b--><span class="nav-b__sublink-text">Веб-разработка</span>
+                                        </a></li>
+                                    <li class="nav-b__subitem"><a class="nav-b__sublink" href="#42">
+                                            <svg class="icon-b icon-b--color-fill nav-b__sublink-icon nav-b__sublink-icon--mobile" width="16" height="16">
+                                                <use xlink:href="images/decor-svg-sprite-b.svg#circle-half-2"></use>
+                                            </svg>
+                                            <!--END .icon-b--><span class="nav-b__sublink-text">Мобильная разработка</span>
+                                        </a></li>
+                                    <li class="nav-b__subitem"><a class="nav-b__sublink" href="#42">
+                                            <svg class="icon-b icon-b--color-fill nav-b__sublink-icon nav-b__sublink-icon--devops" width="16" height="16">
+                                                <use xlink:href="images/decor-svg-sprite-b.svg#leaf"></use>
+                                            </svg>
+                                            <!--END .icon-b--><span class="nav-b__sublink-text">DevОps</span>
+                                        </a></li>
+                                    <li class="nav-b__subitem"><a class="nav-b__sublink" href="#42">
+                                            <svg class="icon-b icon-b--color-fill nav-b__sublink-icon nav-b__sublink-icon--design" width="16" height="16">
+                                                <use xlink:href="images/decor-svg-sprite-b.svg#quadrant"></use>
+                                            </svg>
+                                            <!--END .icon-b--><span class="nav-b__sublink-text">Дизайн</span>
+                                        </a></li>
+                                    <li class="nav-b__subitem"><a class="nav-b__sublink" href="#42">
+                                            <svg class="icon-b icon-b--color-fill nav-b__sublink-icon nav-b__sublink-icon--startup" width="16" height="16">
+                                                <use xlink:href="images/decor-svg-sprite-b.svg#arrow-2"></use>
+                                            </svg>
+                                            <!--END .icon-b--><span class="nav-b__sublink-text">Стартапы</span>
+                                        </a></li>
+                                    <li class="nav-b__subitem"><a class="nav-b__sublink" href="#42">
+                                            <svg class="icon-b icon-b--color-fill nav-b__sublink-icon nav-b__sublink-icon--outsource" width="16" height="16">
+                                                <use xlink:href="images/decor-svg-sprite-b.svg#quadrant-line"></use>
+                                            </svg>
+                                            <!--END .icon-b--><span class="nav-b__sublink-text">ИТ-аутсорсинг</span>
+                                        </a></li>
+                                    <li class="nav-b__subitem"><a class="nav-b__sublink" href="#42">
+                                            <svg class="icon-b icon-b--color-fill nav-b__sublink-icon nav-b__sublink-icon--career" width="16" height="16">
+                                                <use xlink:href="images/decor-svg-sprite-b.svg#star-4"></use>
+                                            </svg>
+                                            <!--END .icon-b--><span class="nav-b__sublink-text">Карьерный сайт</span>
+                                        </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-b__item">
+                                <span class="nav-b__link">Компания
+                                    <svg class="icon-b icon-b--color-fill nav-b__icon-dropdown" width="14" height="14">
+                                        <use xlink:href="images/svg-sprite-b.svg#arrow-2-bottom"></use>
+                                    </svg>
+                                    <!--END .icon-b-->
+                                </span>
+                                <ul class="nav-b__sublist">
+                                    <li class="nav-b__subitem"><a class="nav-b__sublink" href="#42"><span class="nav-b__sublink-text">О нас</span></a></li>
+                                    <li class="nav-b__subitem"><a class="nav-b__sublink" href="#42"><span class="nav-b__sublink-text">Вакансии</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-b__item">
+                                <a class="nav-b__link" href="#42">Блог</a>
+                            </li>
+                            <li class="nav-b__item">
+                                <a class="nav-b__link" href="#42">Контакты</a>
+                            </li>
+                        </ul>
+                        <div class="lang-switcher-b nav-b__lang">
+                            <div class="lang-switcher-b__item"><a class="lang-switcher-b__link" href="#42">En</a></div>
+                        </div>
+                        <!--END .lang-switcher-b-->
+                    </nav>
+                    <!--END .nav-b-->
+                    <div class="header-b__decors">
+                        <svg class="icon-b icon-b--color-fill header-b__decor header-b__decor--1" width="80" height="80">
+                            <use xlink:href="images/decor-svg-sprite-b.svg#circle"></use>
+                        </svg>
+                        <!--END .icon-b-->
+                        <svg class="icon-b icon-b--color-fill header-b__decor header-b__decor--2" width="80" height="80">
+                            <use xlink:href="images/decor-svg-sprite-b.svg#quadrant"></use>
+                        </svg>
+                        <!--END .icon-b-->
+                        <svg class="icon-b icon-b--color-fill header-b__decor header-b__decor--3" width="80" height="80">
+                            <use xlink:href="images/decor-svg-sprite-b.svg#star-4"></use>
+                        </svg>
+                        <!--END .icon-b-->
+                        <svg class="icon-b icon-b--color-fill header-b__decor header-b__decor--4" width="80" height="80">
+                            <use xlink:href="images/decor-svg-sprite-b.svg#quadrant-line"></use>
+                        </svg>
+                        <!--END .icon-b-->
+                    </div>
+                </div><button class="cheeseburger-b js-cheeseburger-b header-b__cheeseburger" type="button" data-open="Открыть меню" data-close="Закрыть меню"><span class="cheeseburger-b__text">Открыть меню</span><span class="cheeseburger-b__lines"></span></button>
+                <!--END .cheeseburger-b-->
+            </div>
+        </header>
+        <!--END .header-b-->
+        <main class="main">
+            <section class="wall-b wall-b--analytics">
+                <div class="box-b">
+                    <h1 class="wall-b__title">Бизнес-аналитика и&nbsp;системный анализ</h1>
+                    <div class="wall-b__description">
+                        <p>Для компаний с большими финансовыми и&nbsp;временными затратами на&nbsp;внедрение ИТ-решений</p>
+                    </div>
+                </div>
+            </section>
+            <!--END .wall-->
+            <div class="doing-group-b doing-group-b--analytics-common">
+                <div class="box-b">
+                    <div class="doing-group-b__body">
+                        <div class="doing-group-b__item">
+                            <div class="doing-group-b__decor-box">
+                                <svg class="icon-b icon-b--color-fill doing-group-b__decor" width="58" height="58">
+                                    <use xlink:href="images/decor-svg-sprite-b.svg#wave"></use>
+                                </svg>
+                                <!--END .icon-b-->
+                                <svg class="icon-b icon-b--color-fill doing-group-b__decor" width="58" height="58">
+                                    <use xlink:href="images/decor-svg-sprite-b.svg#star-rounded"></use>
+                                </svg>
+                                <!--END .icon-b-->
+                            </div>
+                            <div class="doing-group-b__description">
+                                <p>Бесшовно встраиваем новые ИТ-решения в бизнес-процессы компаний. Анализируем уже существующие цифровые системы, предлагаем изменения, описываем технические требования на основе бизнес-требований.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END .box-b-->
+            </div>
+            <!--END .doing-group-b-->
+            <div class="doing-group-b doing-group-b--analytics">
+                <div class="box-b">
+                    <h2 class="doing-group-b__title">Когда необходима аналитика</h2>
+                    <div class="doing-group-b__body">
+                        <div class="doing-group-b__item">
+                            <div class="doing-group-b__decor-box">
+                                <svg class="icon-b icon-b--color-fill doing-group-b__decor" width="58" height="58">
+                                    <use xlink:href="images/decor-svg-sprite-b.svg#quadrant-line"></use>
+                                </svg>
+                                <!--END .icon-b-->
+                                <svg class="icon-b icon-b--color-fill doing-group-b__decor" width="58" height="58">
+                                    <use xlink:href="images/decor-svg-sprite-b.svg#circle-half-2"></use>
+                                </svg>
+                                <!--END .icon-b-->
+                                <svg class="icon-b icon-b--color-fill doing-group-b__decor" width="58" height="58">
+                                    <use xlink:href="images/decor-svg-sprite-b.svg#circle"></use>
+                                </svg>
+                                <!--END .icon-b-->
+                            </div>
+                            <h3 class="doing-group-b__subtitle">01</h3>
+                            <div class="doing-group-b__description">
+                                <p>Когда необходимо реализовать сложное ИТ-решение, которое включает в&nbsp;себя интеграцию с различными сервисами.</p>
+                            </div>
+                        </div>
+                        <div class="doing-group-b__item">
+                            <div class="doing-group-b__decor-box">
+                                <svg class="icon-b icon-b--color-fill doing-group-b__decor" width="58" height="58">
+                                    <use xlink:href="images/decor-svg-sprite-b.svg#quadrant"></use>
+                                </svg>
+                                <!--END .icon-b-->
+                                <svg class="icon-b icon-b--color-fill doing-group-b__decor" width="58" height="58">
+                                    <use xlink:href="images/decor-svg-sprite-b.svg#leaf-double"></use>
+                                </svg>
+                                <!--END .icon-b-->
+                                <svg class="icon-b icon-b--color-fill doing-group-b__decor" width="58" height="58">
+                                    <use xlink:href="images/decor-svg-sprite-b.svg#quadrant-line"></use>
+                                </svg>
+                                <!--END .icon-b-->
+                            </div>
+                            <h3 class="doing-group-b__subtitle">02</h3>
+                            <div class="doing-group-b__description">
+                                <p>Когда есть осознанная потребность в ИТ-решении, но нет понимания, как его реализовать.</p>
+                            </div>
+                        </div>
+                        <div class="doing-group-b__item">
+                            <div class="doing-group-b__decor-box">
+                                <svg class="icon-b icon-b--color-fill doing-group-b__decor" width="58" height="58">
+                                    <use xlink:href="images/decor-svg-sprite-b.svg#triangle"></use>
+                                </svg>
+                                <!--END .icon-b-->
+                                <svg class="icon-b icon-b--color-fill doing-group-b__decor" width="58" height="58">
+                                    <use xlink:href="images/decor-svg-sprite-b.svg#quadrant-line"></use>
+                                </svg>
+                                <!--END .icon-b-->
+                                <svg class="icon-b icon-b--color-fill doing-group-b__decor" width="58" height="58">
+                                    <use xlink:href="images/decor-svg-sprite-b.svg#quadrant"></use>
+                                </svg>
+                                <!--END .icon-b-->
+                            </div>
+                            <h3 class="doing-group-b__subtitle">03</h3>
+                            <div class="doing-group-b__description">
+                                <p>Когда не до конца проведена предварительная аналитическая работа. Не знаете, есть ли подобные решения на рынке. Не хватает информации о конечном пользователе. Нет понимания стоимости будущего цифрового решения.</p>
+                            </div>
+                        </div>
+                        <div class="doing-group-b__item">
+                            <div class="doing-group-b__decor-box">
+                                <svg class="icon-b icon-b--color-fill doing-group-b__decor" width="58" height="58">
+                                    <use xlink:href="images/decor-svg-sprite-b.svg#circle-half-2"></use>
+                                </svg>
+                                <!--END .icon-b-->
+                                <svg class="icon-b icon-b--color-fill doing-group-b__decor" width="58" height="58">
+                                    <use xlink:href="images/decor-svg-sprite-b.svg#triangle"></use>
+                                </svg>
+                                <!--END .icon-b-->
+                                <svg class="icon-b icon-b--color-fill doing-group-b__decor" width="58" height="58">
+                                    <use xlink:href="images/decor-svg-sprite-b.svg#quadrant-line"></use>
+                                </svg>
+                                <!--END .icon-b-->
+                            </div>
+                            <h3 class="doing-group-b__subtitle">04</h3>
+                            <div class="doing-group-b__description">
+                                <p>Когда пользователям неудобно использовать цифровое решение, в&nbsp;результате чего они обращаются к прямым конкурентам.</p>
+                            </div>
+                        </div>
+                        <div class="doing-group-b__item">
+                            <div class="doing-group-b__decor-box">
+                                <svg class="icon-b icon-b--color-fill doing-group-b__decor" width="58" height="58">
+                                    <use xlink:href="images/decor-svg-sprite-b.svg#quadrant-line"></use>
+                                </svg>
+                                <!--END .icon-b-->
+                                <svg class="icon-b icon-b--color-fill doing-group-b__decor" width="58" height="58">
+                                    <use xlink:href="images/decor-svg-sprite-b.svg#quadrant-line"></use>
+                                </svg>
+                                <!--END .icon-b-->
+                                <svg class="icon-b icon-b--color-fill doing-group-b__decor" width="58" height="58">
+                                    <use xlink:href="images/decor-svg-sprite-b.svg#quadrant"></use>
+                                </svg>
+                                <!--END .icon-b-->
+                            </div>
+                            <h3 class="doing-group-b__subtitle">05</h3>
+                            <div class="doing-group-b__description">
+                                <p>Когда существующий ИТ-продукт не решает поставленные задачи и&nbsp;требуются серьёзные изменения.</p>
+                            </div>
+                        </div>
+                        <div class="doing-group-b__item">
+                            <div class="doing-group-b__decor-box">
+                                <svg class="icon-b icon-b--color-fill doing-group-b__decor" width="58" height="58">
+                                    <use xlink:href="images/decor-svg-sprite-b.svg#quadrant"></use>
+                                </svg>
+                                <!--END .icon-b-->
+                                <svg class="icon-b icon-b--color-fill doing-group-b__decor" width="58" height="58">
+                                    <use xlink:href="images/decor-svg-sprite-b.svg#circle"></use>
+                                </svg>
+                                <!--END .icon-b-->
+                                <svg class="icon-b icon-b--color-fill doing-group-b__decor" width="58" height="58">
+                                    <use xlink:href="images/decor-svg-sprite-b.svg#triangle"></use>
+                                </svg>
+                                <!--END .icon-b-->
+                            </div>
+                            <h3 class="doing-group-b__subtitle">06</h3>
+                            <div class="doing-group-b__description">
+                                <p>Когда необходим пакет документации для запуска тендера.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END .box-b-->
+            </div>
+            <!--END .doing-group-b-->
+            <section class="doing-b doing-b--analytics-tasks">
+                <div class="box-b">
+                    <h2 class="doing-b__title"> Какие задачи решают системные и&nbsp;бизнес-аналитики</h2>
+                    <div class="doing-b__container">
+                        <div class="doing-b__item">
+                            <h3 class="doing-b__item-title"><span>Проектирование</span> цифровых решений</h3>
+                            <div class="doing-b__item-description">Бизнес-аналитик погружается в бизнес-процессы заказчика, продумывает, как встроить ИТ-решение в компанию, и&nbsp;фиксирует бизнес-требования. Системный аналитик изучает бизнес-требования и&nbsp;описывает требования к технической реализации цифрового решения.</div>
+                        </div>
+                        <div class="doing-b__item">
+                            <h3 class="doing-b__item-title"><span>Аудит</span> существующего ИТ&nbsp;-&nbsp;решения</h3>
+                            <div class="doing-b__item-description">Системные и&nbsp;бизнес-аналитики проанализируют ваше текущее цифровое решение, решения основных конкурентов, рынок и&nbsp;предложат улучшения.</div>
+                        </div>
+                        <div class="doing-b__item">
+                            <h3 class="doing-b__item-title"><span>Интеграция</span> ИТ-решения с другими системами</h3>
+                            <div class="doing-b__item-description">Аналитики выясняют, какие сервисы необходимо внедрить в цифровое решение. Проводят исследование и&nbsp;готовят техническую документацию с описанием интеграций вашей системы со сторонними сервисами.</div>
+                        </div>
+                        <div class="doing-b__item">
+                            <h3 class="doing-b__item-title"><span>Подготовка</span> документации</h3>
+                            <div class="doing-b__item-description">Аналитики помогут сформулировать и&nbsp;зафиксировать бизнес-требования и&nbsp;требования к технической реализации ИТ-решения. Пакет документации позволит сразу приступить к разработке или выйти на тендерную площадку.</div>
+                        </div>
+                        <div class="doing-b__item">
+                            <h3 class="doing-b__item-title"><span>Автоматизация</span> процессов</h3>
+                            <div class="doing-b__item-description">Бизнес-аналитик изучит бизнес-процессы компании, предложит, какие из них можно автоматизировать для повышения эффективности бизнеса. Системный аналитик опишет, как реализовать автоматизацию с технической стороны.</div>
+                        </div>
+                        <div class="doing-b__item">
+                            <div class="doing-b__item-decor-set">
+                                <svg class="icon-b icon-b--color-fill doing-b__item-decor" width="115" height="115">
+                                    <use xlink:href="images/decor-svg-sprite-b.svg#leaf-double"></use>
+                                </svg>
+                                <!--END .icon-b-->
+                                <svg class="icon-b icon-b--color-fill doing-b__item-decor" width="115" height="115">
+                                    <use xlink:href="images/decor-svg-sprite-b.svg#quadrant-line"></use>
+                                </svg>
+                                <!--END .icon-b-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="doing-b__decor-box">
+                        <svg class="icon-b icon-b--color-stroke doing-b__decor" width="200" height="200">
+                            <use xlink:href="images/decor-svg-sprite-b.svg#circle-half-2-lines-388"></use>
+                        </svg>
+                        <!--END .icon-b-->
+                        <svg class="icon-b icon-b--color-stroke doing-b__decor" width="200" height="200">
+                            <use xlink:href="images/decor-svg-sprite-b.svg#quadrant-line-lines"></use>
+                        </svg>
+                        <!--END .icon-b-->
+                    </div>
+                </div>
+                <!--END .box-b-->
+            </section>
+            <!--END .doing-b-->
+            <section class="stages-b">
+                <div class="box-b">
+                    <header class="stages-b__header">
+                        <h2 class="stages-b__title">Из каких этапов&nbsp;состоит аналитика</h2>
+                    </header>
+                    <div class="stages-b__content">
+                        <div class="stages-b__item stages-b__item--business">
+                            <h3 class="stages-b__item-title">Этапы бизнес-анализа</h3>
+                            <div class="stages-b__item-description">
+                                <p>Бизнес-анализ помогает изучить проблему, сформулировать требования и подобрать подходящее решение.</p>
+                            </div>
+                            <div class="stages-b__slider-box">
+                                <div class="stages-b__slider js-stages-b-slider">
+                                    <div class="stage-slide-b">
+                                        <div class="stage-slide-b__group">
+                                            <div class="stage-slide-b__item stage-slide-b__item--content">
+                                                <h4 class="stage-slide-b__title">1. Изучение информации</h4>
+                                                <div class="stage-slide-b__text">
+                                                    <p>Цель этапа — понять, в&nbsp;каких условиях существует бизнес и какие задачи стоят перед ИТ-решением.</p>
+                                                    <p>Задачи бизнес-аналитика:</p>
+                                                </div>
+                                                <ul class="stage-slide-b__list">
+                                                    <li>изучить сферу бизнеса и её особенности;</li>
+                                                    <li>проанализировать компанию с точки зрения занимаемой рыночной ниши;</li>
+                                                    <li>выяснить требования к цифровому решению, изучить и дополнить;</li>
+                                                    <li>проанализировать существующее ИТ-решение, если это не разработка с нуля.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="stage-slide-b__item stage-slide-b__item--decor">
+                                                <div class="stage-slide-b__decor-box">
+                                                    <svg class="icon-b icon-b--color-fill stage-slide-b__decor" width="100" height="100">
+                                                        <use xlink:href="images/decor-svg-sprite-b.svg#ring-half"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                    <svg class="icon-b icon-b--color-fill stage-slide-b__decor" width="100" height="100">
+                                                        <use xlink:href="images/decor-svg-sprite-b.svg#leaf-2"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--END .stage-slide-b-->
+                                    <div class="stage-slide-b">
+                                        <div class="stage-slide-b__group">
+                                            <div class="stage-slide-b__item stage-slide-b__item--content">
+                                                <h4 class="stage-slide-b__title">2. Интервьюирование сотрудников&nbsp;компании</h4>
+                                                <div class="stage-slide-b__text">
+                                                    <p>Цель этапа — выяснить максимальное количество информации, которое поможет в дальнейшей работе над проектом.</p>
+                                                    <p>Задачи бизнес-аналитика:</p>
+                                                </div>
+                                                <ul class="stage-slide-b__list">
+                                                    <li>понять, как устроены бизнес-процессы компании;</li>
+                                                    <li>прояснить реальную и предполагаемую целевую аудиторию будущего ИТ-решения;</li>
+                                                    <li>уточнить требования к цифровому решению и выдвинуть свои предложения;</li>
+                                                    <li>выяснить, откуда ИТ-решение будет получать необходимые данные и&nbsp;каким образом они будут обработаны.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="stage-slide-b__item stage-slide-b__item--decor">
+                                                <div class="stage-slide-b__decor-box">
+                                                    <svg class="icon-b icon-b--color-fill stage-slide-b__decor" width="100" height="100">
+                                                        <use xlink:href="images/decor-svg-sprite-b.svg#ring-half"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                    <svg class="icon-b icon-b--color-fill stage-slide-b__decor" width="100" height="100">
+                                                        <use xlink:href="images/decor-svg-sprite-b.svg#leaf-2"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--END .stage-slide-b-->
+                                    <div class="stage-slide-b">
+                                        <div class="stage-slide-b__group">
+                                            <div class="stage-slide-b__item stage-slide-b__item--content">
+                                                <h4 class="stage-slide-b__title">3. Описание бизнес-процессов&nbsp;клиента</h4>
+                                                <div class="stage-slide-b__text">
+                                                    <p>Цель этапа — понять, как встроить ИТ-решение в&nbsp;существующие бизнес-процессы компании.</p>
+                                                    <p>Задачи бизнес-аналитика:</p>
+                                                </div>
+                                                <ul class="stage-slide-b__list">
+                                                    <li>исследовать, как функционируют бизнес-процессы компании, на которые должно повлиять ИТ-решение;</li>
+                                                    <li>предложить оптимизацию этих процессов&nbsp;с помощью разрабатываемого решения;</li>
+                                                    <li>описать, как могут улучшиться бизнес-процессы после внедрения ИТ-решения.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="stage-slide-b__item stage-slide-b__item--decor">
+                                                <div class="stage-slide-b__decor-box">
+                                                    <svg class="icon-b icon-b--color-fill stage-slide-b__decor" width="100" height="100">
+                                                        <use xlink:href="images/decor-svg-sprite-b.svg#ring-half"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                    <svg class="icon-b icon-b--color-fill stage-slide-b__decor" width="100" height="100">
+                                                        <use xlink:href="images/decor-svg-sprite-b.svg#leaf-2"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--END .stage-slide-b-->
+                                    <div class="stage-slide-b">
+                                        <div class="stage-slide-b__group">
+                                            <div class="stage-slide-b__item stage-slide-b__item--content">
+                                                <h4 class="stage-slide-b__title">4. Исследование целевой аудитории</h4>
+                                                <div class="stage-slide-b__text">
+                                                    <p>Цель этапа — исследовать всю полученную информацию от клиента и&nbsp;описать целевую аудиторию.</p>
+                                                    <p>Задачи бизнес-аналитика:</p>
+                                                </div>
+                                                <ul class="stage-slide-b__list">
+                                                    <li>зафиксировать основные сегменты целевой аудитории с указанием их характеристик;</li>
+                                                    <li>выявить потребности сегментов&nbsp;пользователей, их поведенческие характеристики и&nbsp;факторы, влияющие на принятие решения.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="stage-slide-b__item stage-slide-b__item--decor">
+                                                <div class="stage-slide-b__decor-box">
+                                                    <svg class="icon-b icon-b--color-fill stage-slide-b__decor" width="100" height="100">
+                                                        <use xlink:href="images/decor-svg-sprite-b.svg#ring-half"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                    <svg class="icon-b icon-b--color-fill stage-slide-b__decor" width="100" height="100">
+                                                        <use xlink:href="images/decor-svg-sprite-b.svg#leaf-2"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--END .stage-slide-b-->
+                                    <div class="stage-slide-b">
+                                        <div class="stage-slide-b__group">
+                                            <div class="stage-slide-b__item stage-slide-b__item--content">
+                                                <h4 class="stage-slide-b__title">5. Исследование конкурентного окружения</h4>
+                                                <div class="stage-slide-b__text">
+                                                    <p>Цель этапа — изучить конкурентов&nbsp;с аналогичными или похожими ИТ-решениями, чтобы выявить преимущества вашего цифрового продукта.</p>
+                                                    <p>Задачи бизнес-аналитика:</p>
+                                                </div>
+                                                <ul class="stage-slide-b__list">
+                                                    <li>выявить сильные и слабые стороны цифровых решений конкурентов;</li>
+                                                    <li>на основании полученной информации дать рекомендации для развития вашей системы.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="stage-slide-b__item stage-slide-b__item--decor">
+                                                <div class="stage-slide-b__decor-box">
+                                                    <svg class="icon-b icon-b--color-fill stage-slide-b__decor" width="100" height="100">
+                                                        <use xlink:href="images/decor-svg-sprite-b.svg#ring-half"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                    <svg class="icon-b icon-b--color-fill stage-slide-b__decor" width="100" height="100">
+                                                        <use xlink:href="images/decor-svg-sprite-b.svg#leaf-2"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--END .stage-slide-b-->
+                                    <div class="stage-slide-b">
+                                        <div class="stage-slide-b__group">
+                                            <div class="stage-slide-b__item stage-slide-b__item--content">
+                                                <h4 class="stage-slide-b__title">6. Проектирование структуры ИТ-решения</h4>
+                                                <div class="stage-slide-b__text">
+                                                    <p>Цель этапа — на основании проведённого аналитического исследования описать структуру ИТ-решения клиента.</p>
+                                                    <p>Задачи бизнес-аналитика:</p>
+                                                </div>
+                                                <ul class="stage-slide-b__list">
+                                                    <li>спроектировать структуру ИТ-решения, продумать логику работы ядра системы и её интерфейсной части;</li>
+                                                    <li>дать рекомендации по контентному наполнению интерфейсной части решения.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="stage-slide-b__item stage-slide-b__item--decor">
+                                                <div class="stage-slide-b__decor-box">
+                                                    <svg class="icon-b icon-b--color-fill stage-slide-b__decor" width="100" height="100">
+                                                        <use xlink:href="images/decor-svg-sprite-b.svg#ring-half"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                    <svg class="icon-b icon-b--color-fill stage-slide-b__decor" width="100" height="100">
+                                                        <use xlink:href="images/decor-svg-sprite-b.svg#leaf-2"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--END .stage-slide-b-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stages-b__item stages-b__item--system">
+                            <h3 class="stages-b__item-title">Этапы системного анализа</h3>
+                            <div class="stages-b__item-description">
+                                <p>Системный анализ помогает перевести бизнес-требования на язык разработки. Это позволяет снизить затраты на создание нового ИТ-решения или доработку существующего, обеспечить стабильную работу системы, сократить количество ошибок при масштабировании ПО.</p>
+                            </div>
+                            <div class="stages-b__slider-box">
+                                <div class="stages-b__slider js-stages-b-slider">
+                                    <div class="stage-slide-b">
+                                        <div class="stage-slide-b__group">
+                                            <div class="stage-slide-b__item stage-slide-b__item--content">
+                                                <h4 class="stage-slide-b__title">1. Анализ бизнес-задач к ИТ-решению</h4>
+                                                <div class="stage-slide-b__text">
+                                                    <p>Цель этапа — погрузиться в&nbsp;потребности бизнеса.</p>
+                                                    <p>Задачи системного аналитика:</p>
+                                                </div>
+                                                <ul class="stage-slide-b__list">
+                                                    <li>изучить документацию, которую составил бизнес-аналитик;</li>
+                                                    <li>выявить потребности бизнеса клиента;</li>
+                                                    <li>предложить варианты реализации технического решения.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="stage-slide-b__item stage-slide-b__item--decor">
+                                                <div class="stage-slide-b__decor-box">
+                                                    <svg class="icon-b icon-b--color-fill stage-slide-b__decor" width="100" height="100">
+                                                        <use xlink:href="images/decor-svg-sprite-b.svg#star-4"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                    <svg class="icon-b icon-b--color-fill stage-slide-b__decor" width="100" height="100">
+                                                        <use xlink:href="images/decor-svg-sprite-b.svg#quadrant"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--END .stage-slide-b-->
+                                    <div class="stage-slide-b">
+                                        <div class="stage-slide-b__group">
+                                            <div class="stage-slide-b__item stage-slide-b__item--content">
+                                                <h4 class="stage-slide-b__title">2. Описание технических требований к ИТ-решению</h4>
+                                                <div class="stage-slide-b__text">
+                                                    <p>Цель этапа — найти подходящее техническое решение бизнес-задач.</p>
+                                                    <p>Задачи системного аналитика:</p>
+                                                </div>
+                                                <ul class="stage-slide-b__list">
+                                                    <li>выявить функциональные и нефункциональные требования к ИТ-проекту;</li>
+                                                    <li>описать и согласовать технические требования к программному обеспечению;</li>
+                                                    <li>определить приоритизацию требований и&nbsp;спланировать их реализацию.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="stage-slide-b__item stage-slide-b__item--decor">
+                                                <div class="stage-slide-b__decor-box">
+                                                    <svg class="icon-b icon-b--color-fill stage-slide-b__decor" width="100" height="100">
+                                                        <use xlink:href="images/decor-svg-sprite-b.svg#star-4"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                    <svg class="icon-b icon-b--color-fill stage-slide-b__decor" width="100" height="100">
+                                                        <use xlink:href="images/decor-svg-sprite-b.svg#quadrant"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--END .stage-slide-b-->
+                                    <div class="stage-slide-b">
+                                        <div class="stage-slide-b__group">
+                                            <div class="stage-slide-b__item stage-slide-b__item--content">
+                                                <h4 class="stage-slide-b__title">3. Анализ решений и технологий</h4>
+                                                <div class="stage-slide-b__text">
+                                                    <p>Цель этапа — сформировать пул технологических решений, которые будут использоваться при разработке ПО.</p>
+                                                    <p>Задачи системного аналитика:</p>
+                                                </div>
+                                                <ul class="stage-slide-b__list">
+                                                    <li>проанализировать технологии, которые клиент уже использует;</li>
+                                                    <li>проанализировать варианты использования существующих решений, чтобы понять, какие готовые решения можно применить на проекте.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="stage-slide-b__item stage-slide-b__item--decor">
+                                                <div class="stage-slide-b__decor-box">
+                                                    <svg class="icon-b icon-b--color-fill stage-slide-b__decor" width="100" height="100">
+                                                        <use xlink:href="images/decor-svg-sprite-b.svg#star-4"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                    <svg class="icon-b icon-b--color-fill stage-slide-b__decor" width="100" height="100">
+                                                        <use xlink:href="images/decor-svg-sprite-b.svg#quadrant"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--END .stage-slide-b-->
+                                    <div class="stage-slide-b">
+                                        <div class="stage-slide-b__group">
+                                            <div class="stage-slide-b__item stage-slide-b__item--content">
+                                                <h4 class="stage-slide-b__title">4. Описание архитектуры ИТ-решения и&nbsp;структуры баз данных</h4>
+                                                <div class="stage-slide-b__text">
+                                                    <p>Цель этапа — задокументировать архитектуру цифрового решения.</p>
+                                                    <p>Задачи системного аналитика:</p>
+                                                </div>
+                                                <ul class="stage-slide-b__list">
+                                                    <li>описать структуру и логику работы ИТ-решения;</li>
+                                                    <li>описать требования к интеграциям со сторонними системами;</li>
+                                                    <li>описать требования к базам данных.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="stage-slide-b__item stage-slide-b__item--decor">
+                                                <div class="stage-slide-b__decor-box">
+                                                    <svg class="icon-b icon-b--color-fill stage-slide-b__decor" width="100" height="100">
+                                                        <use xlink:href="images/decor-svg-sprite-b.svg#star-4"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                    <svg class="icon-b icon-b--color-fill stage-slide-b__decor" width="100" height="100">
+                                                        <use xlink:href="images/decor-svg-sprite-b.svg#quadrant"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--END .stage-slide-b-->
+                                    <div class="stage-slide-b">
+                                        <div class="stage-slide-b__group">
+                                            <div class="stage-slide-b__item stage-slide-b__item--content">
+                                                <h4 class="stage-slide-b__title">5. Описание рабочих задач для разработчиков</h4>
+                                                <div class="stage-slide-b__text">
+                                                    <p>Цель этапа — сформировать объём работ для команды разработки.</p>
+                                                    <p>Задачи системного аналитика:</p>
+                                                </div>
+                                                <ul class="stage-slide-b__list">
+                                                    <li>описать задачи для frontend- и backend-разработчиков;</li>
+                                                    <li>описать задачи для разработчиков интеграционных модулей;</li>
+                                                    <li>описать задачи для специалистов по&nbsp;работе с&nbsp;базами данных.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="stage-slide-b__item stage-slide-b__item--decor">
+                                                <div class="stage-slide-b__decor-box">
+                                                    <svg class="icon-b icon-b--color-fill stage-slide-b__decor" width="100" height="100">
+                                                        <use xlink:href="images/decor-svg-sprite-b.svg#star-4"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                    <svg class="icon-b icon-b--color-fill stage-slide-b__decor" width="100" height="100">
+                                                        <use xlink:href="images/decor-svg-sprite-b.svg#quadrant"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--END .stage-slide-b-->
+                                    <div class="stage-slide-b">
+                                        <div class="stage-slide-b__group">
+                                            <div class="stage-slide-b__item stage-slide-b__item--content">
+                                                <h4 class="stage-slide-b__title">6. Составление и корректировка спецификации проекта</h4>
+                                                <div class="stage-slide-b__text">
+                                                    <p>Цель этапа — собрать всю информацию в&nbsp;документ, благодаря которому клиент может сразу перейти к разработке ИТ-решения.</p>
+                                                    <p>Задачи системного аналитика:</p>
+                                                </div>
+                                                <ul class="stage-slide-b__list">
+                                                    <li>составить аналитический отчёт по проекту, включающий в&nbsp;себя все необходимые документы, которые сопровождают разработку решения.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="stage-slide-b__item stage-slide-b__item--decor">
+                                                <div class="stage-slide-b__decor-box">
+                                                    <svg class="icon-b icon-b--color-fill stage-slide-b__decor" width="100" height="100">
+                                                        <use xlink:href="images/decor-svg-sprite-b.svg#star-4"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                    <svg class="icon-b icon-b--color-fill stage-slide-b__decor" width="100" height="100">
+                                                        <use xlink:href="images/decor-svg-sprite-b.svg#quadrant"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--END .stage-slide-b-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stages-b__item stages-b__item--seo">
+                            <h3 class="stages-b__item-title">Этапы SEO-анализа сайта</h3>
+                            <div class="stages-b__item-description">
+                                <p>SEO-анализ поможет определить текущую позицию вашего сайта и&nbsp;сайтов&nbsp;конкурентов&nbsp;в поисковой выдаче. Позволит обнаружить проблемные зоны и&nbsp;точки роста в вашем SEO-продвижении.</p>
+                            </div>
+                            <div class="stages-b__slider-box">
+                                <div class="stages-b__slider js-stages-b-slider">
+                                    <div class="stage-slide-b">
+                                        <div class="stage-slide-b__group">
+                                            <div class="stage-slide-b__item stage-slide-b__item--content">
+                                                <h4 class="stage-slide-b__title">1. Аудит</h4>
+                                                <div class="stage-slide-b__text">
+                                                    <p>Цель этапа — найти ошибки, которые мешают сайту ранжироваться в поисковых системах.</p>
+                                                    <p>Задачи SEO-специалиста:</p>
+                                                </div>
+                                                <ul class="stage-slide-b__list">
+                                                    <li>проанализировать сайт на наличие технических и поисковых ошибок;</li>
+                                                    <li>предложить подробный план изменений улучшения сайта для пользователей и&nbsp;поисковых алгоритмов.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="stage-slide-b__item stage-slide-b__item--decor">
+                                                <div class="stage-slide-b__decor-box">
+                                                    <svg class="icon-b icon-b--color-fill stage-slide-b__decor" width="100" height="100">
+                                                        <use xlink:href="images/decor-svg-sprite-b.svg#quadrant-line"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                    <svg class="icon-b icon-b--color-fill stage-slide-b__decor" width="100" height="100">
+                                                        <use xlink:href="images/decor-svg-sprite-b.svg#leaf-double"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--END .stage-slide-b-->
+                                    <div class="stage-slide-b">
+                                        <div class="stage-slide-b__group">
+                                            <div class="stage-slide-b__item stage-slide-b__item--content">
+                                                <h4 class="stage-slide-b__title">2. Анализ конкурентов&nbsp;и спроса</h4>
+                                                <div class="stage-slide-b__text">
+                                                    <p>Цель этапа — провести подробный анализ конкурентов&nbsp;и спроса в поисковых системах.</p>
+                                                    <p>Задачи SEO-специалиста:</p>
+                                                </div>
+                                                <ul class="stage-slide-b__list">
+                                                    <li>исследовать цифровые решения конкурентов&nbsp;с точки зрения поисковой оптимизации и пользовательского опыта;</li>
+                                                    <li>определить стратегию SEO-продвижения конкурентов;</li>
+                                                    <li>подготовить рекомендации по структуре сайта и сгруппировать поисковые запросы постранично; </li>
+                                                    <li>собрать семантическое ядро для ИТ-решения — список слов&nbsp;и фраз, которые будут ранжироваться в поисковых системах.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="stage-slide-b__item stage-slide-b__item--decor">
+                                                <div class="stage-slide-b__decor-box">
+                                                    <svg class="icon-b icon-b--color-fill stage-slide-b__decor" width="100" height="100">
+                                                        <use xlink:href="images/decor-svg-sprite-b.svg#quadrant-line"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                    <svg class="icon-b icon-b--color-fill stage-slide-b__decor" width="100" height="100">
+                                                        <use xlink:href="images/decor-svg-sprite-b.svg#leaf-double"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--END .stage-slide-b-->
+                                    <div class="stage-slide-b">
+                                        <div class="stage-slide-b__group">
+                                            <div class="stage-slide-b__item stage-slide-b__item--content">
+                                                <h4 class="stage-slide-b__title">3. Формирование стратегии продвижения</h4>
+                                                <div class="stage-slide-b__text">
+                                                    <p>Цель этапа — подготовить документ с планом SEO-продвижения сайта.</p>
+                                                    <p>Задачи SEO-специалиста:</p>
+                                                </div>
+                                                <ul class="stage-slide-b__list">
+                                                    <li>сформировать план работ по SEO-продвижению с учётом состояния вашего сайта, сайтов&nbsp;конкурентов&nbsp;и спроса на текущий момент;</li>
+                                                    <li>дать рекомендации по приоритетности внедрения изменений.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="stage-slide-b__item stage-slide-b__item--decor">
+                                                <div class="stage-slide-b__decor-box">
+                                                    <svg class="icon-b icon-b--color-fill stage-slide-b__decor" width="100" height="100">
+                                                        <use xlink:href="images/decor-svg-sprite-b.svg#quadrant-line"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                    <svg class="icon-b icon-b--color-fill stage-slide-b__decor" width="100" height="100">
+                                                        <use xlink:href="images/decor-svg-sprite-b.svg#leaf-double"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--END .stage-slide-b-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--END .stages-b-->
+            <section class="infoblock-b infoblock-b--analytics">
+                <div class="box-b">
+                    <div class="infoblock-b__container">
+                        <h2 class="infoblock-b__title"> Что получает клиент после сотрудничества с нами</h2>
+                        <div class="infoblock-b__media-box">
+                            <div class="mask-image-b mask-image-b--type-analytics infoblock-b__media">
+                                <picture>
+                                    <source srcset="images/mask-images/image-16@585w.webp 1x, images/mask-images/image-16@1170w.webp 2x" media="(min-width: 768px)" type="image/webp">
+                                    <source srcset="images/mask-images/image-16@290w.webp 1x, images/mask-images/image-16@585w.webp 2x" type="image/webp">
+                                    <source srcset="images/mask-images/image-16@585w.jpg 1x, images/mask-images/image-16@1170w.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="images/mask-images/image-16@290w.jpg 1x, images/mask-images/image-16@585w.jpg 2x"><img class="mask-image-b__image" src="images/mask-images/image-16@290w.jpg" alt="">
+                                </picture>
+                                <div class="mask-image-b__decors">
+                                    <svg class="icon-b icon-b--color-fill mask-image-b__decor mask-image-b__decor--1" width="60" height="60">
+                                        <use xlink:href="images/decor-svg-sprite-b.svg#circle"></use>
+                                    </svg>
+                                    <!--END .icon-b-->
+                                    <svg class="icon-b icon-b--color-fill mask-image-b__decor mask-image-b__decor--2" width="60" height="60">
+                                        <use xlink:href="images/decor-svg-sprite-b.svg#quadrant-line"></use>
+                                    </svg>
+                                    <!--END .icon-b-->
+                                    <svg class="icon-b icon-b--color-fill mask-image-b__decor mask-image-b__decor--3" width="60" height="60">
+                                        <use xlink:href="images/decor-svg-sprite-b.svg#quadrant"></use>
+                                    </svg>
+                                    <!--END .icon-b-->
+                                </div>
+                            </div>
+                            <!--END .mask-image-b-->
+                        </div>
+                        <div class="infoblock-b__content">
+                            <div class="infoblock-b__item">
+                                <div class="infoblock-b__item-description">
+                                    <p>Техническое задание, которое включает в&nbsp;себя:</p>
+                                </div>
+                                <ul class="infoblock-b__item-list">
+                                    <li>документ, описывающий бизнес-требования;</li>
+                                    <li>документ, описывающий системные требования;</li>
+                                    <li>предложения по улучшению системы; </li>
+                                    <li>исследования возможностей ИТ-решения; </li>
+                                    <li>описание пользовательских сценариев;</li>
+                                    <li>прототипы интерфейса;</li>
+                                    <li>схему архитектуры;</li>
+                                    <li>бэклог — перечень задач для разработчиков с разбивкой по приоритетам;</li>
+                                    <li>BPMN и/или UML-диаграммы.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--END .box-b-->
+            </section>
+            <!--END .infoblock-b-->
+            <section class="doing-b doing-b--analytics-next">
+                <div class="box-b">
+                    <h2 class="doing-b__title"> Что делать дальше</h2>
+                    <div class="doing-b__description">Вы получаете полный пакет документов на разработку или доработку ИТ-системы. С этим пакетом документации вы можете:</div>
+                    <div class="doing-b__container">
+                        <div class="doing-b__item">
+                            <svg class="icon-b icon-b--color-fill doing-b__item-decor" width="58" height="58">
+                                <use xlink:href="images/decor-svg-sprite-b.svg#triangle"></use>
+                            </svg>
+                            <!--END .icon-b-->
+                            <div class="doing-b__item-description">разработать ИТ-решение в&nbsp;нашей компании;</div>
+                        </div>
+                        <div class="doing-b__item">
+                            <svg class="icon-b icon-b--color-fill doing-b__item-decor" width="58" height="58">
+                                <use xlink:href="images/decor-svg-sprite-b.svg#star-4"></use>
+                            </svg>
+                            <!--END .icon-b-->
+                            <div class="doing-b__item-description">использовать аналитический отчёт для запуска тендера;</div>
+                        </div>
+                        <div class="doing-b__item">
+                            <svg class="icon-b icon-b--color-fill doing-b__item-decor" width="58" height="58">
+                                <use xlink:href="images/decor-svg-sprite-b.svg#quadrant-line"></use>
+                            </svg>
+                            <!--END .icon-b-->
+                            <div class="doing-b__item-description">обратиться в&nbsp;любую компанию разработчиков&nbsp;для дальнейшей реализации;</div>
+                        </div>
+                        <div class="doing-b__item">
+                            <svg class="icon-b icon-b--color-fill doing-b__item-decor" width="58" height="58">
+                                <use xlink:href="images/decor-svg-sprite-b.svg#quadrant"></use>
+                            </svg>
+                            <!--END .icon-b-->
+                            <div class="doing-b__item-description">распределить задачи и&nbsp;отдать в работу нескольким подрядчикам.</div>
+                        </div>
+                    </div>
+                </div>
+                <!--END .box-b-->
+            </section>
+            <!--END .doing-b-->
+            <div class="cases-grid-b cases-grid-b--grid-4-4-3-3">
+                <div class="cases-grid-b__container">
+                    <div class="case-preview-b cases-grid-b__item"><video class="case-preview-b__media-video" autoplay loop muted playsinline>
+                            <source src="images/cases-preview/sci.mp4" type="video/mp4">
+                        </video>
+                        <div class="case-preview-b__container">
+                            <div class="case-preview-b__content">
+                                <h3 class="case-preview-b__name">Социальная сеть для&nbsp;ученых</h3>
+                                <div class="case-preview-b__categories">
+                                    <div class="case-preview-b__categories-grid">
+                                        <div class="case-preview-b__categories-item">Веб</div>
+                                        <div class="case-preview-b__categories-item">Стартапы</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><a class="case-preview-b__button-more" href="#42"><span class="case-preview-b__button-more-text">Подробнее о кейсе</span></a>
+                    </div>
+                    <!--END .case-preview-b-->
+                    <div class="case-preview-b cases-grid-b__item">
+                        <picture class="case-preview-b__media">
+                            <source srcset="images/cases-preview/wes@640w.webp 1x, images/cases-preview/wes@1280w.webp 2x" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="images/cases-preview/wes@320w.webp 1x, images/cases-preview/wes@640w.webp 2x" type="image/webp">
+                            <source srcset="images/cases-preview/wes@640w.jpg 1x, images/cases-preview/wes@1280w.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="images/cases-preview/wes@320w.jpg 1x, images/cases-preview/wes@640w.jpg 2x"><img class="case-preview-b__media-image" src="images/cases-preview/wes@320w.jpg" alt="" loading="lazy">
+                        </picture>
+                        <div class="case-preview-b__container">
+                            <div class="case-preview-b__content">
+                                <h3 class="case-preview-b__name">Сервис для&nbsp;изучения английского языка</h3>
+                                <div class="case-preview-b__categories">
+                                    <div class="case-preview-b__categories-grid">
+                                        <div class="case-preview-b__categories-item">Веб</div>
+                                        <div class="case-preview-b__categories-item">Стартапы</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><a class="case-preview-b__button-more" href="#42"><span class="case-preview-b__button-more-text">Подробнее о кейсе</span></a>
+                    </div>
+                    <!--END .case-preview-b-->
+                    <div class="case-preview-b cases-grid-b__item"><video class="case-preview-b__media-video" autoplay loop muted playsinline>
+                            <source src="images/cases-preview/light.mp4" type="video/mp4">
+                        </video>
+                        <div class="case-preview-b__container">
+                            <div class="case-preview-b__content">
+                                <h3 class="case-preview-b__name">Интернет-каталог светодиодной техники</h3>
+                                <div class="case-preview-b__categories">
+                                    <div class="case-preview-b__categories-grid">
+                                        <div class="case-preview-b__categories-item">Веб</div>
+                                        <div class="case-preview-b__categories-item">Стартапы</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><a class="case-preview-b__button-more" href="#42"><span class="case-preview-b__button-more-text">Подробнее о кейсе</span></a>
+                    </div>
+                    <!--END .case-preview-b-->
+                    <div class="case-preview-b cases-grid-b__item">
+                        <picture class="case-preview-b__media">
+                            <source srcset="images/cases-preview/corner@640w.webp 1x, images/cases-preview/corner@1280w.webp 2x" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="images/cases-preview/corner@320w.webp 1x, images/cases-preview/corner@640w.webp 2x" type="image/webp">
+                            <source srcset="images/cases-preview/corner@640w.jpg 1x, images/cases-preview/corner@1280w.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="images/cases-preview/corner@320w.jpg 1x, images/cases-preview/corner@640w.jpg 2x"><img class="case-preview-b__media-image" src="images/cases-preview/corner@320w.jpg" alt="" loading="lazy">
+                        </picture>
+                        <div class="case-preview-b__container">
+                            <div class="case-preview-b__content">
+                                <h3 class="case-preview-b__name">Конфигуратор частных домов</h3>
+                                <div class="case-preview-b__categories">
+                                    <div class="case-preview-b__categories-grid">
+                                        <div class="case-preview-b__categories-item">Веб</div>
+                                        <div class="case-preview-b__categories-item">Стартапы</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><a class="case-preview-b__button-more" href="#42"><span class="case-preview-b__button-more-text">Подробнее о кейсе</span></a>
+                    </div>
+                    <!--END .case-preview-b-->
+                </div>
+            </div>
+            <!--END .cases-grid-b-->
+            <section class="in-touch-b">
+                <div class="box-b">
+                    <div class="in-touch-b__container">
+                        <header class="in-touch-b__header">
+                            <div class="in-touch-b__decors">
+                                <svg class="icon-b icon-b--color-fill in-touch-b__decor in-touch-b__decor--1" width="44" height="44">
+                                    <use xlink:href="images/decor-svg-sprite-b.svg#circle"></use>
+                                </svg>
+                                <!--END .icon-b-->
+                                <svg class="icon-b icon-b--color-fill in-touch-b__decor in-touch-b__decor--2" width="44" height="44">
+                                    <use xlink:href="images/decor-svg-sprite-b.svg#quadrant"></use>
+                                </svg>
+                                <!--END .icon-b-->
+                                <svg class="icon-b icon-b--color-fill in-touch-b__decor in-touch-b__decor--3" width="44" height="44">
+                                    <use xlink:href="images/decor-svg-sprite-b.svg#star-4"></use>
+                                </svg>
+                                <!--END .icon-b-->
+                                <svg class="icon-b icon-b--color-fill in-touch-b__decor in-touch-b__decor--4" width="44" height="44">
+                                    <use xlink:href="images/decor-svg-sprite-b.svg#quadrant-line"></use>
+                                </svg>
+                                <!--END .icon-b-->
+                            </div>
+                            <h2 class="in-touch-b__title">Оставьте заявку</h2>
+                            <h3 class="in-touch-b__subtitle">Расскажите о&nbsp;проекте&nbsp;&mdash; мы&nbsp;его реализуем</h3>
+                            <div class="in-touch-b__description">Мы свяжемся с вами в течение 4 часов: обсудим цели проекта, требования к нему и составим план сотрудничества.</div>
+                        </header>
+                        <div class="in-touch-b__form">
+                            <form class="form-contacts-b">
+                                <div class="form-contacts-b__grid">
+                                    <div class="form-contacts-b__item form-contacts-b__item--name">
+                                        <div class="form-control-b">
+                                            <label class="form-control-b__label" for="name">Имя</label>
+                                            <div class="form-control-b__body">
+                                                <input class="ctrl-textfield-b js-textfield form-control-b__field" type="text" id="name" placeholder="Имя">
+                                                <!--END .ctrl-textfield-b-->
+                                            </div>
+                                        </div>
+                                        <!--END .form-control-b-->
+                                    </div>
+                                    <div class="form-contacts-b__item form-contacts-b__item--tel">
+                                        <div class="form-control-b">
+                                            <label class="form-control-b__label" for="tel">Телефон</label>
+                                            <div class="form-control-b__body">
+                                                <input class="ctrl-textfield-b js-textfield form-control-b__field" type="tel" id="tel" placeholder="Телефон">
+                                                <!--END .ctrl-textfield-b-->
+                                            </div>
+                                            <div class="form-control-b__note">Не обязательно</div>
+                                        </div>
+                                        <!--END .form-control-b-->
+                                    </div>
+                                    <div class="form-contacts-b__item">
+                                        <div class="form-control-b has-error">
+                                            <label class="form-control-b__label" for="email">Email</label>
+                                            <div class="form-control-b__body">
+                                                <input class="ctrl-textfield-b js-textfield form-control-b__field" type="email" id="email" placeholder="Email">
+                                                <!--END .ctrl-textfield-b-->
+                                            </div>
+                                            <div class="form-control-b__validation">Helper text</div>
+                                        </div>
+                                        <!--END .form-control-b-->
+                                    </div>
+                                    <div class="form-contacts-b__item">
+                                        <div class="form-control-b">
+                                            <label class="form-control-b__label" for="message">Расскажите о проекте</label>
+                                            <div class="form-control-b__body">
+                                                <textarea class="ctrl-textfield-b js-textfield ctrl-textfield-b--textarea js-textarea form-control-b__field" id="message" placeholder="Расскажите о проекте"></textarea>
+                                                <!--END .ctrl-textfield-b-->
+                                            </div>
+                                        </div>
+                                        <!--END .form-control-b-->
+                                    </div>
+                                    <div class="form-contacts-b__item form-contacts-b__item--attach">
+                                        <div class="attached-b">
+                                            <div class="attached-b__group">
+                                                <div class="attached-file-b attached-b__item">
+                                                    <span class="attached-file-b__name">file_01.jpeg</span>
+                                                    <button class="ctrl-button-b ctrl-button-b--icon-only attached-file-b__button-remove" type="button">
+                                                        <svg class="icon-b icon-b--color-fill ctrl-button-b__icon" width="24" height="24">
+                                                            <use xlink:href="images/svg-sprite-b.svg#close"></use>
+                                                        </svg>
+                                                        <!--END .icon-b-->
+                                                        <span class="ctrl-button-b__text-box"><span class="ctrl-button-b__text">Удалить файл</span><span class="ctrl-button-b__text ctrl-button-b__text--duplicated">Удалить файл</span></span>
+                                                    </button>
+                                                    <!--END .ctrl-button-b-->
+                                                </div>
+                                                <!--END .attached-file-b-->
+                                                <div class="attached-file-b attached-b__item">
+                                                    <span class="attached-file-b__name">file_02.jpeg</span>
+                                                    <button class="ctrl-button-b ctrl-button-b--icon-only attached-file-b__button-remove" type="button">
+                                                        <svg class="icon-b icon-b--color-fill ctrl-button-b__icon" width="24" height="24">
+                                                            <use xlink:href="images/svg-sprite-b.svg#close"></use>
+                                                        </svg>
+                                                        <!--END .icon-b-->
+                                                        <span class="ctrl-button-b__text-box"><span class="ctrl-button-b__text">Удалить файл</span><span class="ctrl-button-b__text ctrl-button-b__text--duplicated">Удалить файл</span></span>
+                                                    </button>
+                                                    <!--END .ctrl-button-b-->
+                                                </div>
+                                                <!--END .attached-file-b-->
+                                                <div class="attached-file-b attached-b__item">
+                                                    <span class="attached-file-b__name">ultralongnamefileultralongnamefileultralongnamefileultralongnamefileultralongnamefileultralongnamefileultralongnamefileultralongnamefile.pdf</span>
+                                                    <button class="ctrl-button-b ctrl-button-b--icon-only attached-file-b__button-remove" type="button">
+                                                        <svg class="icon-b icon-b--color-fill ctrl-button-b__icon" width="24" height="24">
+                                                            <use xlink:href="images/svg-sprite-b.svg#close"></use>
+                                                        </svg>
+                                                        <!--END .icon-b-->
+                                                        <span class="ctrl-button-b__text-box"><span class="ctrl-button-b__text">Удалить файл</span><span class="ctrl-button-b__text ctrl-button-b__text--duplicated">Удалить файл</span></span>
+                                                    </button>
+                                                    <!--END .ctrl-button-b-->
+                                                </div>
+                                                <!--END .attached-file-b-->
+                                                <div class="attached-file-b attached-b__item">
+                                                    <span class="attached-file-b__name">file_04.txt</span>
+                                                    <button class="ctrl-button-b ctrl-button-b--icon-only attached-file-b__button-remove" type="button">
+                                                        <svg class="icon-b icon-b--color-fill ctrl-button-b__icon" width="24" height="24">
+                                                            <use xlink:href="images/svg-sprite-b.svg#close"></use>
+                                                        </svg>
+                                                        <!--END .icon-b-->
+                                                        <span class="ctrl-button-b__text-box"><span class="ctrl-button-b__text">Удалить файл</span><span class="ctrl-button-b__text ctrl-button-b__text--duplicated">Удалить файл</span></span>
+                                                    </button>
+                                                    <!--END .ctrl-button-b-->
+                                                </div>
+                                                <!--END .attached-file-b-->
+                                            </div>
+                                        </div>
+                                        <!--END .attached-b-->
+                                    </div>
+                                    <div class="form-contacts-b__item form-contacts-b__item--attach">
+                                        <div class="ctrl-attach-b">
+                                            <label class="ctrl-attach-b__body"><span class="ctrl-attach-b__text">
+                                                    <svg class="icon-b icon-b--color-fill ctrl-attach-b__icon" width="24" height="24">
+                                                        <use xlink:href="images/svg-sprite-b.svg#attach"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                    <span class="ctrl-attach-b__label">Прикрепить файл</span>
+                                                </span><span class="ctrl-attach-b__text ctrl-attach-b__text--duplicated">
+                                                    <svg class="icon-b icon-b--color-fill ctrl-attach-b__icon" width="24" height="24">
+                                                        <use xlink:href="images/svg-sprite-b.svg#attach"></use>
+                                                    </svg>
+                                                    <!--END .icon-b-->
+                                                    <span class="ctrl-attach-b__label">Прикрепить файл</span>
+                                                </span>
+                                                <input class="ctrl-attach-b__field" type="file"></label>
+                                            <div class="ctrl-attach-b__validation">Helper text</div>
+                                        </div>
+                                        <!--END .ctrl-attach-b-->
+                                    </div>
+                                    <div class="form-contacts-b__item form-contacts-b__item--check">
+                                        <label class="ctrl-check-b ctrl-check-b--checkbox">
+                                            <input class="ctrl-check-b__field" type="checkbox" checked>
+                                            <span class="ctrl-check-b__visual"></span>
+                                            <span class="ctrl-check-b__label">Я даю <a href="#42">согласие на обработку персональныx данных</a></span>
+                                        </label>
+                                        <!--END .ctrl-check-b-->
+                                    </div>
+                                    <div class="form-contacts-b__item form-contacts-b__item--check">
+                                        <label class="ctrl-check-b ctrl-check-b--checkbox">
+                                            <input class="ctrl-check-b__field" type="checkbox">
+                                            <span class="ctrl-check-b__visual"></span>
+                                            <span class="ctrl-check-b__label">Я даю <a href="#42">согласие на получение рассылки</a></span>
+                                        </label>
+                                        <!--END .ctrl-check-b-->
+                                    </div>
+                                    <div class="form-contacts-b__item form-contacts-b__item--actions">
+                                        <button class="ctrl-button-b form-contacts-b__button-submit" type="submit">
+                                            <span class="ctrl-button-b__text-box"><span class="ctrl-button-b__text">Оставить заявку</span><span class="ctrl-button-b__text ctrl-button-b__text--duplicated">Оставить заявку</span></span>
+                                        </button>
+                                        <!--END .ctrl-button-b-->
+                                    </div>
+                                    <div class="form-contacts-b__item form-contacts-b__item--captcha">
+                                        <div class="form-contacts-b__captcha">Защита от спама reCAPTCHA <a href="#42">Конфиденциальность</a> и <a href="#42">Условия использования</a></div>
+                                    </div>
+                                </div>
+                            </form>
+                            <!--END .form-contacts-b-->
+                            <div class="form-message-b is-hidden form-message-b--success">
+                                <!--.is-hidden-->
+                                <div class="form-message-b__container">
+                                    <div class="form-message-b__decor">
+                                        <svg class="icon-b icon-b--color-fill form-message-b__icon" width="89" height="89">
+                                            <use xlink:href="images/decor-svg-sprite-b.svg#check-fill"></use>
+                                        </svg>
+                                        <!--END .icon-b-->
+                                    </div>
+                                    <h3 class="form-message-b__title">Спасибо! <br>Ваша заявка принята!</h3>
+                                    <div class="form-message-b__description">
+                                        <p>После обработки с Вами свяжется наш менеджер</p>
+                                    </div>
+                                    <div class="form-message-b__actions">
+                                        <button class="ctrl-button-b form-message-b__button-more" type="button">
+                                            <span class="ctrl-button-b__text-box"><span class="ctrl-button-b__text">Понятно</span><span class="ctrl-button-b__text ctrl-button-b__text--duplicated">Понятно</span></span>
+                                        </button>
+                                        <!--END .ctrl-button-b-->
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END .form-message-b-->
+                            <div class="form-message-b is-hidden form-message-b--fail">
+                                <!--.is-hidden-->
+                                <div class="form-message-b__container">
+                                    <div class="form-message-b__decor">
+                                        <svg class="icon-b icon-b--color-fill form-message-b__icon" width="89" height="89">
+                                            <use xlink:href="images/decor-svg-sprite-b.svg#cross-fill"></use>
+                                        </svg>
+                                        <!--END .icon-b-->
+                                    </div>
+                                    <h3 class="form-message-b__title">Что-то пошло не&nbsp;так!</h3>
+                                    <div class="form-message-b__description">
+                                        <p>Попробуйте отправить заявку еще раз</p>
+                                    </div>
+                                    <div class="form-message-b__actions">
+                                        <button class="ctrl-button-b form-message-b__button-more" type="button">
+                                            <span class="ctrl-button-b__text-box"><span class="ctrl-button-b__text">Хорошо</span><span class="ctrl-button-b__text ctrl-button-b__text--duplicated">Хорошо</span></span>
+                                        </button>
+                                        <!--END .ctrl-button-b-->
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END .form-message-b-->
+                        </div>
+                        <footer class="in-touch-b__nav">
+                            <div class="in-touch-b__nav-part"><a class="in-touch-b__link" href="#42">+7 (495) 640-45-00</a></div>
+                            <div class="in-touch-b__nav-part"><a class="in-touch-b__link" href="#42">+7 (960) 449-73-86</a>
+                                <div class="social-b in-touch-b__social">
+                                    <a class="ctrl-button-b ctrl-button-b--icon-only social-b__item" href="#42" target="_blank" rel="noopener noreferrer">
+                                        <svg class="icon-b icon-b--color-fill ctrl-button-b__icon" width="24" height="24">
+                                            <use xlink:href="images/social-svg-sprite-b.svg#telegram"></use>
+                                        </svg>
+                                        <!--END .icon-b-->
+                                        <svg class="icon-b icon-b--color-fill ctrl-button-b__icon ctrl-button-b__icon--duplicated" width="24" height="24">
+                                            <use xlink:href="images/social-svg-sprite-b.svg#telegram"></use>
+                                        </svg>
+                                        <!--END .icon-b-->
+                                        <span class="ctrl-button-b__text-box"><span class="ctrl-button-b__text">Написать в Telegram</span><span class="ctrl-button-b__text ctrl-button-b__text--duplicated">Написать в Telegram</span></span>
+                                    </a>
+                                    <!--END .ctrl-button-b-->
+                                    <a class="ctrl-button-b ctrl-button-b--icon-only social-b__item" href="#42" target="_blank" rel="noopener noreferrer">
+                                        <svg class="icon-b icon-b--color-fill ctrl-button-b__icon" width="24" height="24">
+                                            <use xlink:href="images/social-svg-sprite-b.svg#whatsapp"></use>
+                                        </svg>
+                                        <!--END .icon-b-->
+                                        <svg class="icon-b icon-b--color-fill ctrl-button-b__icon ctrl-button-b__icon--duplicated" width="24" height="24">
+                                            <use xlink:href="images/social-svg-sprite-b.svg#whatsapp"></use>
+                                        </svg>
+                                        <!--END .icon-b-->
+                                        <span class="ctrl-button-b__text-box"><span class="ctrl-button-b__text">Написать в WhatsApp</span><span class="ctrl-button-b__text ctrl-button-b__text--duplicated">Написать в WhatsApp</span></span>
+                                    </a>
+                                    <!--END .ctrl-button-b-->
+                                </div>
+                                <!--END .social-b-->
+                            </div>
+                            <div class="in-touch-b__nav-part"><a class="in-touch-b__link" href="#42">welcome@inostudio.com</a></div>
+                        </footer>
+                    </div>
+                </div>
+                <!--END .box-b-->
+            </section>
+            <!--END .in-touch-b-->
+        </main>
+        <footer class="footer-b">
+            <div class="box-b">
+                <div class="footer-b__container">
+                    <div class="social-b footer-b__social">
+                        <a class="ctrl-button-b ctrl-button-b--icon-only social-b__item" href="#42" target="_blank" rel="noopener noreferrer">
+                            <svg class="icon-b icon-b--color-fill ctrl-button-b__icon" width="24" height="24">
+                                <use xlink:href="images/social-svg-sprite-b.svg#instagram"></use>
+                            </svg>
+                            <!--END .icon-b-->
+                            <svg class="icon-b icon-b--color-fill ctrl-button-b__icon ctrl-button-b__icon--duplicated" width="24" height="24">
+                                <use xlink:href="images/social-svg-sprite-b.svg#instagram"></use>
+                            </svg>
+                            <!--END .icon-b-->
+                            <span class="ctrl-button-b__text-box"><span class="ctrl-button-b__text">INOSTUDIO в Instagram</span><span class="ctrl-button-b__text ctrl-button-b__text--duplicated">INOSTUDIO в Instagram</span></span>
+                        </a>
+                        <!--END .ctrl-button-b-->
+                        <a class="ctrl-button-b ctrl-button-b--icon-only social-b__item" href="#42" target="_blank" rel="noopener noreferrer">
+                            <svg class="icon-b icon-b--color-fill ctrl-button-b__icon" width="24" height="24">
+                                <use xlink:href="images/social-svg-sprite-b.svg#vk"></use>
+                            </svg>
+                            <!--END .icon-b-->
+                            <svg class="icon-b icon-b--color-fill ctrl-button-b__icon ctrl-button-b__icon--duplicated" width="24" height="24">
+                                <use xlink:href="images/social-svg-sprite-b.svg#vk"></use>
+                            </svg>
+                            <!--END .icon-b-->
+                            <span class="ctrl-button-b__text-box"><span class="ctrl-button-b__text">INOSTUDIO Вконтакте</span><span class="ctrl-button-b__text ctrl-button-b__text--duplicated">INOSTUDIO Вконтакте</span></span>
+                        </a>
+                        <!--END .ctrl-button-b-->
+                        <a class="ctrl-button-b ctrl-button-b--icon-only social-b__item" href="#42" target="_blank" rel="noopener noreferrer">
+                            <svg class="icon-b icon-b--color-fill ctrl-button-b__icon" width="24" height="24">
+                                <use xlink:href="images/social-svg-sprite-b.svg#facebook"></use>
+                            </svg>
+                            <!--END .icon-b-->
+                            <svg class="icon-b icon-b--color-fill ctrl-button-b__icon ctrl-button-b__icon--duplicated" width="24" height="24">
+                                <use xlink:href="images/social-svg-sprite-b.svg#facebook"></use>
+                            </svg>
+                            <!--END .icon-b-->
+                            <span class="ctrl-button-b__text-box"><span class="ctrl-button-b__text">INOSTUDIO на Facebook</span><span class="ctrl-button-b__text ctrl-button-b__text--duplicated">INOSTUDIO на Facebook</span></span>
+                        </a>
+                        <!--END .ctrl-button-b-->
+                        <a class="ctrl-button-b ctrl-button-b--icon-only social-b__item" href="#42" target="_blank" rel="noopener noreferrer">
+                            <svg class="icon-b icon-b--color-fill ctrl-button-b__icon" width="24" height="24">
+                                <use xlink:href="images/social-svg-sprite-b.svg#behance"></use>
+                            </svg>
+                            <!--END .icon-b-->
+                            <svg class="icon-b icon-b--color-fill ctrl-button-b__icon ctrl-button-b__icon--duplicated" width="24" height="24">
+                                <use xlink:href="images/social-svg-sprite-b.svg#behance"></use>
+                            </svg>
+                            <!--END .icon-b-->
+                            <span class="ctrl-button-b__text-box"><span class="ctrl-button-b__text">INOSTUDIO на Behance</span><span class="ctrl-button-b__text ctrl-button-b__text--duplicated">INOSTUDIO на Behance</span></span>
+                        </a>
+                        <!--END .ctrl-button-b-->
+                        <a class="ctrl-button-b ctrl-button-b--icon-only social-b__item" href="#42" target="_blank" rel="noopener noreferrer">
+                            <svg class="icon-b icon-b--color-fill ctrl-button-b__icon" width="24" height="24">
+                                <use xlink:href="images/social-svg-sprite-b.svg#dribbble"></use>
+                            </svg>
+                            <!--END .icon-b-->
+                            <svg class="icon-b icon-b--color-fill ctrl-button-b__icon ctrl-button-b__icon--duplicated" width="24" height="24">
+                                <use xlink:href="images/social-svg-sprite-b.svg#dribbble"></use>
+                            </svg>
+                            <!--END .icon-b-->
+                            <span class="ctrl-button-b__text-box"><span class="ctrl-button-b__text">INOSTUDIO на Dribbble</span><span class="ctrl-button-b__text ctrl-button-b__text--duplicated">INOSTUDIO на Dribbble</span></span>
+                        </a>
+                        <!--END .ctrl-button-b-->
+                    </div>
+                    <!--END .social-b-->
+                    <div class="footer-b__links">
+                        <div class="footer-b__links-item"><a class="footer-b__link" href="#42">Соглашение об использовании сайта</a></div>
+                        <div class="footer-b__links-item"><a class="footer-b__link" href="#42">Политика обработки персональных данных</a></div>
+                    </div>
+                    <div class="footer-b__copy">
+                        <p>&copy; 2021 Все права защищены. INOSTUDIO</p>
+                    </div>
+                </div>
+            </div>
+            <!--END .box-->
+        </footer>
+        <!--END .footer-b-->
+        <div class="cookies-b">
+            <div class="box-b">
+                <div class="cookies-b__container">
+                    <div class="cookies-b__text">Этот сайт использует файлы cookies. Оставаясь на&nbsp;сайте, вы соглашаетесь с&nbsp;использованием файлов cookies и&nbsp;принимаете <a class="cookies-b__link" href="#42" target="_blank">Соглашение об&nbsp;использовании сайта</a></div>
+                    <button class="ctrl-button-b ctrl-button-b--icon-only cookies-b__button-close" type="button">
+                        <svg class="icon-b icon-b--color-fill ctrl-button-b__icon" width="24" height="24">
+                            <use xlink:href="images/svg-sprite-b.svg#close"></use>
+                        </svg>
+                        <!--END .icon-b-->
+                        <span class="ctrl-button-b__text-box"><span class="ctrl-button-b__text">Закрыть</span><span class="ctrl-button-b__text ctrl-button-b__text--duplicated">Закрыть</span></span>
+                    </button>
+                    <!--END .ctrl-button-b-->
+                </div>
+            </div>
+            <!--END .box-b-->
+        </div>
+        <!--END .cookies-b-->
+        <div class="scroll-b">
+            <div class="scroll-b__actions">
+                <button class="ctrl-button-b ctrl-button-b--icon-only scroll-b__button scroll-b__button--up is-hidden" type="button">
+                    <svg class="icon-b icon-b--color-fill ctrl-button-b__icon" width="24" height="24">
+                        <use xlink:href="images/svg-sprite-b.svg#to-top"></use>
+                    </svg>
+                    <!--END .icon-b-->
+                    <span class="ctrl-button-b__text-box"><span class="ctrl-button-b__text">На верх</span><span class="ctrl-button-b__text ctrl-button-b__text--duplicated">На верх</span></span>
+                </button>
+                <!--END .ctrl-button-b-->
+            </div>
+        </div>
+        <!--END .scroll-b-->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/modernizr/modernizr-custom.js"></script>
+    <script src="scripts/autosize/autosize.min.js"></script>
+    <script src="scripts/svg4everybody/svg4everybody.min.js"></script>
+    <script src="scripts/slick/slick.min.js"></script>
+    <script src="scripts/common-b.js"></script>
+</body>
+
+</html>
