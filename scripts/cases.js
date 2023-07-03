@@ -192,10 +192,41 @@ $(document).ready(function(){
         const swiper = new Swiper('.js-product-slider', {
             spaceBetween: 20,
             slidesPerView: 1,
-            mousewheel: true,
+            mousewheel: false,
+            preloadImages: true,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+            },            
             breakpoints: {
                 769: {
+                    spaceBetween: 60,
+                },
+                1400: {
                     spaceBetween: 80,
+                },
+            },
+        });
+    }
+
+    if( $('.product-slider--biodive .swiper').length ) {
+        const swiper1 = new Swiper('.product-slider--biodive .swiper', {
+            spaceBetween: 20,
+            slidesPerView: 1,
+            mousewheel: false,
+            preloadImages: true,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+            },            
+            breakpoints: {
+                769: {
+                    spaceBetween: 30,
+                },
+                1400: {
+                    spaceBetween: 30,
                 },
             },
         });
@@ -207,7 +238,7 @@ $(document).ready(function(){
         $(window).scroll(function () {
             var $sections = $('.js-media-autoplay');
             $sections.each(function (i, el) {
-                var top = $(el).offset().top - 500;
+                var top = $(el).offset().top - 300;
                 var bottom = top + $(el).height();
                 var scroll = $(window).scrollTop();
 
@@ -218,6 +249,40 @@ $(document).ready(function(){
                 }
             })
         });
+    }
+
+    if( $('.js-media-side-autoplay').length ) {
+        
+        $(window).scroll(function () {
+            var $sections = $('.js-media-side-autoplay');            
+
+            $sections.each(function (i, el) {
+                var top = $(el).offset().top - 500;
+                var bottom = top + $(el).height();
+                var scroll = $(window).scrollTop();
+
+                $('video', this).get(0).stop();
+
+                if (scroll > top && scroll < bottom) {
+                    $('video', this).get(0).play();
+                }
+            })
+        });
+    }
+
+    if( $('.js-panzoom').length ) {
+
+        const elem = document.getElementById('panzoom-element')
+
+        const panzoom = Panzoom(elem, {
+            maxScale: 1.35,
+            minScale: 1,
+            contain: 'outside',
+            startScale: 1.35,       
+            cursor: 'move', 
+            startX: '-50',
+            startY: '200',
+        })       
     }
 
 });
@@ -243,5 +308,74 @@ $(window).on("load", function(){
                 });
             });
         });
+    }
+
+    if( $('.product--dar .product-cards__item').length && $('html').hasClass('no-touchevents')) {
+
+        var tweenDesign = TweenMax.from('.product-cards__item--design', 1, {width:"100%"});
+        var tweenSelection = TweenMax.from('.product-cards__item--selection', 1, {width:"100%"});
+        var tweenChecking = TweenMax.from('.product-cards__item--checking', 1, {width:"100%"});
+
+        var controller = new ScrollMagic.Controller();
+
+        var scene = new ScrollMagic.Scene({
+            triggerElement: '.product-info--tasks',
+            offset: 100,
+            duration: 300,
+        }).setTween(tweenDesign)
+        .setClassToggle(".product-cards__item", "is-visible");
+
+        var scene2 = new ScrollMagic.Scene({
+            triggerElement: '.product-cards__item--selection',
+            offset: 1,
+            duration: 200,
+        }).setTween(tweenSelection)
+        .setClassToggle(".product-cards__item", "is-visible");
+
+        var scene3 = new ScrollMagic.Scene({
+            triggerElement: '.product-cards__item--checking',
+            offset: 1,
+            duration: 200,
+        }).setTween(tweenChecking)
+        .setClassToggle(".product-cards__item", "is-visible");
+
+        controller.addScene([scene, scene2, scene3]);
+    }
+
+    if ($('.js-plans').length) {
+
+        var $plans = $('.js-plans');
+
+        function slickStart() {
+
+            $plans.slick({
+                centerMode: true,
+                variableWidth: true,
+                arrows: false,
+                dots: true,
+                infinite: false,
+                slide: '.plan-benefits--normal',
+            });
+        }
+
+        if (( $(window).width() < 768 ) && $plans.not('.slick-initialized')) {
+            slickStart();
+        }
+
+        $(window).resize(function () {
+
+            setTimeout(function () {
+                var smallscreen = ( $(window).width() < 768 )
+                var slickInit = $plans.hasClass("slick-initialized");
+
+                if (!smallscreen && slickInit) {
+                    $plans.slick("unslick");
+                }
+
+                if (smallscreen && !slickInit) {
+                    slickStart();
+                }
+            }, 100);
+        })
     }
 });
