@@ -820,8 +820,8 @@ button[disabled] {
 .product-quote__content span {
             color: #4AABE2;
             font-size: 26px;
-            opacity: .4;
-            display: none
+            opacity: 0;
+            position: absolute
         }
 
 .product-quote__mark {
@@ -2495,7 +2495,8 @@ button[disabled] {
     }
 
         .product-quote__content span {
-                display: inline
+                opacity: .4;
+                position: static
         }
 
     .product-quote__mark {
@@ -2988,11 +2989,8 @@ button[disabled] {
         }
 
     .product-cards__group {
-            margin-top: 40px;   
-            -webkit-box-orient: vertical;   
-            -webkit-box-direction: normal;   
-                -ms-flex-direction: column;   
-                    flex-direction: column
+            margin-top: 60px;   
+            display: block
     }
 
     .product-cards__item {     
