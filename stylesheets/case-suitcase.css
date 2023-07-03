@@ -2496,6 +2496,7 @@ button[disabled] {
 
         .product-quote__content span {
                 opacity: .4;
+                display: inline-block;
                 position: static
         }
 
