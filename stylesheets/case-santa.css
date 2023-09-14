@@ -3516,14 +3516,12 @@ button[disabled] {
 
         .product--santa .product-stores {
                 padding-top: 60px;
-                padding-bottom: 80px;
-                background-size: 240% auto;
-                background-position: 31% 100%
+                padding-bottom: 80px
         }
 
             .product--santa .product-stores:before {
                     height: 70px;
-                    background-position: 50% 2px
+                    background-position: 50% 4px
             }
 
             .product--santa .product-stores__item {
@@ -3853,7 +3851,7 @@ button[disabled] {
     .product-review--developer {
             padding-top: 750px;
             margin-top: -720px;
-            background-position: 45% 0
+            background-position: 45% 13px
     }
 
         .product-review--developer .product-review__decor {
