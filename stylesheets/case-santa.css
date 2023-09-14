@@ -3522,7 +3522,8 @@ button[disabled] {
         }
 
             .product--santa .product-stores:before {
-                    height: 70px
+                    height: 70px;
+                    background-position: 50% 2px
             }
 
             .product--santa .product-stores__item {
