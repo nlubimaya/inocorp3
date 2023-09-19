@@ -505,8 +505,8 @@ button[disabled] {
                 content: "";
                 background-image: url(../images/cases/case-santa/decor-1.svg);
                 background-repeat: no-repeat;
-                background-position: 50% 100%;
-                background-size: 100% auto;
+                background-position: 50% 102%;
+                background-size: cover;
                 position: absolute;
                 bottom: -2px;
                 left: 0;
@@ -2851,8 +2851,7 @@ button[disabled] {
     }
 
             .product--santa .product-stores:before {
-                    height: 126px;
-                    background-size: cover
+                    height: 126px
             }
 
 .product-header {
@@ -3128,10 +3127,6 @@ button[disabled] {
                 .product--santa .product-tags__item:first-child {
                         margin-left: 0
                 }
-
-            .product--santa .product-stores:before {
-                    background-position: 0 101%
-            }
 
             .product--santa .product-tech__subtitle {
                     font-size: 22px
@@ -3521,7 +3516,7 @@ button[disabled] {
 
             .product--santa .product-stores:before {
                     height: 70px;
-                    background-position: 50% 4px
+                    background-position: 11% 4px
             }
 
             .product--santa .product-stores__item {
@@ -4649,6 +4644,36 @@ button[disabled] {
                 )
         }
 
+        .projects-nav__bg--santa {
+                background-image: url('../images/cases/case-santa/project-nav_mobile.jpg');
+                background-image: 
+                    url('../images/cases/case-santa/project-nav_mobile.jpg')
+        }
+
+        .projects-nav__bg--santa {
+                background-image: -webkit-image-set(
+                    url('../images/cases/case-santa/project-nav_mobile.jpg') 1x, url('../images/cases/case-santa/project-nav_mobile.jpg') 2x
+                );
+                background-image: image-set(
+                    url('../images/cases/case-santa/project-nav_mobile.jpg') 1x, url('../images/cases/case-santa/project-nav_mobile.jpg') 2x
+                )
+        }
+
+        .projects-nav__bg--zetta {
+                background-image: url('../images/cases/case-zetta/project-nav_mobile.jpg');
+                background-image: 
+                    url('../images/cases/case-zetta/project-nav_mobile.jpg')
+        }
+
+        .projects-nav__bg--zetta {
+                background-image: -webkit-image-set(
+                    url('../images/cases/case-zetta/project-nav_mobile.jpg') 1x, url('../images/cases/case-zetta/project-nav_mobile.jpg') 2x
+                );
+                background-image: image-set(
+                    url('../images/cases/case-zetta/project-nav_mobile.jpg') 1x, url('../images/cases/case-zetta/project-nav_mobile.jpg') 2x
+                )
+        }
+
     .projects-nav__name {
             display: none
     }
@@ -4901,5 +4926,13 @@ button[disabled] {
 
         .projects-nav__bg--rosneft {
                 background-image:  url('../images/cases/case-rosneft/project-nav_mobile-2.jpg')
+        }
+
+        .projects-nav__bg--santa {
+                background-image:  url('../images/cases/case-santa/project-nav_mobile.jpg')
+        }
+
+        .projects-nav__bg--zetta {
+                background-image:  url('../images/cases/case-zetta/project-nav_mobile.jpg')
         }
             }
